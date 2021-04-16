@@ -1,0 +1,9 @@
+#!/bin/sh
+#SBATCH --nodes=1
+#SBATCH -n {nproc}
+#SBATCH --job-name={molecule}
+
+export OMP_NUM_THREADS={nproc}
+export MKL_NUM_THREADS={nproc}
+
+time dmrcc > {molecule}.out

@@ -1,0 +1,15 @@
+#!/bin/sh
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=6-311pg_2df_2p
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=BE13
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=BE17
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=BE4
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=cc-pVQZ
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=cc-pVTZ-DK
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=def2-QZVP
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=def2-QZVPPD
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=def2-TZVP
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=ma-TZVP
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=MG3S
+snakemake -j8 -R --until ALL_ENERGY_PRINT --config BASES=cc-pCVQZ
+
+cat M06-2X*_energy.csv > all_dev.csv

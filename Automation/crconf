@@ -1,0 +1,13 @@
+#!/bin/sh
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=6-311pg_2df_2p PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=BE13 PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=BE17 PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=BE4 PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=cc-pVQZ PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=cc-pVTZ-DK PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=def2-QZVP PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=def2-QZVPPD PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=def2-TZVP PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=ma-TZVP PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=MG3S PROC=2
+snakemake -j8 -R --until QCENGINE_INPUT --config BASES=cc-pCVQZ PROC=2
