@@ -1,3 +1,15 @@
+
+./crconf - генерация инпут файлов
+./excrconf - парсим энергии после расчётов
+./Snakefile - основной скрипт
+./config.yaml - конфиг для Snakemake
+./ASCDB_{базис}.list - список файлов
+./*.tmpl - шаблоны для генерации файлов
+./basis/*.c4bas - базисы для MRCC которые копируются при генерации инпут файлов (если нужны)
+./content/ASCDB_MN*{база данных}.list - список файлов по под базам MN
+
+
+
 # Automation
 
 Automation of the jobs is achieved through snakemake workflows. Follow the instructions on the following website to install snakemake and its dependencies (http://snakemake.readthedocs.io/en/stable/index.html). Suggested installation is through conda. Modifications of snakefiles and extension for specific purposes is straightforward using snakemake (python-like) syntax.

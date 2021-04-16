@@ -22,6 +22,7 @@ import os
 import glob
 from operator import itemgetter
 from datetime import timedelta
+from shutil import copyfile
 #
 #    --- ACCDB WORKFLOW FILE ---
 #
@@ -59,7 +60,7 @@ configfile: "config.yaml"
 #
 def get_all_inputs():
 #read all text files in MOL_LIST_DIR and cat them into a launch_list file containing the names of all molecules
-    path = os.path.join(config["MOL_LIST_DIR"], '*.list')
+    path = os.path.join(config["MOL_LIST_DIR"], "ASCDB_" + config['BASES'] + '.list')
     read_files=glob.glob(path)
     with open("launch_list", "w") as outfile:
         for f in read_files:
@@ -95,24 +96,130 @@ TEMPL1 = config['TEMPL1']
 # NUMBER OF PROCESSORS/CORES/THREADS
 nproc = config['PROC']
 
+ATOMS = {
+"H":"1",
+"He":"2",
+"Li":"3",
+"Be":"4",
+"B":"5",
+"C":"6",
+"N":"7",
+"O":"8",
+"F":"9",
+"Ne":"10",
+"Na":"11",
+"Mg":"12",
+"Al":"13",
+"Si":"14",
+"P":"15",
+"S":"16",
+"Cl":"17",
+"Ar":"18",
+"Ca":"20",
+"V":"23",
+"Cr":"24",
+"Fe":"26",
+"Ni":"28",
+"Co":"27",
+"Cu":"29",
+"Zn":"30",
+"Se":"34",
+"Br":"35",
+"Kr":"36",
+"Mo":"42",
+"Ru":"44",
+"Rh":"45",
+"Pd":"46",
+}
+
+mrcc_avail = {
+"def2-QZVP"       : True,
+"def2-QZVPPD"     : True,
+"def2-TZVP"       : True,
+"cc-pVQZ"         : True,
+"cc-pVTZ-DK"      : False,
+"6-311pg_2df_2p"  : False,
+"ma-TZVP"         : False,
+"MG3S"            : False,
+"BE13"            : False,
+"BE17"            : False,
+"BE4"             : False,
+"cc-pCVQZ"        : False,
+}
+
 def get_energy(*path):
     "get calculated energies for molecule"
 #
 # Next section is for extraction of the results (energies). The correct regex should be selected in the configfile, based on each problem/database/qcengine
 #
+
+#ortus  st 2m32.031s
+#hpc4 st /dev/shm 204.71 secs
+#50GB 182.29 secs
+#st drive 340.73 secs
+    name = ""
     engine_exp = config["REGEXP"]
     energy_exp = '(?P<energy>[-+]?\d+\.\d+)'
     total_exp = engine_exp + energy_exp
+    print(type(path))
     regexp = re.compile(total_exp)
-    with open(os.path.join(*path, 'mol.out'), 'r') as qcengine_out:
+    print(path)
+    if "2p" in path:
+        path = path[0], path[1].split("_6-311pg_2df")[0], "6-311pg_2df_2p", path[-1]
+    p = os.listdir(os.path.join(*path))
+    print(p)
+    if "out.log" in p:
+        name = "out.log" 
+    else:
+        name = path[-1] + ".out"
+    print(name)
+    with open(os.path.join(*path, name), 'r') as qcengine_out:
         energy = re.findall(regexp, qcengine_out.read())
         if energy:
             # we are only interested in the last occurrence
             return float(energy[-1])
 
+def ggen(mol, name):
+    ans = ""
+    t = mol.split("\n")
+    while "" in t:
+        t.remove("")
+    # print(t)
+    k = 0
+    for i in range(len(t)):
+        p = i + k
+        while t[p][0] == " ":
+            t[p] = t[p][1:]
+            if len(t[p]) == 0:
+                t = t[:p] + t[p+1:]
+                k -= 1
+                break
+    # print(t)
+    mol = t[1:]
+    for at in mol:
+        tmp = at.split(" ")
+        att = tmp[0]
+        if att[0] in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+            ans += "Qq " + att + " " + " ".join(tmp[1:]) + "\n"
+        else:
+            if len(att) == 2:
+                att = att[0].upper() + att[1].lower()
+            else:
+                att = att[0].upper()
+            ans += att + " " + ATOMS[att] + " " + " ".join(tmp[1:]) + "\n"
+
+    oth = t[0]
+    oth = oth.split(" ")
+    charge = int(oth[0].replace(",", ""))
+    mult = int(oth[1])
+
+    print("FILE ", name, "Le", len(mol))
+
+    return ans, charge, mult, str(len(mol))
+
 rule ALL:
     input:
-        expand('{out_DIR}/{method}/{basis}/{molecule}/mol.out', molecule=get_all_inputs(), method=METHODS, basis=BASES, out_DIR=OUTPUTS_DIR),
+        expand('{out_DIR}/{method}/{basis}/{molecule}/{molecule}.out', molecule=get_all_inputs(), method=METHODS, basis=BASES, out_DIR=OUTPUTS_DIR),
 
 rule ALL_ENERGY_PRINT:
 #This rule is called to print the .csv file with all the final energies.
@@ -127,7 +234,7 @@ rule ENERGY_PRINT:
         with open(output[0], 'w', newline='') as output_file:
             energy_data = csv.writer(output_file, dialect='excel')
             fieldnames = ['Molecules', 'Calc_energy',]
-            energy_data.writerow(fieldnames)
+            # energy_data.writerow(fieldnames)
             with open('launch_list') as f:
                 for line in f:
                     molecule = line.replace('\n', '')
@@ -142,15 +249,15 @@ rule ENERGY_PRINT:
 
 rule QCENGINE_RUN:
 #This rule calls the program.
-    input:      '{out_DIR}/{method}/{basis}/{molecule}/mol.in'
-    output:     '{out_DIR}/{method}/{basis}/{molecule}/mol.out'
+    input:      '{out_DIR}/{method}/{basis}/{molecule}/MINP'
+    output:     '{out_DIR}/{method}/{basis}/{molecule}/{molecule}.out'
     run:
         shell(config["QCENGINE_CALL"])
 
 rule QCENGINE_INPUT:
 #This rule writes the input file for the program of choice, based on the template given in the configfile
     input:      '{out_DIR}/{method}/{basis}/{molecule}/.keep'
-    output:     '{out_DIR}/{method}/{basis}/{molecule}/mol.in'
+    output:     '{out_DIR}/{method}/{basis}/{molecule}/MINP'
     run:
         for file_name in output:
             molecule = wildcards.molecule
@@ -158,16 +265,34 @@ rule QCENGINE_INPUT:
             # set method: useful to change some keywords according to your program's syntax.
             # set template
             template = TEMPL1
+            df = "#"
             #    template = TEMPL2
+            # copyfile("SLURM.tmpl", file_name[:-4] + "SLURM.slurm")
             with open('tolaunch/{molecule}.xyz'.format(molecule=wildcards.molecule), 'r') as f:
                 f.readline()                   # skip first line
                 molecule_data = f.read()[:-1]  # skip last NL
+                molecule_datag, charge, mult, n_at = ggen(molecule_data, molecule)
+            if not mrcc_avail[wildcards.basis]:
+                df = ""
+                copyfile("basis/" + wildcards.basis + ".c4bas", file_name[:-4] + "GENBAS")
+            if molecule in ["Z_015_de2-QZVP_He", "12_He_AE18", "SIE4x4_he+", "SIE4x4_he2+_1_25"]:
+                    df = ""
             with open(file_name, 'w') as f:
                 f.write(open(template).read().format(
                     basis=wildcards.basis,
                     method=method,
                     molecule=molecule,
                     molecule_data=molecule_data,
+                    molecule_xyz=n_at + "\n" + molecule_data,
+                    molecule_datag=molecule_datag[:-1],
+                    charge=charge,
+                    mult=mult,
+                    nproc=nproc,
+                    df=df
+                ))
+            with open(file_name[:-4] + "SLURM.slurm", 'w') as f:
+                f.write(open("SLURM.tmpl").read().format(
+                    molecule=molecule,
                     nproc=nproc,
                 ))
 

@@ -4,18 +4,16 @@
 # ------------------------- #
 
 #input files template
-TEMPL1: qcengine.tmpl
+TEMPL1: ginput.tmpl
 
 METHODS:
-- M11
-- PBE
+- M06
 
 BASES:
-- cc-pVDZ
-- pc-0
+- def2-QZVPPD
 
 #Number of processors for parallel jobs
-PROC: 4
+PROC: 1
 
 #If you don't use this, leave it blank and don't comment it out, otherwise it will result in an error.
 OTHERS: RHF
@@ -25,24 +23,24 @@ OTHERS: RHF
 # ------------------ #
 
 #Directory containing all xyz files (full or relative path)
-GEOMETRIES_DIR: Geometries
+GEOMETRIES_DIR: /home/lsvvt/work/AAACCC/ACCDB/Geometries
 
 #Directory where the output file structures is created (full or relative path)
-OUTPUTS_DIR: output_dir
+OUTPUTS_DIR: /home/lsvvt/work/AAACCC/ACCDB/Automation/output
 
 #Directory containing the list of databases/subsets that needs to be run (they can be more than one)
-MOL_LIST_DIR: mol_list
+MOL_LIST_DIR: /home/lsvvt/work/AAACCC/ACCDB/Automation
 
 # ---------------- #
 # Running the jobs #
 # ---------------- #
 
 #Call to the quantum chemistry program
-QCENGINE_CALL: "qchem -nt {nproc} {input} {output}"   #Q-Chem
+QCENGINE_CALL: "echo lol"   #Q-Chem
           # "g16 {input} {output}"                 #Gaussian
           
 #regexp to extract final energies from output files
-REGEXP: ' Total energy in the final basis set =\s+' #Q-CHEM
+REGEXP: 'FINAL KOHN-SHAM ENERGY:\s+' #Q-CHEM
       # 'SCF Done:  E({method}) =  '                # Gaussian
 
 ...
