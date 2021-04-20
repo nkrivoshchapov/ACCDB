@@ -1,13 +1,10 @@
-%nproc={nproc}
-%mem=20GB 
-%chk={molecule}
-#P {method}/{basis} Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt) IOp(1/33=1) 
-Guess=Read
+%nprocshared={nproc}
+#P {method}/{basis} Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt) IOp(1/33=1)
 
 Database calculations.
 
 {molecule_data}
 
-
+{fullbasis}
 
 

@@ -134,7 +134,7 @@ ATOMS = {
 
 mrcc_avail = {
 "def2-QZVP"       : True,
-"def2-QZVPPD"     : True,
+"def2-QZVPPD"     : False,
 "def2-TZVP"       : True,
 "cc-pVQZ"         : True,
 "cc-pVTZ-DK"      : False,
@@ -249,7 +249,7 @@ rule ENERGY_PRINT:
 
 rule QCENGINE_RUN:
 #This rule calls the program.
-    input:      '{out_DIR}/{method}/{basis}/{molecule}/MINP'
+    input:      '{out_DIR}/{method}/{basis}/{molecule}/inpfile.gjf'
     output:     '{out_DIR}/{method}/{basis}/{molecule}/{molecule}.out'
     run:
         shell(config["QCENGINE_CALL"])
@@ -257,7 +257,7 @@ rule QCENGINE_RUN:
 rule QCENGINE_INPUT:
 #This rule writes the input file for the program of choice, based on the template given in the configfile
     input:      '{out_DIR}/{method}/{basis}/{molecule}/.keep'
-    output:     '{out_DIR}/{method}/{basis}/{molecule}/MINP'
+    output:     '{out_DIR}/{method}/{basis}/{molecule}/inpfile.gjf'
     run:
         for file_name in output:
             molecule = wildcards.molecule
@@ -272,14 +272,42 @@ rule QCENGINE_INPUT:
                 f.readline()                   # skip first line
                 molecule_data = f.read()[:-1]  # skip last NL
                 molecule_datag, charge, mult, n_at = ggen(molecule_data, molecule)
+            basis_kw = "GEN"
             if not mrcc_avail[wildcards.basis]:
-                df = ""
-                copyfile("basis/" + wildcards.basis + ".c4bas", file_name[:-4] + "GENBAS")
-            if molecule in ["Z_015_de2-QZVP_He", "12_He_AE18", "SIE4x4_he+", "SIE4x4_he2+_1_25"]:
-                    df = ""
+                fb = open("basis/" + wildcards.basis + ".gbs", "r").read()
+                atoms = []
+                xyzlines = molecule_data.split("\n")
+                #print(repr(xyzlines))
+                for line in xyzlines[1:]:
+                    if line.lower().islower():
+                        atname = line.split()[0]
+                        if atname not in atoms:
+                            atoms.append(atname)
+                #print("Atoms = "+repr(atoms))
+                fbparts = fb.split("****")
+                for i, fbpart in reversed(list(enumerate(fbparts))):
+                    good = False
+                    for atom in atoms:
+                        if fbpart.startswith(atom+" ") or fbpart.startswith("\n"+atom+" "):
+                            good = True
+                            #print("atom=%s Remained part %s" % (repr(atom), repr(fbpart[:20])))
+                            break
+                        #else:
+                        #    print("atom=%s Will not do part %s" % (repr(atom), repr(fbpart[:20])))
+                    if not good:
+                        del fbparts[i]
+                fb = ("****".join(fbparts)+"****").lstrip("\n")
+            else:
+                fb = ""
+                if wildcards.basis == "def2-QZVP":
+                    basis_kw = "Def2QZVP"
+                elif wildcards.basis == "def2-TZVP":
+                    basis_kw = "Def2TZVP"
+                elif wildcards.basis == "cc-pVQZ":
+                    basis_kw = "cc-pVQZ"
             with open(file_name, 'w') as f:
                 f.write(open(template).read().format(
-                    basis=wildcards.basis,
+                    basis=basis_kw,
                     method=method,
                     molecule=molecule,
                     molecule_data=molecule_data,
@@ -288,7 +316,8 @@ rule QCENGINE_INPUT:
                     charge=charge,
                     mult=mult,
                     nproc=nproc,
-                    df=df
+                    df=df,
+                    fullbasis=fb
                 ))
             with open(file_name[:-4] + "SLURM.slurm", 'w') as f:
                 f.write(open("SLURM.tmpl").read().format(
@@ -308,3 +337,4 @@ rule QCENGINE_DIRS:
     input:      'tolaunch' + '/{molecule}.xyz'
     output:     '{out_DIR}/{method}/{basis}/{molecule}/.keep'
     shell:      'touch {output}'
+
