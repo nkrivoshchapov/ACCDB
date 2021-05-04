@@ -1,0 +1,817 @@
+ Entering Gaussian System, Link 0=/opt/g16avx/g16
+ Input=M062X--MG3S--22_F2_NCCE30.gjf
+ Output=M062X--MG3S--22_F2_NCCE30.log
+ Initial command:
+ /opt/g16avx/l1.exe "/scratch/gaussian/Gau-14369.inp" -scrdir="/scratch/gaussian/"
+ Entering Link 1 = /opt/g16avx/l1.exe PID=     14371.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                19-Apr-2021 
+ ******************************************
+ %nprocshared=7
+ Will use up to    7 processors via shared memory.
+ ----------------------------------------------------------------------
+ #P M062X/GEN Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt) IOp(
+ 1/33=1)
+ ----------------------------------------------------------------------
+ 1/33=1,38=1,172=1/1;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=7,11=2,25=1,30=1,74=-55,75=-5/1,2,3;
+ 4/9=2/1;
+ 5/5=2,38=5/2;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 8/6=1,10=90,11=11/1;
+ 9/8=-3,42=1,46=1/14;
+ 5/5=2,8=3,17=40,38=5/8(-2);
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 99/5=1,9=1/99;
+ Leave Link    1 at Mon Apr 19 20:59:47 2021, MaxMem=           0 cpu:               0.3 elap:               0.0
+ (Enter /opt/g16avx/l101.exe)
+ ONIOM data not found on unit 2.
+ ----------------------
+ Database calculations.
+ ----------------------
+ TstMul:  ICh=     0
+ TstMul:  Mul=     1
+ TstMul:  ICh=     0
+ TstMul:  Mul=     1
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ 9                     0.        0.        1.41423 
+ 9                     0.        0.        0. 
+ 
+ RdStrC is calling ZToCFu for IStruc=1 NZ=     2.
+ PrtBox:  NBox=     1 Levels=  1 BoxLen=    8.00 SMaxX=        2.67
+          Shift=            0.000000            0.000000            0.000000
+ Box      1 Number                   0 centers from      1 to      2:
+ After GenITR:
+ ITRead=  0  0
+ MicOpt= -1 -1
+ ITRead=  0  0
+ MicOpt= -1 -1
+ NAtoms=      2 NQM=        2 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2
+ IAtWgt=          19          19
+ AtmWgt=  18.9984032  18.9984032
+ NucSpn=           1           1
+ AtZEff=  -0.0000000  -0.0000000
+ NQMom=    0.0000000   0.0000000
+ NMagM=    2.6288670   2.6288670
+ AtZNuc=   9.0000000   9.0000000
+ No MM parameters found.
+ Leave Link  101 at Mon Apr 19 20:59:47 2021, MaxMem=   104857600 cpu:               1.2 elap:               0.2
+ (Enter /opt/g16avx/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          9           0        0.000000    0.000000    1.414230
+      2          9           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    F2
+ Framework group  D*H[C*(F.F)]
+ Deg. of freedom     1
+ Full point group                 D*H     NOp   8
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C2      NOp   2
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          9           0        0.000000    0.000000    0.707115
+      2          9           0        0.000000    0.000000   -0.707115
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):           0.0000000          26.6005124          26.6005124
+ Leave Link  202 at Mon Apr 19 20:59:47 2021, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16avx/l301.exe)
+ General basis read from cards:  (5D, 7F)
+ Centers:       1      2
+ S 6 1.00
+     Exponent=  1.1427100000D+04 Coefficients=  1.8009300000D-03
+     Exponent=  1.7223500000D+03 Coefficients=  1.3741900000D-02
+     Exponent=  3.9574600000D+02 Coefficients=  6.8133400000D-02
+     Exponent=  1.1513900000D+02 Coefficients=  2.3332500000D-01
+     Exponent=  3.3602600000D+01 Coefficients=  5.8908600000D-01
+     Exponent=  4.9190100000D+00 Coefficients=  2.9950500000D-01
+ S 3 1.00
+     Exponent=  5.5444100000D+01 Coefficients=  1.1453600000D-01
+     Exponent=  1.2632300000D+01 Coefficients=  9.2051200000D-01
+     Exponent=  3.7175600000D+00 Coefficients= -3.3780400000D-03
+ S 1 1.00
+     Exponent=  1.1654500000D+00 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  3.2189200000D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  1.0760000000D-01 Coefficients=  1.0000000000D+00
+ P 3 1.00
+     Exponent=  5.5444100000D+01 Coefficients=  3.5460900000D-02
+     Exponent=  1.2632300000D+01 Coefficients=  2.3745100000D-01
+     Exponent=  3.7175600000D+00 Coefficients=  8.2045800000D-01
+ P 1 1.00
+     Exponent=  1.1654500000D+00 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  3.2189200000D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  1.0760000000D-01 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  3.5000000000D+00 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  8.7500000000D-01 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  1.8500000000D+00 Coefficients=  1.0000000000D+00
+ ****
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ There are    18 symmetry adapted cartesian basis functions of AG  symmetry.
+ There are     3 symmetry adapted cartesian basis functions of B1G symmetry.
+ There are     9 symmetry adapted cartesian basis functions of B2G symmetry.
+ There are     9 symmetry adapted cartesian basis functions of B3G symmetry.
+ There are     3 symmetry adapted cartesian basis functions of AU  symmetry.
+ There are    18 symmetry adapted cartesian basis functions of B1U symmetry.
+ There are     9 symmetry adapted cartesian basis functions of B2U symmetry.
+ There are     9 symmetry adapted cartesian basis functions of B3U symmetry.
+ There are    15 symmetry adapted basis functions of AG  symmetry.
+ There are     3 symmetry adapted basis functions of B1G symmetry.
+ There are     8 symmetry adapted basis functions of B2G symmetry.
+ There are     8 symmetry adapted basis functions of B3G symmetry.
+ There are     3 symmetry adapted basis functions of AU  symmetry.
+ There are    15 symmetry adapted basis functions of B1U symmetry.
+ There are     8 symmetry adapted basis functions of B2U symmetry.
+ There are     8 symmetry adapted basis functions of B3U symmetry.
+    68 basis functions,   104 primitive gaussians,    78 cartesian basis functions
+     9 alpha electrons        9 beta electrons
+       nuclear repulsion energy        30.3086160557 Hartrees.
+ IExCor= 4336 DFT=T Ex+Corr=M062X ExCW=0 ScaHFX=  0.540000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    2 NActive=    2 NUniq=    1 SFac= 4.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Mon Apr 19 20:59:48 2021, MaxMem=   104857600 cpu:               0.3 elap:               0.1
+ (Enter /opt/g16avx/l302.exe)
+ NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
+         NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
+ One-electron integrals computed using PRISM.
+ One-electron integral symmetry used in STVInt
+ NBasis=    68 RedAO= T EigKep=  3.42D-03  NBF=    15     3     8     8     3    15     8     8
+ NBsUse=    68 1.00D-06 EigRej= -1.00D+00 NBFU=    15     3     8     8     3    15     8     8
+ Precomputing XC quadrature grid using
+ IXCGrd= 4 IRadAn=           5 IRanWt=          -1 IRanGd=           0 AccXCQ= 0.00D+00.
+ Generated NRdTot=       0 NPtTot=           0 NUsed=           0 NTot=          32
+ NSgBfM=    78    78    78    78    78 MxSgAt=     2 MxSgA2=     2.
+ Leave Link  302 at Mon Apr 19 20:59:48 2021, MaxMem=   104857600 cpu:               1.0 elap:               0.1
+ (Enter /opt/g16avx/l303.exe)
+ DipDrv:  MaxL=1.
+ Leave Link  303 at Mon Apr 19 20:59:48 2021, MaxMem=   104857600 cpu:               0.2 elap:               0.0
+ (Enter /opt/g16avx/l401.exe)
+ SCF N**3 symmetry information disabled.
+ ExpMin= 1.08D-01 ExpMax= 1.14D+04 ExpMxC= 1.72D+03 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
+ Harris functional with IExCor= 1009 and IRadAn=       5 diagonalized for initial guess.
+ HarFok:  IExCor= 1009 AccDes= 0.00D+00 IRadAn=         5 IDoV= 1 UseB2=F ITyADJ=14
+ ICtDFT=  3500011 ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=           0
+         NFxFlg=           0 DoJE=T BraDBF=F KetDBF=T FulRan=T
+         wScrn=  0.000000 ICntrl=       500 IOpCl=  0 I1Cent=   200000004 NGrid=           0
+         NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ Harris En= -199.413011335114    
+ JPrj=0 DoOrth=F DoCkMO=F.
+ Initial guess orbital symmetries:
+       Occupied  (SGU) (SGG) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG)
+       Virtual   (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGG)
+                 (PIU) (PIU) (DLTG) (DLTG) (SGU) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (SGU)
+                 (PIG) (PIG) (PIU) (PIU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (SGG) (DLTU) (DLTU) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (SGU)
+ The electronic state of the initial guess is 1-SGG.
+ Leave Link  401 at Mon Apr 19 20:59:48 2021, MaxMem=   104857600 cpu:               1.2 elap:               0.2
+ (Enter /opt/g16avx/l502.exe)
+ Keep R1 ints in memory in symmetry-blocked form, NReq=9070968.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   2346 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ Closed shell SCF:
+ Using DIIS extrapolation, IDIIS=  1040.
+ NGot=   104857600 LenX=   104475967 LenY=   104469442
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Integral accuracy reduced to 1.0D-05 until final iterations.
+
+ Cycle   1  Pass 0  IDiag  1:
+ E= -199.492850893696    
+ DIIS: error= 3.03D-02 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin= -199.492850893696     IErMin= 1 ErrMin= 3.03D-02
+ ErrMax= 3.03D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.92D-02 BMatP= 3.92D-02
+ IDIUse=3 WtCom= 6.97D-01 WtEn= 3.03D-01
+ Coeff-Com:  0.100D+01
+ Coeff-En:   0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.428 Goal=   None    Shift=    0.000
+ GapD=    0.428 DampG=2.000 DampE=0.500 DampFc=1.0000 IDamp=-1.
+ RMSDP=1.20D-03 MaxDP=1.43D-02              OVMax= 2.85D-02
+
+ Cycle   2  Pass 0  IDiag  1:
+ E= -199.502845895295     Delta-E=       -0.009995001599 Rises=F Damp=F
+ DIIS: error= 9.30D-03 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin= -199.502845895295     IErMin= 2 ErrMin= 9.30D-03
+ ErrMax= 9.30D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.09D-03 BMatP= 3.92D-02
+ IDIUse=3 WtCom= 9.07D-01 WtEn= 9.30D-02
+ Coeff-Com:  0.191D+00 0.809D+00
+ Coeff-En:   0.000D+00 0.100D+01
+ Coeff:      0.174D+00 0.826D+00
+ Gap=     0.440 Goal=   None    Shift=    0.000
+ RMSDP=4.70D-04 MaxDP=9.28D-03 DE=-1.00D-02 OVMax= 1.47D-02
+
+ Cycle   3  Pass 0  IDiag  1:
+ E= -199.504668487528     Delta-E=       -0.001822592233 Rises=F Damp=F
+ DIIS: error= 3.50D-03 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -199.504668487528     IErMin= 3 ErrMin= 3.50D-03
+ ErrMax= 3.50D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.03D-04 BMatP= 4.09D-03
+ IDIUse=3 WtCom= 9.65D-01 WtEn= 3.50D-02
+ Coeff-Com:  0.109D-01 0.280D+00 0.709D+00
+ Coeff-En:   0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.105D-01 0.271D+00 0.719D+00
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=1.53D-04 MaxDP=3.28D-03 DE=-1.82D-03 OVMax= 3.74D-03
+
+ Cycle   4  Pass 0  IDiag  1:
+ E= -199.504964229052     Delta-E=       -0.000295741524 Rises=F Damp=F
+ DIIS: error= 7.09D-04 at cycle   4 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -199.504964229052     IErMin= 4 ErrMin= 7.09D-04
+ ErrMax= 7.09D-04  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.25D-05 BMatP= 6.03D-04
+ IDIUse=3 WtCom= 9.93D-01 WtEn= 7.09D-03
+ Coeff-Com: -0.193D-02 0.726D-01 0.237D+00 0.692D+00
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:     -0.192D-02 0.721D-01 0.235D+00 0.695D+00
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=2.07D-05 MaxDP=4.70D-04 DE=-2.96D-04 OVMax= 5.20D-04
+
+ Cycle   5  Pass 0  IDiag  1:
+ E= -199.504969750478     Delta-E=       -0.000005521426 Rises=F Damp=F
+ DIIS: error= 4.06D-05 at cycle   5 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -199.504969750478     IErMin= 5 ErrMin= 4.06D-05
+ ErrMax= 4.06D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 5.42D-08 BMatP= 1.25D-05
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.677D-04-0.881D-02-0.344D-01-0.761D-01 0.112D+01
+ Coeff:     -0.677D-04-0.881D-02-0.344D-01-0.761D-01 0.112D+01
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=2.66D-06 MaxDP=3.11D-05 DE=-5.52D-06 OVMax= 7.07D-05
+
+ Initial convergence to 1.0D-05 achieved.  Increase integral accuracy.
+ Cycle   6  Pass 1  IDiag  1:
+ E= -199.504942778253     Delta-E=        0.000026972225 Rises=F Damp=F
+ DIIS: error= 3.34D-05 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin= -199.504942778253     IErMin= 1 ErrMin= 3.34D-05
+ ErrMax= 3.34D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.42D-08 BMatP= 2.42D-08
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=2.66D-06 MaxDP=3.11D-05 DE= 2.70D-05 OVMax= 7.26D-05
+
+ Cycle   7  Pass 1  IDiag  1:
+ E= -199.504942803731     Delta-E=       -0.000000025478 Rises=F Damp=F
+ DIIS: error= 1.49D-05 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin= -199.504942803731     IErMin= 2 ErrMin= 1.49D-05
+ ErrMax= 1.49D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.10D-09 BMatP= 2.42D-08
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.253D+00 0.747D+00
+ Coeff:      0.253D+00 0.747D+00
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=6.84D-07 MaxDP=1.55D-05 DE=-2.55D-08 OVMax= 1.62D-05
+
+ Cycle   8  Pass 1  IDiag  1:
+ E= -199.504942806691     Delta-E=       -0.000000002960 Rises=F Damp=F
+ DIIS: error= 4.53D-06 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -199.504942806691     IErMin= 3 ErrMin= 4.53D-06
+ ErrMax= 4.53D-06  0.00D+00 EMaxC= 1.00D-01 BMatC= 5.67D-10 BMatP= 6.10D-09
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.326D-01 0.215D+00 0.818D+00
+ Coeff:     -0.326D-01 0.215D+00 0.818D+00
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=1.58D-07 MaxDP=1.97D-06 DE=-2.96D-09 OVMax= 5.45D-06
+
+ Cycle   9  Pass 1  IDiag  1:
+ E= -199.504942807017     Delta-E=       -0.000000000326 Rises=F Damp=F
+ DIIS: error= 2.23D-07 at cycle   4 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -199.504942807017     IErMin= 4 ErrMin= 2.23D-07
+ ErrMax= 2.23D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.79D-12 BMatP= 5.67D-10
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.149D-02-0.997D-03-0.137D-01 0.102D+01
+ Coeff:     -0.149D-02-0.997D-03-0.137D-01 0.102D+01
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=1.46D-08 MaxDP=1.38D-07 DE=-3.26D-10 OVMax= 4.52D-07
+
+ Cycle  10  Pass 1  IDiag  1:
+ E= -199.504942807019     Delta-E=       -0.000000000002 Rises=F Damp=F
+ DIIS: error= 7.72D-08 at cycle   5 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -199.504942807019     IErMin= 5 ErrMin= 7.72D-08
+ ErrMax= 7.72D-08  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.18D-13 BMatP= 1.79D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.280D-03-0.704D-02-0.286D-01 0.248D+00 0.787D+00
+ Coeff:      0.280D-03-0.704D-02-0.286D-01 0.248D+00 0.787D+00
+ Gap=     0.438 Goal=   None    Shift=    0.000
+ RMSDP=2.74D-09 MaxDP=2.82D-08 DE=-1.68D-12 OVMax= 8.33D-08
+
+ SCF Done:  E(RM062X) =  -199.504942807     A.U. after   10 cycles
+            NFock= 10  Conv=0.27D-08     -V/T= 2.0026
+ KE= 1.989833997694D+02 PE=-5.373518927735D+02 EE= 1.085549341413D+02
+ Leave Link  502 at Mon Apr 19 20:59:48 2021, MaxMem=   104857600 cpu:               3.3 elap:               0.5
+ (Enter /opt/g16avx/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 0 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG)
+       Virtual   (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGG)
+                 (PIU) (PIU) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (SGU)
+                 (PIG) (PIG) (PIU) (PIU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTU) (DLTU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (SGU)
+ The electronic state is 1-SGG.
+ Alpha  occ. eigenvalues --  -25.36180 -25.36166  -1.50769  -1.25877  -0.68109
+ Alpha  occ. eigenvalues --   -0.65730  -0.65730  -0.52383  -0.52383
+ Alpha virt. eigenvalues --   -0.08534   0.14102   0.18008   0.19903   0.19903
+ Alpha virt. eigenvalues --    0.27516   0.27521   0.27521   0.44129   1.22271
+ Alpha virt. eigenvalues --    1.22271   1.24859   1.36380   1.36380   1.36403
+ Alpha virt. eigenvalues --    1.61834   1.72090   1.72090   1.90301   1.90509
+ Alpha virt. eigenvalues --    1.90512   2.11632   2.11635   2.11676   2.58482
+ Alpha virt. eigenvalues --    2.58482   3.43295   5.72985   6.06788   6.06788
+ Alpha virt. eigenvalues --    6.29314   6.34623   6.34623   6.38535   6.38535
+ Alpha virt. eigenvalues --    6.43894   6.43897   6.60868   6.60868   6.63910
+ Alpha virt. eigenvalues --    6.63910   6.74540   6.74543   6.77651   7.17891
+ Alpha virt. eigenvalues --    7.17891   7.80028   8.89992   8.89992   8.92599
+ Alpha virt. eigenvalues --    8.92599   9.05406   9.05407   9.39272   9.48668
+ Alpha virt. eigenvalues --    9.48668  10.43650  66.72011  66.83468
+          Condensed to atoms (all electrons):
+               1          2
+     1  F    8.886531   0.113469
+     2  F    0.113469   8.886531
+ Mulliken charges:
+               1
+     1  F   -0.000000
+     2  F   -0.000000
+ Sum of Mulliken charges =  -0.00000
+ Mulliken charges with hydrogens summed into heavy atoms:
+               1
+     1  F   -0.000000
+     2  F   -0.000000
+ Electronic spatial extent (au):  <R**2>=             53.1387
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=             -0.0000    Y=              0.0000    Z=             -0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -9.6775   YY=             -9.6775   ZZ=             -8.8886
+   XY=             -0.0000   XZ=              0.0000   YZ=              0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -0.2629   YY=             -0.2629   ZZ=              0.5259
+   XY=             -0.0000   XZ=              0.0000   YZ=              0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=             -0.0000  YYY=              0.0000  ZZZ=              0.0000  XYY=             -0.0000
+  XXY=              0.0000  XXZ=             -0.0000  XZZ=             -0.0000  YZZ=              0.0000
+  YYZ=             -0.0000  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -5.8213 YYYY=             -5.8213 ZZZZ=            -30.1044 XXXY=             -0.0000
+ XXXZ=              0.0000 YYYX=             -0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -1.9404 XXZZ=             -6.7777 YYZZ=             -6.7777
+ XXYZ=              0.0000 YYXZ=              0.0000 ZZXY=             -0.0000
+ N-N= 3.030861605575D+01 E-N=-5.373518935586D+02  KE= 1.989833997694D+02
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Mon Apr 19 20:59:49 2021, MaxMem=   104857600 cpu:               0.8 elap:               0.1
+ (Enter /opt/g16avx/l801.exe)
+ DoSCS=F DFT=T ScalE2(SS,OS)=  1.000000  1.000000
+ Range of M.O.s used for correlation:     1    68
+ NBasis=    68 NAE=     9 NBE=     9 NFC=     0 NFV=     0
+ NROrb=     68 NOA=     9 NOB=     9 NVA=    59 NVB=    59
+ Leave Link  801 at Mon Apr 19 20:59:49 2021, MaxMem=   104857600 cpu:               0.2 elap:               0.0
+ (Enter /opt/g16avx/l914.exe)
+ RHF ground state
+ Doing stability rather than CIS.
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=19870137.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   2346 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ MDV=   104857600 DFT=T DoStab=T Mixed=T DoRPA=F DoScal=F NonHer=F
+ Making orbital integer symmetry assigments:
+ Orbital symmetries:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG)
+       Virtual   (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGG)
+                 (PIU) (PIU) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (SGU)
+                 (PIG) (PIG) (PIU) (PIU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTU) (DLTU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (SGU)
+    48 initial guesses have been made.
+ Convergence on wavefunction:    0.001000000000000
+ Davidson Disk Diagonalization:  ConvIn= 1.00D-03 SkipCon=T Conv= 1.00D-03.
+ Max sub-space:  2000 roots to seek:    48 dimension of matrix:         1062
+ Iteration     1 Dimension    48 NMult     0 NNew     48
+ CISAX will form    48 AO SS matrices at one time.
+ NMat=    48 NSing=    24 JSym2X= 2.
+ New state      1 was old state      2
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.999563177131956
+ Root      2 :     2.999563177132107
+ Root      3 :     5.082145393264184
+ Root      4 :     5.616741447015448
+ Root      5 :     5.616741447015556
+ Root      6 :     6.888113944076292
+ Root      7 :     6.888113944076498
+ Root      8 :     9.214327864659618
+ Root      9 :     9.214327864659776
+ Root     10 :    13.912830077293480
+ Root     11 :    13.912830077294549
+ Root     12 :    14.217499507455637
+ Root     13 :    14.217499507455878
+ Root     14 :    15.088027917177213
+ Root     15 :    15.309865844477626
+ Root     16 :    15.309865844478436
+ Root     17 :    15.508363177769176
+ Root     18 :    15.509080376057966
+ Root     19 :    15.542208728400388
+ Root     20 :    15.542208728401004
+ Root     21 :    15.670017765646028
+ Root     22 :    15.674496589089705
+ Root     23 :    15.675171390495285
+ Root     24 :    15.830611592903594
+ Root     25 :    15.830611592903619
+ Root     26 :    17.629400121610349
+ Root     27 :    17.629400121611361
+ Root     28 :    17.701721570038579
+ Root     29 :    17.701721570038956
+ Root     30 :    18.009194831294227
+ Root     31 :    18.009194831295055
+ Root     32 :    18.077741076155771
+ Root     33 :    18.078108300039737
+ Root     34 :    18.149557459977039
+ Root     35 :    18.149877894149121
+ Root     36 :    18.205129345971642
+ Root     37 :    18.249472551397471
+ Root     38 :    18.249472551397503
+ Root     39 :    18.253889341976446
+ Root     40 :    18.253889341977057
+ Root     41 :    18.524786741375657
+ Root     42 :    18.549264933823988
+ Root     43 :    19.409902110853260
+ Root     44 :    19.409902110853519
+ Root     45 :    19.488753915856293
+ Root     46 :    19.488753915856570
+ Root     47 :    21.422809138994307
+ Root     48 :    32.450267784238996
+ Iteration     2 Dimension    96 NMult    48 NNew     48
+ CISAX will form    48 AO SS matrices at one time.
+ NMat=    48 NSing=    24 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.187153584441798
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.666876767221953   Change is   -0.332686409910003
+ Root      2 :     2.666876767222026   Change is   -0.332686409910081
+ Root      3 :     4.214259836546844   Change is   -0.867885556717341
+ Root      4 :     5.230983541982958   Change is   -0.385757905032489
+ Root      5 :     5.230983541983061   Change is   -0.385757905032495
+ Root      6 :     6.595152579030451   Change is   -0.292961365045841
+ Root      7 :     6.595152579030729   Change is   -0.292961365045769
+ Root      8 :     8.996296634665077   Change is   -0.218031229994541
+ Root      9 :     8.996296634665185   Change is   -0.218031229994589
+ Root     10 :    13.726344173006847   Change is   -0.186485904286633
+ Root     11 :    13.726344173008018   Change is   -0.186485904286530
+ Root     12 :    14.163946823249496   Change is   -0.053552684206141
+ Root     13 :    14.163946823249793   Change is   -0.053552684206087
+ Root     14 :    14.606677537125519   Change is   -0.481350380051695
+ Root     15 :    15.107000331788289   Change is   -0.202865512689338
+ Root     16 :    15.107000331789449   Change is   -0.202865512688988
+ Root     17 :    15.154628880068277   Change is   -0.353734297700899
+ Root     18 :    15.155252817607607   Change is   -0.353827558450359
+ Root     19 :    15.191512314312545   Change is   -0.478505451333483
+ Root     20 :    15.436782240348791   Change is   -0.105426488051596
+ Root     21 :    15.436782240349322   Change is   -0.105426488051681
+ Root     22 :    15.515032873545493   Change is   -0.159463715544211
+ Root     23 :    15.515683687426916   Change is   -0.159487703068368
+ Root     24 :    15.768237153466206   Change is   -0.062374439437413
+ Root     25 :    15.768237153466231   Change is   -0.062374439437365
+ Root     26 :    17.533202395626521   Change is   -0.096197725983825
+ Root     27 :    17.533202395627580   Change is   -0.096197725983783
+ Root     28 :    17.602927408496573   Change is   -0.474813667659198
+ Root     29 :    17.603125739429949   Change is   -0.474982560609788
+ Root     30 :    17.646315005414653   Change is   -0.055406564623927
+ Root     31 :    17.646315005415111   Change is   -0.055406564623843
+ Root     32 :    17.792964997049278   Change is   -0.412164348922363
+ Root     33 :    17.832328863825015   Change is   -0.176865967469212
+ Root     34 :    17.832328863825548   Change is   -0.176865967469508
+ Root     35 :    17.886048854696096   Change is   -0.263508605280943
+ Root     36 :    17.886207740940446   Change is   -0.263670153208672
+ Root     37 :    18.064402225353184   Change is   -0.460384516022473
+ Root     38 :    18.073921806226704   Change is   -0.175550745170770
+ Root     39 :    18.073921806227730   Change is   -0.175550745169773
+ Root     40 :    18.206910080484764   Change is   -0.046979261491680
+ Root     41 :    18.206910080485297   Change is   -0.046979261491759
+ Root     42 :    18.425121265482140   Change is   -0.124143668341847
+ Root     43 :    19.265741633035887   Change is   -2.157067505958420
+ Root     44 :    19.326314277343545   Change is   -0.083587833509714
+ Root     45 :    19.326314277343844   Change is   -0.083587833509678
+ Root     46 :    19.444206063637971   Change is   -0.044547852218322
+ Root     47 :    19.444206063638241   Change is   -0.044547852218328
+ Root     48 :    20.681057159752395
+ Iteration     3 Dimension   102 NMult    96 NNew      6
+ CISAX will form     6 AO SS matrices at one time.
+ NMat=     6 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.232360091426363
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.665432814184780   Change is   -0.001443953037174
+ Root      2 :     2.665432814184780   Change is   -0.001443953037246
+ Root      3 :     4.207728233101682   Change is   -0.006531603445162
+ Root      4 :     5.223260879512265   Change is   -0.007722662470693
+ Root      5 :     5.223260879512307   Change is   -0.007722662470754
+ Root      6 :     8.994936314325750   Change is   -0.001360320339327
+ Iteration     4 Dimension   108 NMult   102 NNew      6
+ CISAX will form     6 AO SS matrices at one time.
+ NMat=     6 NSing=     3 JSym2X= 2.
+ DSYEVD-2 returned Info=        6103 IAlg= 4 N=   108 NDim=   108 NE2=      889981 trying  DSYEV.
+ Vector  24 SDiff=9.80D-01 TDiff=3.81D-04 assumed to be triplet.
+ Vector  25 SDiff=3.81D-04 TDiff=9.80D-01 assumed to be singlet.
+ Vector  38 SDiff=1.11D-03 TDiff=8.09D-01 assumed to be singlet.
+ Vector  39 SDiff=8.09D-01 TDiff=1.11D-03 assumed to be triplet.
+ Vector  61 SDiff=6.91D-01 TDiff=3.70D-03 assumed to be triplet.
+ Vector  62 SDiff=3.70D-03 TDiff=6.91D-01 assumed to be singlet.
+ New state      1 was old state      2
+ Root      1 not converged, maximum delta is    0.431714136871014
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.665424446921342   Change is   -0.000008367263437
+ Root      2 :     2.665424446921554   Change is   -0.000008367263226
+ Root      3 :     4.207686707326602   Change is   -0.000041525775079
+ Root      4 :     5.223162646865547   Change is   -0.000098232646718
+ Root      5 :     5.223162646865609   Change is   -0.000098232646699
+ Root      6 :     8.994799364884511   Change is   -0.000136949441240
+ Iteration     5 Dimension   114 NMult   108 NNew      6
+ CISAX will form     6 AO SS matrices at one time.
+ NMat=     6 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.416875210238697
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.665424424966248   Change is   -0.000000021955094
+ Root      2 :     2.665424424966345   Change is   -0.000000021955209
+ Root      3 :     4.207685632271354   Change is   -0.000001075055249
+ Root      4 :     5.223161796937365   Change is   -0.000000849928182
+ Root      5 :     5.223161796937377   Change is   -0.000000849928232
+ Root      6 :     8.994798186751618   Change is   -0.000001178132891
+ Iteration     6 Dimension   120 NMult   114 NNew      6
+ CISAX will form     6 AO SS matrices at one time.
+ NMat=     6 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.415465314685279
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.665424424701560   Change is   -0.000000000264688
+ Root      2 :     2.665424424701602   Change is   -0.000000000264742
+ Root      3 :     4.207685623519439   Change is   -0.000000008751915
+ Root      4 :     5.223161795391525   Change is   -0.000000001545840
+ Root      5 :     5.223161795391568   Change is   -0.000000001545809
+ Root      6 :     8.994798184811760   Change is   -0.000000001939860
+ Iteration     7 Dimension   121 NMult   120 NNew      1
+ CISAX will form     1 AO SS matrices at one time.
+ NMat=     1 NSing=     0 JSym2X= 2.
+ DSYEVD-2 returned Info=        7563 IAlg= 4 N=   121 NDim=   121 NE2=      794363 trying  DSYEV.
+ Vector  38 SDiff=3.62D-04 TDiff=8.09D-01 assumed to be singlet.
+ Vector  39 SDiff=8.09D-01 TDiff=3.62D-04 assumed to be triplet.
+ Root      1 not converged, maximum delta is    0.069094671465283
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     2.665424424701520   Change is   -0.000000000000040
+ Root      2 :     2.665424424701681   Change is    0.000000000000079
+ Root      3 :     4.207685623024986   Change is   -0.000000000494453
+ Root      4 :     5.223161795391490   Change is   -0.000000000000035
+ Root      5 :     5.223161795391560   Change is   -0.000000000000008
+ Root      6 :     8.994798184811730   Change is   -0.000000000000029
+ Convergence achieved on expansion vectors.
+ ***********************************************************************
+ Stability analysis using <AA,BB:AA,BB> singles matrix:
+ ***********************************************************************
+ 1PDM for each excited state written to RWF  633
+ Ground to excited state transition densities written to RWF  633
+
+ Eigenvectors of the stability matrix:
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   1:      Triplet-?Sym  Eigenvalue= 0.0979525  <S**2>=2.000
+       8 -> 10         0.16794
+       9 -> 10         0.67605
+       9 -> 12        -0.10119
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   2:      Triplet-?Sym  Eigenvalue= 0.0979525  <S**2>=2.000
+       8 -> 10         0.67605
+       8 -> 12        -0.10119
+       9 -> 10        -0.16794
+ 
+ Eigenvector   3:      Triplet-SGU  Eigenvalue= 0.1546296  <S**2>=2.000
+       5 -> 10         0.68976
+       5 -> 12        -0.13458
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   4:      Singlet-?Sym  Eigenvalue= 0.1919477  <S**2>=0.000
+       8 -> 10         0.44840
+       9 -> 10         0.53783
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   5:      Singlet-?Sym  Eigenvalue= 0.1919477  <S**2>=0.000
+       8 -> 10         0.53783
+       9 -> 10        -0.44840
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   6:      Singlet-?Sym  Eigenvalue= 0.3305528  <S**2>=0.000
+       6 -> 10         0.35046
+       7 -> 10         0.60677
+ The wavefunction is stable under the perturbations considered.
+ Leave Link  914 at Mon Apr 19 21:00:01 2021, MaxMem=   104857600 cpu:              88.4 elap:              12.6
+ (Enter /opt/g16avx/l508.exe)
+ The wavefunction is already stable.
+ Leave Link  508 at Mon Apr 19 21:00:01 2021, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16avx/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 0 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+       Occupied  (SGG) (SGU) (SGG) (SGU) (SGG) (PIU) (PIU) (PIG)
+                 (PIG)
+       Virtual   (SGU) (SGG) (SGU) (PIU) (PIU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (SGU) (PIG) (PIG) (SGG) (SGG)
+                 (PIU) (PIU) (SGU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (PIU) (PIU) (SGU)
+                 (PIG) (PIG) (PIU) (PIU) (DLTG) (DLTG) (PHIU) (PHIU)
+                 (PHIG) (PHIG) (DLTU) (DLTU) (SGG) (PIG) (PIG)
+                 (SGU) (PIU) (PIU) (DLTG) (DLTG) (DLTU) (DLTU)
+                 (SGG) (PIG) (PIG) (SGU) (SGG) (SGU)
+ The electronic state is 1-SGG.
+ Alpha  occ. eigenvalues --  -25.36180 -25.36166  -1.50769  -1.25877  -0.68109
+ Alpha  occ. eigenvalues --   -0.65730  -0.65730  -0.52383  -0.52383
+ Alpha virt. eigenvalues --   -0.08534   0.14102   0.18008   0.19903   0.19903
+ Alpha virt. eigenvalues --    0.27516   0.27521   0.27521   0.44129   1.22271
+ Alpha virt. eigenvalues --    1.22271   1.24859   1.36380   1.36380   1.36403
+ Alpha virt. eigenvalues --    1.61834   1.72090   1.72090   1.90301   1.90509
+ Alpha virt. eigenvalues --    1.90512   2.11632   2.11635   2.11676   2.58482
+ Alpha virt. eigenvalues --    2.58482   3.43295   5.72985   6.06788   6.06788
+ Alpha virt. eigenvalues --    6.29314   6.34623   6.34623   6.38535   6.38535
+ Alpha virt. eigenvalues --    6.43894   6.43897   6.60868   6.60868   6.63910
+ Alpha virt. eigenvalues --    6.63910   6.74540   6.74543   6.77651   7.17891
+ Alpha virt. eigenvalues --    7.17891   7.80028   8.89992   8.89992   8.92599
+ Alpha virt. eigenvalues --    8.92599   9.05406   9.05407   9.39272   9.48668
+ Alpha virt. eigenvalues --    9.48668  10.43650  66.72011  66.83468
+          Condensed to atoms (all electrons):
+               1          2
+     1  F    8.886531   0.113469
+     2  F    0.113469   8.886531
+ Mulliken charges:
+               1
+     1  F   -0.000000
+     2  F   -0.000000
+ Sum of Mulliken charges =  -0.00000
+ Mulliken charges with hydrogens summed into heavy atoms:
+               1
+     1  F   -0.000000
+     2  F   -0.000000
+ Electronic spatial extent (au):  <R**2>=             53.1387
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=             -0.0000    Y=              0.0000    Z=             -0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -9.6775   YY=             -9.6775   ZZ=             -8.8886
+   XY=             -0.0000   XZ=              0.0000   YZ=              0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -0.2629   YY=             -0.2629   ZZ=              0.5259
+   XY=             -0.0000   XZ=              0.0000   YZ=              0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=             -0.0000  YYY=              0.0000  ZZZ=              0.0000  XYY=             -0.0000
+  XXY=              0.0000  XXZ=             -0.0000  XZZ=             -0.0000  YZZ=              0.0000
+  YYZ=             -0.0000  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -5.8213 YYYY=             -5.8213 ZZZZ=            -30.1044 XXXY=             -0.0000
+ XXXZ=              0.0000 YYYX=             -0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -1.9404 XXZZ=             -6.7777 YYZZ=             -6.7777
+ XXYZ=              0.0000 YYXZ=              0.0000 ZZXY=             -0.0000
+ N-N= 3.030861605575D+01 E-N=-5.373518935586D+02  KE= 1.989833997694D+02
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Mon Apr 19 21:00:01 2021, MaxMem=   104857600 cpu:               0.8 elap:               0.1
+ (Enter /opt/g16avx/l9999.exe)
+
+ Test job not archived.
+ 1\1\GINC-VERTEX\Stability\RM062X\Gen\F2\XRAY\19-Apr-2021\0\\#P M062X/G
+ EN Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt) IOp(1/33=1)\\D
+ atabase calculations.\\0,1\F,0,0.,0.,1.41423\F,0,0.,0.,0.\\Version=ES6
+ 4L-G16RevA.03\State=1-SGG\HF=-199.5049428\RMSD=2.741e-09\Dipole=0.,0.,
+ 0.\Quadrupole=-0.1954902,-0.1954902,0.3909804,0.,0.,0.\PG=D*H [C*(F1.F
+ 1)]\\@
+
+
+ I (ERNEST RUTHERFORD) CAME INTO THE ROOM, WHICH WAS HALF DARK, AND PRESENTLY
+ SPOTTED LORD KELVIN IN THE AUDIENCE AND REALIZED I WAS IN TROUBLE AT
+ THE LAST PART OF MY SPEECH DEALING THE AGE OF THE EARTH, WHERE MY VIEWS
+ CONFLICTED WITH HIS.  TO MY RELIEF KELVIN FELL FAST ASLEEP, BUT AS I CAME
+ TO THE IMPORTANT POINT, I SAW THE OLD BIRD SIT UP AND COCK A BALEFUL GLANCE
+ AT ME! THEN A SUDDEN INSPIRATION CAME AND I SAID LORD KELVIN HAD LIMITED
+ THE AGE OF THE EARTH PROVIDED NO NEW SOURCE WAS DISCOVERED. THAT
+ PROPHETIC UTTERANCE REFERS TO WHAT WE ARE NOW CONSIDERING TONIGHT, RADIUM!
+ BEHOLD!  THE OLD BOY BEAMED UPON ME.
+ Job cpu time:       0 days  0 hours  1 minutes 38.3 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes 14.1 seconds.
+ File lengths (MBytes):  RWF=     57 Int=      0 D2E=      0 Chk=      3 Scr=      1
+ Normal termination of Gaussian 16 at Mon Apr 19 21:00:01 2021.

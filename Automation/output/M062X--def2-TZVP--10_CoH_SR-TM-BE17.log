@@ -1,0 +1,2491 @@
+ Entering Gaussian System, Link 0=/s/ls4/users/knvvv/bin/g16sse/g16
+ Input=data/database/M062X--def2-TZVP--10_CoH_SR-TM-BE17.gjf
+ Output=data/database/M062X--def2-TZVP--10_CoH_SR-TM-BE17.log
+ Initial command:
+ /s/ls4/users/knvvv/bin/g16sse/l1.exe "/s/ls4/users/knvvv/bin/scratch/Gau-39440.inp" -scrdir="/s/ls4/users/knvvv/bin/scratch/"
+ Entering Link 1 = /s/ls4/users/knvvv/bin/g16sse/l1.exe PID=     39441.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                18-Apr-2021 
+ ******************************************
+ %RWF=temp12_49688,70GB
+ %nprocshared=48
+ Will use up to   48 processors via shared memory.
+ Default route: MaxDisk=80GB
+ ----------------------------------------------------------------------
+ #P M062X/Def2TZVP Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt)
+  IOp(1/33=1)
+ ----------------------------------------------------------------------
+ 1/33=1,38=1,172=1/1;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=44,7=101,11=2,25=1,30=1,74=-55,75=-5/1,2,3;
+ 4/9=2/1;
+ 5/5=2,38=5/2;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 8/6=1,10=90,11=11/1;
+ 9/8=-3,42=1,46=1/14;
+ 5/5=2,8=3,17=40,38=5/8(-2);
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 99/5=1,9=1/99;
+ Leave Link    1 at Sun Apr 18 07:50:25 2021, MaxMem=           0 cpu:               8.3 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l101.exe)
+ ONIOM data not found on unit 2.
+ ----------------------
+ Database calculations.
+ ----------------------
+ TstMul:  ICh=     0
+ TstMul:  Mul=     3
+ TstMul:  ICh=     0
+ TstMul:  Mul=     3
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 3
+ Co                    0.        0.        0. 
+ H                     0.        0.        1.531 
+ 
+ RdStrC is calling ZToCFu for IStruc=1 NZ=     2.
+ PrtBox:  NBox=     1 Levels=  1 BoxLen=    8.00 SMaxX=        2.89
+          Shift=            0.000000            0.000000            0.000000
+ Box      1 Number                   0 centers from      1 to      2:
+ After GenITR:
+ ITRead=  0  0
+ MicOpt= -1 -1
+ ITRead=  0  0
+ MicOpt= -1 -1
+ NAtoms=      2 NQM=        2 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2
+ IAtWgt=          59           1
+ AtmWgt=  58.9331978   1.0078250
+ NucSpn=           7           1
+ AtZEff=  -0.0000000  -0.0000000
+ NQMom=   42.0000000   0.0000000
+ NMagM=    4.6270000   2.7928460
+ AtZNuc=  27.0000000   1.0000000
+ No MM parameters found.
+ Leave Link  101 at Sun Apr 18 07:50:26 2021, MaxMem=   104857600 cpu:               8.8 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         27           0        0.000000    0.000000    0.000000
+      2          1           0        0.000000    0.000000    1.531000
+ ---------------------------------------------------------------------
+ Stoichiometry    CoH(3)
+ Framework group  C*V[C*(HCo)]
+ Deg. of freedom     1
+ Full point group                 C*V     NOp   4
+ Largest Abelian subgroup         C2V     NOp   4
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         27           0        0.000000    0.000000    0.054679
+      2          1           0        0.000000    0.000000   -1.476321
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):           0.0000000         217.5934497         217.5934497
+ Leave Link  202 at Sun Apr 18 07:50:26 2021, MaxMem=   104857600 cpu:               6.2 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l301.exe)
+ Standard basis: def2TZVP (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ There are    29 symmetry adapted cartesian basis functions of A1  symmetry.
+ There are     5 symmetry adapted cartesian basis functions of A2  symmetry.
+ There are    12 symmetry adapted cartesian basis functions of B1  symmetry.
+ There are    12 symmetry adapted cartesian basis functions of B2  symmetry.
+ There are    24 symmetry adapted basis functions of A1  symmetry.
+ There are     5 symmetry adapted basis functions of A2  symmetry.
+ There are    11 symmetry adapted basis functions of B1  symmetry.
+ There are    11 symmetry adapted basis functions of B2  symmetry.
+    51 basis functions,   110 primitive gaussians,    58 cartesian basis functions
+    15 alpha electrons       13 beta electrons
+       nuclear repulsion energy         9.3323218124 Hartrees.
+ IExCor= 4336 DFT=T Ex+Corr=M062X ExCW=0 ScaHFX=  0.540000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    2 NActive=    2 NUniq=    2 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Sun Apr 18 07:50:26 2021, MaxMem=   104857600 cpu:               6.0 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l302.exe)
+ NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
+         NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
+ One-electron integrals computed using PRISM.
+ One-electron integral symmetry used in STVInt
+ PrsmSu:  requested number of processors reduced to:  13 ShMem   1 Linda.
+   4 Symmetry operations used in ECPInt.
+ ECPInt:  NShTT=     190 NPrTT=     965 LenC2=     191 LenP2D=     945.
+ LDataN:  DoStor=T MaxTD1= 6 Len=  172
+ NBasis=    51 RedAO= T EigKep=  4.27D-02  NBF=    24     5    11    11
+ NBsUse=    51 1.00D-06 EigRej= -1.00D+00 NBFU=    24     5    11    11
+ Precomputing XC quadrature grid using
+ IXCGrd= 4 IRadAn=           5 IRanWt=          -1 IRanGd=           0 AccXCQ= 0.00D+00.
+ Generated NRdTot=       0 NPtTot=           0 NUsed=           0 NTot=          32
+ NSgBfM=    58    58    58    58    58 MxSgAt=     2 MxSgA2=     2.
+ Leave Link  302 at Sun Apr 18 07:50:27 2021, MaxMem=   104857600 cpu:              60.3 elap:               1.3
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l303.exe)
+ DipDrv:  MaxL=1.
+ Leave Link  303 at Sun Apr 18 07:50:27 2021, MaxMem=   104857600 cpu:              10.2 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l401.exe)
+ SCF N**3 symmetry information disabled.
+ ExpMin= 4.44D-02 ExpMax= 3.26D+05 ExpMxC= 3.15D+03 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
+ Harris functional with IExCor= 1009 and IRadAn=       5 diagonalized for initial guess.
+ HarFok:  IExCor= 1009 AccDes= 0.00D+00 IRadAn=         5 IDoV= 1 UseB2=F ITyADJ=14
+ ICtDFT=  3500011 ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=           0
+         NFxFlg=           0 DoJE=T BraDBF=F KetDBF=T FulRan=T
+         wScrn=  0.000000 ICntrl=       500 IOpCl=  0 I1Cent=   200000004 NGrid=           0
+         NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ Harris En= -1382.97218621427    
+ JPrj=0 DoOrth=F DoCkMO=F.
+ Initial guess orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG)
+                 (PI) (PI) (DLTA) (DLTA) (SG)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (PI) (PI) (DLTA) (DLTA)
+                 (SG) (SG) (PI) (PI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (DLTA) (DLTA) (PI)
+                 (PI) (SG) (DLTA) (DLTA) (PHI) (PHI) (PI) (PI)
+                 (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG)
+                 (PI) (PI) (DLTA)
+       Virtual   (DLTA) (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI)
+                 (DLTA) (DLTA) (SG) (SG) (PI) (PI) (DLTA) (DLTA)
+                 (SG) (PI) (PI) (SG) (PI) (PI) (SG) (SG) (SG) (DLTA)
+                 (DLTA) (PI) (PI) (SG) (DLTA) (DLTA) (PHI) (PHI)
+                 (PI) (PI) (SG)
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 1.0000 <S**2>= 2.0000 S= 1.0000
+ Leave Link  401 at Sun Apr 18 07:50:29 2021, MaxMem=   104857600 cpu:              60.4 elap:               1.3
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l502.exe)
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=43144348.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   1326 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ UHF open shell SCF:
+ Using DIIS extrapolation, IDIIS=  1040.
+ NGot=   104857600 LenX=   104379889 LenY=   104376084
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+
+ Cycle   1  Pass 1  IDiag  1:
+ E= -1383.15881024301    
+ DIIS: error= 4.62D-02 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin= -1383.15881024301     IErMin= 1 ErrMin= 4.62D-02
+ ErrMax= 4.62D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.48D-01 BMatP= 4.48D-01
+ IDIUse=3 WtCom= 5.38D-01 WtEn= 4.62D-01
+ Coeff-Com:  0.100D+01
+ Coeff-En:   0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.168 Goal=   None    Shift=    0.000
+ Gap=     0.421 Goal=   None    Shift=    0.000
+ GapD=    0.168 DampG=1.000 DampE=0.250 DampFc=0.2500 IDamp=-1.
+ Damping current iteration by 2.50D-01
+ RMSDP=8.31D-03 MaxDP=1.07D-01              OVMax= 3.35D-01
+
+ Cycle   2  Pass 1  IDiag  1:
+ E= -1383.17811142288     Delta-E=       -0.019301179869 Rises=F Damp=T
+ DIIS: error= 3.16D-02 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin= -1383.17811142288     IErMin= 2 ErrMin= 3.16D-02
+ ErrMax= 3.16D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.53D-01 BMatP= 4.48D-01
+ IDIUse=3 WtCom= 6.84D-01 WtEn= 3.16D-01
+ Coeff-Com: -0.110D+00 0.111D+01
+ Coeff-En:   0.000D+00 0.100D+01
+ Coeff:     -0.752D-01 0.108D+01
+ Gap=     0.269 Goal=   None    Shift=    0.000
+ Gap=     0.183 Goal=   None    Shift=    0.000
+ RMSDP=3.36D-03 MaxDP=3.92D-02 DE=-1.93D-02 OVMax= 1.19D-01
+
+ Cycle   3  Pass 1  IDiag  1:
+ E= -1383.23727035188     Delta-E=       -0.059158928992 Rises=F Damp=F
+ DIIS: error= 7.95D-03 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -1383.23727035188     IErMin= 3 ErrMin= 7.95D-03
+ ErrMax= 7.95D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 9.72D-03 BMatP= 1.53D-01
+ IDIUse=3 WtCom= 9.20D-01 WtEn= 7.95D-02
+ Coeff-Com:  0.589D-01 0.155D-01 0.926D+00
+ Coeff-En:   0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.542D-01 0.142D-01 0.932D+00
+ Gap=     0.239 Goal=   None    Shift=    0.000
+ Gap=     0.224 Goal=   None    Shift=    0.000
+ RMSDP=9.74D-04 MaxDP=1.37D-02 DE=-5.92D-02 OVMax= 7.68D-02
+
+ Cycle   4  Pass 1  IDiag  1:
+ E= -1383.24265583989     Delta-E=       -0.005385488017 Rises=F Damp=F
+ DIIS: error= 4.74D-03 at cycle   4 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -1383.24265583989     IErMin= 4 ErrMin= 4.74D-03
+ ErrMax= 4.74D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.99D-03 BMatP= 9.72D-03
+ IDIUse=3 WtCom= 9.53D-01 WtEn= 4.74D-02
+ Coeff-Com:  0.170D-01-0.391D-01 0.131D+00 0.891D+00
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.162D-01-0.373D-01 0.125D+00 0.896D+00
+ Gap=     0.235 Goal=   None    Shift=    0.000
+ Gap=     0.225 Goal=   None    Shift=    0.000
+ RMSDP=5.20D-04 MaxDP=6.53D-03 DE=-5.39D-03 OVMax= 3.87D-02
+
+ Cycle   5  Pass 1  IDiag  1:
+ E= -1383.24419443375     Delta-E=       -0.001538593855 Rises=F Damp=F
+ DIIS: error= 2.71D-03 at cycle   5 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -1383.24419443375     IErMin= 5 ErrMin= 2.71D-03
+ ErrMax= 2.71D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.99D-04 BMatP= 1.99D-03
+ IDIUse=3 WtCom= 9.73D-01 WtEn= 2.71D-02
+ Coeff-Com: -0.436D-01 0.522D-01-0.240D+00-0.116D+00 0.135D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:     -0.425D-01 0.507D-01-0.233D+00-0.113D+00 0.134D+01
+ Gap=     0.235 Goal=   None    Shift=    0.000
+ Gap=     0.225 Goal=   None    Shift=    0.000
+ RMSDP=4.33D-04 MaxDP=5.86D-03 DE=-1.54D-03 OVMax= 3.58D-02
+
+ Cycle   6  Pass 1  IDiag  1:
+ E= -1383.24475715014     Delta-E=       -0.000562716391 Rises=F Damp=F
+ DIIS: error= 5.58D-04 at cycle   6 NSaved=   6.
+ NSaved= 6 IEnMin= 6 EnMin= -1383.24475715014     IErMin= 6 ErrMin= 5.58D-04
+ ErrMax= 5.58D-04  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.92D-05 BMatP= 4.99D-04
+ IDIUse=3 WtCom= 9.94D-01 WtEn= 5.58D-03
+ Coeff-Com:  0.304D-02-0.132D-02 0.797D-01 0.823D-02-0.483D+00 0.139D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.303D-02-0.131D-02 0.793D-01 0.819D-02-0.481D+00 0.139D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.222 Goal=   None    Shift=    0.000
+ RMSDP=1.48D-04 MaxDP=3.20D-03 DE=-5.63D-04 OVMax= 7.63D-03
+
+ Cycle   7  Pass 1  IDiag  1:
+ E= -1383.24479796195     Delta-E=       -0.000040811812 Rises=F Damp=F
+ DIIS: error= 2.58D-04 at cycle   7 NSaved=   7.
+ NSaved= 7 IEnMin= 7 EnMin= -1383.24479796195     IErMin= 7 ErrMin= 2.58D-04
+ ErrMax= 2.58D-04  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.66D-06 BMatP= 3.92D-05
+ IDIUse=3 WtCom= 9.97D-01 WtEn= 2.58D-03
+ Coeff-Com:  0.428D-02-0.602D-02-0.457D-03-0.582D-03 0.185D-01-0.520D+00
+ Coeff-Com:  0.150D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.000D+00
+ Coeff-En:   0.100D+01
+ Coeff:      0.427D-02-0.601D-02-0.456D-03-0.580D-03 0.184D-01-0.519D+00
+ Coeff:      0.150D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=8.30D-05 MaxDP=1.88D-03 DE=-4.08D-05 OVMax= 4.89D-03
+
+ Cycle   8  Pass 1  IDiag  1:
+ E= -1383.24480592729     Delta-E=       -0.000007965341 Rises=F Damp=F
+ DIIS: error= 6.06D-05 at cycle   8 NSaved=   8.
+ NSaved= 8 IEnMin= 8 EnMin= -1383.24480592729     IErMin= 8 ErrMin= 6.06D-05
+ ErrMax= 6.06D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.42D-07 BMatP= 3.66D-06
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.516D-03 0.643D-03-0.293D-02 0.819D-02 0.108D-01-0.259D-01
+ Coeff-Com: -0.275D+00 0.128D+01
+ Coeff:     -0.516D-03 0.643D-03-0.293D-02 0.819D-02 0.108D-01-0.259D-01
+ Coeff:     -0.275D+00 0.128D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=2.18D-05 MaxDP=4.38D-04 DE=-7.97D-06 OVMax= 1.13D-03
+
+ Cycle   9  Pass 1  IDiag  1:
+ E= -1383.24480643732     Delta-E=       -0.000000510033 Rises=F Damp=F
+ DIIS: error= 1.19D-05 at cycle   9 NSaved=   9.
+ NSaved= 9 IEnMin= 9 EnMin= -1383.24480643732     IErMin= 9 ErrMin= 1.19D-05
+ ErrMax= 1.19D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.31D-08 BMatP= 3.42D-07
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.256D-03 0.348D-03 0.341D-03-0.103D-02-0.742D-03 0.329D-01
+ Coeff-Com: -0.780D-01-0.586D-01 0.111D+01
+ Coeff:     -0.256D-03 0.348D-03 0.341D-03-0.103D-02-0.742D-03 0.329D-01
+ Coeff:     -0.780D-01-0.586D-01 0.111D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=3.10D-06 MaxDP=5.33D-05 DE=-5.10D-07 OVMax= 1.54D-04
+
+ Cycle  10  Pass 1  IDiag  1:
+ E= -1383.24480645063     Delta-E=       -0.000000013301 Rises=F Damp=F
+ DIIS: error= 3.16D-06 at cycle  10 NSaved=  10.
+ NSaved=10 IEnMin=10 EnMin= -1383.24480645063     IErMin=10 ErrMin= 3.16D-06
+ ErrMax= 3.16D-06  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.17D-09 BMatP= 1.31D-08
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.107D-04-0.153D-04 0.247D-04-0.530D-03-0.241D-03-0.369D-02
+ Coeff-Com:  0.289D-01-0.712D-01-0.109D+00 0.116D+01
+ Coeff:      0.107D-04-0.153D-04 0.247D-04-0.530D-03-0.241D-03-0.369D-02
+ Coeff:      0.289D-01-0.712D-01-0.109D+00 0.116D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=7.92D-07 MaxDP=1.57D-05 DE=-1.33D-08 OVMax= 3.07D-05
+
+ Cycle  11  Pass 1  IDiag  1:
+ E= -1383.24480645145     Delta-E=       -0.000000000828 Rises=F Damp=F
+ DIIS: error= 5.63D-07 at cycle  11 NSaved=  11.
+ NSaved=11 IEnMin=11 EnMin= -1383.24480645145     IErMin=11 ErrMin= 5.63D-07
+ ErrMax= 5.63D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.42D-11 BMatP= 1.17D-09
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.223D-05 0.247D-05-0.302D-04 0.843D-04 0.376D-03-0.125D-02
+ Coeff-Com: -0.182D-02 0.142D-01-0.323D-01-0.182D+00 0.120D+01
+ Coeff:     -0.223D-05 0.247D-05-0.302D-04 0.843D-04 0.376D-03-0.125D-02
+ Coeff:     -0.182D-02 0.142D-01-0.323D-01-0.182D+00 0.120D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=1.95D-07 MaxDP=3.46D-06 DE=-8.28D-10 OVMax= 6.10D-06
+
+ Cycle  12  Pass 1  IDiag  1:
+ E= -1383.24480645151     Delta-E=       -0.000000000060 Rises=F Damp=F
+ DIIS: error= 1.72D-07 at cycle  12 NSaved=  12.
+ NSaved=12 IEnMin=12 EnMin= -1383.24480645151     IErMin=12 ErrMin= 1.72D-07
+ ErrMax= 1.72D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 5.29D-12 BMatP= 6.42D-11
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.546D-06-0.182D-06 0.142D-04-0.119D-04-0.157D-03 0.686D-03
+ Coeff-Com: -0.675D-03-0.257D-02 0.241D-01-0.512D-02-0.520D+00 0.150D+01
+ Coeff:      0.546D-06-0.182D-06 0.142D-04-0.119D-04-0.157D-03 0.686D-03
+ Coeff:     -0.675D-03-0.257D-02 0.241D-01-0.512D-02-0.520D+00 0.150D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=8.90D-08 MaxDP=1.49D-06 DE=-5.96D-11 OVMax= 2.64D-06
+
+ Cycle  13  Pass 1  IDiag  1:
+ E= -1383.24480645152     Delta-E=       -0.000000000007 Rises=F Damp=F
+ DIIS: error= 3.00D-08 at cycle  13 NSaved=  13.
+ NSaved=13 IEnMin=13 EnMin= -1383.24480645152     IErMin=13 ErrMin= 3.00D-08
+ ErrMax= 3.00D-08  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.78D-13 BMatP= 5.29D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.145D-06 0.309D-07-0.230D-05-0.141D-05 0.286D-04-0.144D-03
+ Coeff-Com:  0.334D-03 0.195D-03-0.724D-02 0.156D-01 0.109D+00-0.554D+00
+ Coeff-Com:  0.144D+01
+ Coeff:     -0.145D-06 0.309D-07-0.230D-05-0.141D-05 0.286D-04-0.144D-03
+ Coeff:      0.334D-03 0.195D-03-0.724D-02 0.156D-01 0.109D+00-0.554D+00
+ Coeff:      0.144D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=2.01D-08 MaxDP=3.15D-07 DE=-7.28D-12 OVMax= 7.75D-07
+
+ Cycle  14  Pass 1  IDiag  1:
+ E= -1383.24480645152     Delta-E=        0.000000000000 Rises=F Damp=F
+ DIIS: error= 8.43D-09 at cycle  14 NSaved=  14.
+ NSaved=14 IEnMin=13 EnMin= -1383.24480645152     IErMin=14 ErrMin= 8.43D-09
+ ErrMax= 8.43D-09  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.20D-14 BMatP= 2.78D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.490D-07 0.782D-07 0.203D-07-0.627D-06 0.131D-05 0.419D-05
+ Coeff-Com: -0.258D-04-0.813D-04 0.998D-03-0.295D-02-0.103D-01 0.978D-01
+ Coeff-Com: -0.414D+00 0.133D+01
+ Coeff:     -0.490D-07 0.782D-07 0.203D-07-0.627D-06 0.131D-05 0.419D-05
+ Coeff:     -0.258D-04-0.813D-04 0.998D-03-0.295D-02-0.103D-01 0.978D-01
+ Coeff:     -0.414D+00 0.133D+01
+ Gap=     0.234 Goal=   None    Shift=    0.000
+ Gap=     0.221 Goal=   None    Shift=    0.000
+ RMSDP=3.79D-09 MaxDP=7.58D-08 DE= 4.55D-13 OVMax= 2.10D-07
+
+ SCF Done:  E(UM062X) =  -1383.24480645     A.U. after   14 cycles
+            NFock= 14  Conv=0.38D-08     -V/T= 2.0014
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 1.0000 <S**2>= 2.0211 S= 1.0070
+ <L.S>= 0.000000000000E+00
+ KE= 1.381357627870D+03 PE=-3.318796003415D+03 EE= 5.448612472819D+02
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     2.0211,   after     2.0002
+ Leave Link  502 at Sun Apr 18 07:50:39 2021, MaxMem=   104857600 cpu:             468.2 elap:              10.0
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (PI) (PI) (SG) (SG) (SG) (PI) (PI) (SG)
+                 (DLTA) (PI) (PI) (DLTA) (SG)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (PI) (PI) (DLTA) (DLTA)
+                 (SG) (SG) (PI) (PI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (DLTA) (DLTA) (PI)
+                 (PI) (SG) (?A) (?A) (DLTA) (?A) (?A) (DLTA) (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG)
+                 (PI) (PI) (?A)
+       Virtual   (SG) (SG) (?A) (PI) (PI) (SG) (?A) (PI) (PI) (SG)
+                 (?A) (SG) (SG) (?A) (PI) (PI) (?A) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (DLTA) (PI) (PI)
+                 (DLTA) (SG) (DLTA) (DLTA) (?B) (?B) (?B) (?B)
+                 (SG)
+ Unable to determine electronic state:  an orbital has unidentified symmetry.
+ Alpha  occ. eigenvalues -- -279.35342 -33.37072 -29.00967 -29.00967 -29.00917
+ Alpha  occ. eigenvalues --   -3.90269  -2.57151  -2.57014  -2.57014  -0.38432
+ Alpha  occ. eigenvalues --   -0.36854  -0.34169  -0.34169  -0.34024  -0.26792
+ Alpha virt. eigenvalues --   -0.03406   0.10281   0.10281   0.16857   0.19855
+ Alpha virt. eigenvalues --    0.23534   0.23534   0.24347   0.24402   0.30485
+ Alpha virt. eigenvalues --    0.52646   1.02903   1.02903   1.04490   1.05869
+ Alpha virt. eigenvalues --    1.06450   1.66337   1.66337   1.66938   1.92959
+ Alpha virt. eigenvalues --    1.92959   2.24215   2.59203   2.98156   3.91220
+ Alpha virt. eigenvalues --    3.93350   3.94748   3.94748   3.99212   4.97993
+ Alpha virt. eigenvalues --    4.97993   4.99193   5.00130   5.00130   5.00954
+ Alpha virt. eigenvalues --    5.13373
+  Beta  occ. eigenvalues -- -279.35314 -33.31965 -28.96803 -28.96575 -28.96575
+  Beta  occ. eigenvalues --   -3.81819  -2.45939  -2.45581  -2.45581  -0.31893
+  Beta  occ. eigenvalues --   -0.27873  -0.27873  -0.27816
+  Beta virt. eigenvalues --   -0.05723   0.06024   0.07666   0.10038   0.10038
+  Beta virt. eigenvalues --    0.15653   0.22037   0.22613   0.22613   0.23436
+  Beta virt. eigenvalues --    0.24545   0.30957   0.51317   1.03577   1.04169
+  Beta virt. eigenvalues --    1.04169   1.05553   1.08802   1.66153   1.66153
+  Beta virt. eigenvalues --    1.68735   1.97519   1.97519   2.23441   2.60626
+  Beta virt. eigenvalues --    3.04149   3.97232   3.98304   3.98304   4.05545
+  Beta virt. eigenvalues --    4.12091   5.04814   5.06397   5.06667   5.06667
+  Beta virt. eigenvalues --    5.09297   5.09297   5.23214
+          Condensed to atoms (all electrons):
+               1          2
+     1  Co  26.409220   0.345103
+     2  H    0.345103   0.900574
+          Atomic-Atomic Spin Densities.
+               1          2
+     1  Co   2.059602   0.012856
+     2  H    0.012856  -0.085315
+ Mulliken charges and spin densities:
+               1          2
+     1  Co   0.245677   2.072459
+     2  H   -0.245677  -0.072459
+ Sum of Mulliken charges =  -0.00000   2.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  Co  -0.000000   2.000000
+ Electronic spatial extent (au):  <R**2>=             42.7615
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=              0.0000    Y=             -0.0000    Z=              3.2703  Tot=              3.2703
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=            -14.7761   YY=            -14.7761   ZZ=            -17.1070
+   XY=             -0.0000   XZ=              0.0000   YZ=              0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=              0.7770   YY=              0.7770   ZZ=             -1.5540
+   XY=             -0.0000   XZ=              0.0000   YZ=              0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=              0.0000  YYY=             -0.0000  ZZZ=             12.0602  XYY=              0.0000
+  XXY=             -0.0000  XXZ=              3.0247  XZZ=              0.0000  YZZ=             -0.0000
+  YYZ=              3.0247  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=            -18.6471 YYYY=            -18.6471 ZZZZ=            -45.0839 XXXY=             -0.0000
+ XXXZ=              0.0000 YYYX=             -0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -6.5299 XXZZ=            -10.6737 YYZZ=            -10.6737
+ XXYZ=             -0.0000 YYXZ=              0.0000 ZZXY=             -0.0000
+ N-N= 9.332321812436D+00 E-N=-3.318796003688D+03  KE= 1.381357627870D+03
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  Co(59)             0.42454     224.56119      80.12902      74.90555
+     2  H(1)              -0.03798     -84.87928     -30.28704     -28.31268
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        0.102924      0.102924     -0.205847
+     2   Atom       -0.080628     -0.080628      0.161255
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+     2   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -0.2058   -25.994    -9.275    -8.671  0.0000  0.0000  1.0000
+     1 Co(59) Bbb     0.1029    12.997     4.638     4.335 -0.0000  1.0000  0.0000
+              Bcc     0.1029    12.997     4.638     4.335  1.0000  0.0000  0.0000
+ 
+              Baa    -0.0806   -43.019   -15.350   -14.350  1.0000  0.0000  0.0000
+     2 H(1)   Bbb    -0.0806   -43.019   -15.350   -14.350 -0.0000  1.0000  0.0000
+              Bcc     0.1613    86.038    30.701    28.699  0.0000  0.0000  1.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Sun Apr 18 07:50:40 2021, MaxMem=   104857600 cpu:              65.7 elap:               1.4
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l801.exe)
+ DoSCS=F DFT=T ScalE2(SS,OS)=  1.000000  1.000000
+ Range of M.O.s used for correlation:     1    51
+ NBasis=    51 NAE=    15 NBE=    13 NFC=     0 NFV=     0
+ NROrb=     51 NOA=    15 NOB=    13 NVA=    36 NVB=    38
+ Leave Link  801 at Sun Apr 18 07:50:40 2021, MaxMem=   104857600 cpu:               3.1 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l914.exe)
+ UHF ground state
+ Doing stability rather than CIS.
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=51702368.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   1326 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ MDV=   104857600 DFT=T DoStab=T Mixed=T DoRPA=F DoScal=F NonHer=F
+ Making orbital integer symmetry assigments:
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (PI) (PI) (SG) (SG) (SG) (PI) (PI) (SG)
+                 (DLTA) (PI) (PI) (DLTA) (SG)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (PI) (PI) (DLTA) (DLTA)
+                 (SG) (SG) (PI) (PI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (DLTA) (DLTA) (PI)
+                 (PI) (SG) (?A) (?A) (DLTA) (?A) (?A) (DLTA) (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG)
+                 (PI) (PI) (?A)
+       Virtual   (SG) (SG) (?A) (PI) (PI) (SG) (?A) (PI) (PI) (SG)
+                 (?A) (SG) (SG) (?A) (PI) (PI) (?A) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (DLTA) (PI) (PI)
+                 (DLTA) (SG) (DLTA) (DLTA) (?B) (?B) (?B) (?B)
+                 (SG)
+    12 initial guesses have been made.
+ Convergence on wavefunction:    0.001000000000000
+ Davidson Disk Diagonalization:  ConvIn= 1.00D-03 SkipCon=T Conv= 1.00D-03.
+ Max sub-space:  2000 roots to seek:    12 dimension of matrix:         1034
+ Iteration     1 Dimension    12 NMult     0 NNew     12
+ CISAX will form    12 AO SS matrices at one time.
+ NMat=    12 NSing=    12 JSym2X= 2.
+ New state      1 was old state      2
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     1.567514910496261
+ Root      2 :     1.567514910496545
+ Root      3 :     1.923907613119103
+ Root      4 :     2.879341747516885
+ Root      5 :     2.879341747518064
+ Root      6 :     2.954495281523645
+ Root      7 :     3.324686013586428
+ Root      8 :     3.842818905938004
+ Root      9 :     3.939701975528800
+ Root     10 :     3.939701975529265
+ Root     11 :     4.561668638881994
+ Root     12 :     7.084299328471789
+ Iteration     2 Dimension    24 NMult    12 NNew     12
+ CISAX will form    12 AO SS matrices at one time.
+ NMat=    12 NSing=    12 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.344210218957108
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.067603340803757   Change is   -1.635118251300018
+ Root      2 :    -0.067603340803379   Change is   -1.635118251299925
+ Root      3 :     0.666527788652297   Change is   -1.257379824466806
+ Root      4 :     1.874102490660455   Change is   -1.080392790863190
+ Root      5 :     1.909612516602669   Change is   -0.969729230914217
+ Root      6 :     1.909612516603370   Change is   -0.969729230914694
+ Root      7 :     2.836949127617438   Change is   -0.487736885968991
+ Root      8 :     3.488835559313630   Change is   -0.353983346624373
+ Root      9 :     3.530161803703254   Change is   -0.409540171825546
+ Root     10 :     3.530161803703417   Change is   -0.409540171825849
+ Root     11 :     4.190275065203603   Change is   -0.371393573678391
+ Root     12 :     4.735708635620912   Change is   -2.348590692850877
+ Iteration     3 Dimension    27 NMult    24 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.020503568091807
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.101723551283685   Change is   -0.034120210479928
+ Root      2 :    -0.101723551283295   Change is   -0.034120210479916
+ Root      3 :     0.615267403309789   Change is   -0.051260385342508
+ Iteration     4 Dimension    30 NMult    27 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.039859382119250
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.106483707181375   Change is   -0.004760155897691
+ Root      2 :    -0.106483707181010   Change is   -0.004760155897715
+ Root      3 :     0.614507021952280   Change is   -0.000760381357509
+ Iteration     5 Dimension    33 NMult    30 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.083768686718678
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.115985795856242   Change is   -0.009502088674867
+ Root      2 :    -0.115985795855886   Change is   -0.009502088674876
+ Root      3 :     0.614463157922981   Change is   -0.000043864029299
+ Iteration     6 Dimension    36 NMult    33 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.021071746802122
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.118056500305029   Change is   -0.002070704448787
+ Root      2 :    -0.118056500304666   Change is   -0.002070704448780
+ Root      3 :     0.503016274691476
+ Iteration     7 Dimension    39 NMult    36 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.242605837308801
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.118153298796660   Change is   -0.000096798491631
+ Root      2 :    -0.118152215765023   Change is   -0.000095715460357
+ Root      3 :     0.494150220340670   Change is   -0.008866054350805
+ Iteration     8 Dimension    42 NMult    39 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 has converged.
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.118159561386201   Change is   -0.000006262589542
+ Root      2 :    -0.118159561175427   Change is   -0.000007345410404
+ Root      3 :     0.493708366465360   Change is   -0.000441853875311
+ Convergence achieved on expansion vectors.
+ ***********************************************************************
+ Stability analysis using <AA,BB:AA,BB> singles matrix:
+ ***********************************************************************
+ 1PDM for each excited state written to RWF  633
+ Ground to excited state transition densities written to RWF  633
+
+ Eigenvectors of the stability matrix:
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   1:  3.016-?Sym  Eigenvalue=-0.0043423  <S**2>=2.024
+     11B -> 14B        0.44016
+     11B -> 15B        0.68649
+     11B -> 16B       -0.14868
+     11B -> 19B        0.12621
+     11B -> 23B        0.38424
+     11B -> 25B       -0.11884
+     12B -> 14B        0.16030
+     12B -> 15B        0.25002
+     12B -> 23B        0.13994
+ The wavefunction has an internal instability.
+ Leave Link  914 at Sun Apr 18 07:50:49 2021, MaxMem=   104857600 cpu:             415.6 elap:               8.9
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l508.exe)
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=43144748.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   1326 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ Tight linear equation convergence will be used.
+ UM062X wavefunction.
+ Quadratic Convergence SCF Method.
+ Line search only if initial step raises energy.
+ Perform preliminary linear searches along instability eigenvector.
+     ILin= 1 X=0.000D+00 Y=-1.383244806452D+03 DE= 0.00D+00
+     ILin= 2 X=1.000D-01 Y=-1.383244848463D+03 DE=-4.20D-05
+     ILin= 3 X=1.414D-01 Y=-1.383244887862D+03 DE=-8.14D-05
+     ILin= 4 X=2.000D-01 Y=-1.383244958926D+03 DE=-1.52D-04
+     ILin= 5 X=2.828D-01 Y=-1.383245071168D+03 DE=-2.65D-04
+     ILin= 6 X=4.000D-01 Y=-1.383245195265D+03 DE=-3.89D-04
+     ILin= 7 X=5.657D-01 Y=-1.383245155128D+03 DE=-3.49D-04
+     An  expanding polynomial of degree  7 produced  0.4665
+ Iteration F X= 4.665D-01 EE=-1.383245218685249D+03
+     ILin= 1 X=0.000D+00 Y=-1.383244806452D+03 DE= 0.00D+00
+     ILin= 2 X=1.000D-01 Y=-1.383244848463D+03 DE=-4.20D-05
+     ILin= 3 X=1.414D-01 Y=-1.383244887862D+03 DE=-8.14D-05
+ The two search directions are symmetric.
+ Iteration B X= 4.665D-01 EE=-1.383245218685249D+03
+ Take forward step, X= 4.665D-01 Step= 4.665D-01
+ Iteration   1 EE= -1383.24521854178                                    Grad=3.168D-02 Max rot=    0.3927 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.234 HL deriv= 2.83D-03
+  Beta Gap=     0.240 HL deriv= 3.66D-04
+     ILin= 1 X=0.000D+00 Y=-1.383245218542D+03 DE= 0.00D+00 F= -1.03D-03
+     ILin= 2 X=3.000D-01 Y=-1.383245412372D+03 DE=-1.94D-04 F= -2.68D-04
+     ILin= 3 X=6.000D-01 Y=-1.383245379713D+03 DE=-1.61D-04 F=  4.85D-04
+     An  expanding polynomial of degree  3 produced  0.4067
+ Iteration   2 EE= -1383.24542664144     Delta-E=       -0.000208099661 Grad=1.505D-02 Max rot=    0.2525 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.233 HL deriv= 2.99D-04
+  Beta Gap=     0.230 HL deriv= 3.74D-04
+     ILin= 1 X=0.000D+00 Y=-1.383245426641D+03 DE= 0.00D+00 F= -1.58D-04
+     ILin= 2 X=3.000D-01 Y=-1.383245464782D+03 DE=-3.81D-05 F= -9.61D-05
+     ILin= 3 X=7.000D-01 Y=-1.383245486646D+03 DE=-6.00D-05 F= -1.32D-05
+     ILin= 4 X=1.400D+00 Y=-1.383245444966D+03 DE=-1.83D-05 F=  1.32D-04
+     An  expanding polynomial of degree  4 produced  0.7636
+     Minimum is close to point  3 DX=  6.36D-02 DF= -4.19D-07 DXR=  8.32D-02 DFR=  6.99D-03 which will be used.
+ Iteration   3 EE= -1383.24548664644     Delta-E=       -0.000060004997 Grad=8.260D-03 Max rot=    0.0989 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.50D-04 Max=4.19D-03 NDo=     1
+ AX will form     1 AO Fock derivatives at one time.
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.51D-04 Max=4.26D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.43D-04 Max=1.89D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.87D-05 Max=3.61D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=9.71D-06 Max=1.17D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.88D-06 Max=6.48D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.98D-06 Max=2.62D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.48D-07 Max=8.64D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.69D-07 Max=1.96D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=6.11D-08 Max=5.37D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.12D-08 Max=1.84D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=7.01D-09 Max=8.98D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.73D-09 Max=3.72D-08 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     0 RMS=8.08D-10 Max=7.11D-09 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    13 iterations.
+ Angle between quadratic step and gradient=  99.27 degrees.
+ Incorrect curvature in search direction -- initial direction reversed.
+     ILin= 1 X=0.000D+00 Y=-1.383245486646D+03 DE= 0.00D+00 F= -3.03D-03
+     ILin= 2 X=1.000D+00 Y=-1.383246138394D+03 DE=-6.52D-04 F=  8.68D-03
+     ILin= 3 X=1.400D+00 Y=-1.383239593814D+03 DE= 5.89D-03 F=  2.42D-02
+     An  expanding polynomial of degree  3 produced  0.5268
+ Iteration   4 EE= -1383.24720205151     Delta-E=       -0.001715405070 Grad=3.942D-02 Max rot=    0.8619 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.229 HL deriv= 4.18D-03
+  Beta Gap=     0.215 HL deriv= 5.79D-03
+     ILin= 1 X=0.000D+00 Y=-1.383247202052D+03 DE= 0.00D+00 F= -9.33D-04
+     ILin= 2 X=6.000D-01 Y=-1.383247508324D+03 DE=-3.06D-04 F= -8.89D-05
+     Reject lnstep minimum 9.100D-01 FVal=-1.383247543431D+03 Lims=  0.00D+00  6.00D-01
+     ILin= 3 X=1.100D+00 Y=-1.383247377859D+03 DE=-1.76D-04 F=  6.10D-04
+     An  expanding polynomial of degree  3 produced  0.6640
+     Minimum is close to point  2 DX=  6.40D-02 DF= -2.87D-06 DXR=  9.63D-02 DFR=  9.37D-03 which will be used.
+ Iteration   5 EE= -1383.24750832386     Delta-E=       -0.000306272351 Grad=2.105D-02 Max rot=    0.3710 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.228 HL deriv= 1.72D-03
+  Beta Gap=     0.210 HL deriv= 1.46D-02
+     ILin= 1 X=0.000D+00 Y=-1.383247508324D+03 DE= 0.00D+00 F= -4.26D-04
+     ILin= 2 X=7.000D-01 Y=-1.383247620587D+03 DE=-1.12D-04 F=  1.06D-04
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.4826
+ Iteration   6 EE= -1383.24762564115     Delta-E=       -0.000117317292 Grad=1.221D-02 Max rot=    0.2104 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.229 HL deriv= 3.78D-03
+  Beta Gap=     0.214 HL deriv= 7.36D-03
+     ILin= 1 X=0.000D+00 Y=-1.383247625641D+03 DE= 0.00D+00 F= -1.72D-04
+     ILin= 2 X=6.000D-01 Y=-1.383247694593D+03 DE=-6.90D-05 F= -5.83D-05
+     ILin= 3 X=1.100D+00 Y=-1.383247700253D+03 DE=-7.46D-05 F=  3.56D-05
+     Accept linear search using points  2 and  3.
+     An  expanding polynomial of degree  3 produced  0.8653
+ Iteration   7 EE= -1383.24770344349     Delta-E=       -0.000077802343 Grad=1.078D-02 Max rot=    0.1437 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.228 HL deriv= 1.91D-03
+  Beta Gap=     0.211 HL deriv= 1.19D-02
+     ILin= 1 X=0.000D+00 Y=-1.383247703443D+03 DE= 0.00D+00 F= -1.94D-04
+     ILin= 2 X=6.000D-01 Y=-1.383247749077D+03 DE=-4.56D-05 F=  4.22D-05
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.3929
+ Iteration   8 EE= -1383.24774934876     Delta-E=       -0.000045905269 Grad=4.612D-03 Max rot=    0.0894 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.06D-04 Max=6.82D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.78D-04 Max=1.75D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.08D-04 Max=1.59D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.21D-05 Max=5.47D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.48D-05 Max=1.62D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.83D-06 Max=5.78D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.37D-06 Max=1.45D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.70D-07 Max=3.87D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.55D-07 Max=1.83D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.82D-08 Max=5.17D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.47D-08 Max=1.83D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.64D-09 Max=5.40D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     0 RMS=1.79D-09 Max=2.52D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    12 iterations.
+ Angle between quadratic step and gradient=  60.90 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383247749349D+03 DE= 0.00D+00 F= -3.75D-02
+     ILin= 2 X=1.000D-01 Y=-1.383246860795D+03 DE= 8.89D-04 F=  1.19D-01
+     Reject lnstep minimum 6.283D-02 FVal=-1.383265613760D+03 Lims=  0.00D+00  1.00D-01
+     ILin= 3 X=6.283D-02 Y=-1.383249135221D+03 DE=-1.39D-03 F=  1.41D-02
+     A contracting polynomial of degree  3 produced  0.0447
+ Iteration   9 EE= -1383.24910958726     Delta-E=       -0.001360238501 Grad=1.346D-02 Max rot=    0.1999 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.228 HL deriv= 1.45D-03
+  Beta Gap=     0.212 HL deriv= 6.69D-03
+     ILin= 1 X=0.000D+00 Y=-1.383249109587D+03 DE= 0.00D+00 F= -1.42D-04
+     ILin= 2 X=6.000D-01 Y=-1.383249157943D+03 DE=-4.84D-05 F= -1.87D-05
+     Reject lnstep minimum 8.817D-01 FVal=-1.383249164347D+03 Lims=  0.00D+00  6.00D-01
+     ILin= 3 X=1.200D+00 Y=-1.383249131931D+03 DE=-2.23D-05 F=  1.06D-04
+     An  expanding polynomial of degree  3 produced  0.6901
+ Iteration  10 EE= -1383.24915879195     Delta-E=       -0.000049204691 Grad=9.367D-03 Max rot=    0.1003 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.45D-04 Max=2.42D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=4.38D-04 Max=9.53D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.07D-04 Max=1.25D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.43D-05 Max=3.27D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.07D-05 Max=1.33D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.78D-06 Max=6.69D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.32D-06 Max=1.65D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.56D-07 Max=7.04D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.72D-07 Max=2.55D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=5.58D-08 Max=6.92D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.56D-08 Max=1.56D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=5.57D-09 Max=7.25D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.53D-09 Max=3.22D-08 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     0 RMS=9.40D-10 Max=8.21D-09 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    13 iterations.
+ Angle between quadratic step and gradient=  82.92 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383249158792D+03 DE= 0.00D+00 F= -1.02D-03
+     ILin= 2 X=1.000D+00 Y=-1.383249285678D+03 DE=-1.27D-04 F=  1.07D-03
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.5948
+ Iteration  11 EE= -1383.24948611890     Delta-E=       -0.000327326945 Grad=2.688D-02 Max rot=    0.4093 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.227 HL deriv= 2.67D-03
+  Beta Gap=     0.210 HL deriv= 2.06D-03
+     ILin= 1 X=0.000D+00 Y=-1.383249486119D+03 DE= 0.00D+00 F= -2.96D-04
+     ILin= 2 X=5.000D-01 Y=-1.383249594084D+03 DE=-1.08D-04 F= -1.36D-04
+     ILin= 3 X=1.000D+00 Y=-1.383249621854D+03 DE=-1.36D-04 F=  2.47D-05
+     Accept linear search using points  2 and  3.
+     An  expanding polynomial of degree  3 produced  0.8047
+ Iteration  12 EE= -1383.24962055291     Delta-E=       -0.000134434007 Grad=5.616D-03 Max rot=    0.0980 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.69D-04 Max=2.98D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.93D-05 Max=1.29D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.76D-05 Max=4.93D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.09D-05 Max=1.02D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.24D-05 Max=2.83D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=8.09D-06 Max=1.03D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.65D-06 Max=5.75D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.53D-06 Max=1.88D-05 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.60D-07 Max=5.87D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.07D-07 Max=1.34D-06 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.97D-08 Max=4.21D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.39D-08 Max=1.24D-07 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=4.78D-09 Max=5.96D-08 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     0 RMS=2.04D-09 Max=2.16D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    13 iterations.
+ Angle between quadratic step and gradient=  97.95 degrees.
+ Incorrect curvature in search direction -- initial direction reversed.
+     ILin= 1 X=0.000D+00 Y=-1.383249620553D+03 DE= 0.00D+00 F= -8.51D-04
+     ILin= 2 X=1.000D+00 Y=-1.383250329741D+03 DE=-7.09D-04 F=  1.77D-04
+     ILin= 3 X=1.400D+00 Y=-1.383249959568D+03 DE=-3.39D-04 F=  1.73D-03
+     An  expanding polynomial of degree  3 produced  0.8037
+ Iteration  13 EE= -1383.25030552897     Delta-E=       -0.000684976065 Grad=2.014D-02 Max rot=    0.4084 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.227 HL deriv= 5.37D-03
+  Beta Gap=     0.210 HL deriv= 2.32D-03
+     ILin= 1 X=0.000D+00 Y=-1.383250305529D+03 DE= 0.00D+00 F= -1.99D-04
+     ILin= 2 X=7.000D-01 Y=-1.383250409497D+03 DE=-1.04D-04 F= -9.76D-05
+     ILin= 3 X=1.500D+00 Y=-1.383250441131D+03 DE=-1.36D-04 F=  1.85D-05
+     Accept linear search using points  2 and  3.
+     An  expanding polynomial of degree  3 produced  1.3168
+ Iteration  14 EE= -1383.25044208959     Delta-E=       -0.000136560621 Grad=8.108D-03 Max rot=    0.1114 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.77D-04 Max=4.87D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.72D-04 Max=2.47D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.80D-04 Max=2.74D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.70D-05 Max=1.43D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.08D-05 Max=1.84D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=7.44D-06 Max=8.52D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.15D-06 Max=6.04D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.82D-06 Max=2.79D-05 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.53D-07 Max=5.03D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.97D-07 Max=1.90D-06 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=5.54D-08 Max=7.27D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.85D-08 Max=1.57D-07 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=6.36D-09 Max=6.82D-08 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     0 RMS=2.55D-09 Max=2.35D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    13 iterations.
+ Angle between quadratic step and gradient=  79.60 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383250442090D+03 DE= 0.00D+00 F= -1.84D-03
+     ILin= 2 X=1.000D+00 Y=-1.383250450127D+03 DE=-8.04D-06 F=  2.99D-03
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.5617
+ Iteration  15 EE= -1383.25104825941     Delta-E=       -0.000606169814 Grad=1.424D-02 Max rot=    0.3389 deg.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Alpha Gap=     0.226 HL deriv= 6.85D-05
+  Beta Gap=     0.209 HL deriv= 3.81D-03
+     ILin= 1 X=0.000D+00 Y=-1.383251048259D+03 DE= 0.00D+00 F= -1.03D-04
+     ILin= 2 X=1.000D+00 Y=-1.383251095524D+03 DE=-4.73D-05 F=  8.83D-06
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9213
+     Minimum is close to point  2 DX= -7.87D-02 DF= -3.48D-07 DXR=  8.54D-02 DFR=  7.35D-03 which will be used.
+ Iteration  16 EE= -1383.25109552352     Delta-E=       -0.000047264117 Grad=6.629D-03 Max rot=    0.0715 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.90D-04 Max=2.00D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.01D-04 Max=6.08D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.07D-04 Max=1.80D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.98D-05 Max=6.61D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.21D-05 Max=1.29D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.09D-06 Max=5.69D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.17D-06 Max=3.80D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.43D-07 Max=6.44D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.94D-07 Max=1.65D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=6.73D-08 Max=7.78D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.17D-08 Max=2.80D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=5.98D-09 Max=5.22D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     0 RMS=1.60D-09 Max=1.25D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    12 iterations.
+ Angle between quadratic step and gradient=  80.52 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251095524D+03 DE= 0.00D+00 F= -1.81D-04
+     ILin= 2 X=1.000D+00 Y=-1.383251199419D+03 DE=-1.04D-04 F= -3.55D-05
+     Reject lnstep minimum 1.312D+00 FVal=-1.383251204832D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=1.700D+00 Y=-1.383251189384D+03 DE=-9.39D-05 F=  6.99D-05
+     An  expanding polynomial of degree  3 produced  1.2469
+ Iteration  17 EE= -1383.25120409410     Delta-E=       -0.000108570580 Grad=1.815D-03 Max rot=    0.0321 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.63D-05 Max=1.89D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.76D-05 Max=3.49D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.91D-05 Max=1.11D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.87D-05 Max=3.48D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.27D-05 Max=2.36D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.46D-06 Max=3.94D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.31D-06 Max=1.75D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.00D-07 Max=7.41D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.66D-07 Max=2.34D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.75D-08 Max=7.75D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.97D-08 Max=3.06D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=5.80D-09 Max=6.32D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     0 RMS=1.45D-09 Max=1.56D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    12 iterations.
+ Angle between quadratic step and gradient=  78.76 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251204094D+03 DE= 0.00D+00 F= -2.39D-04
+     ILin= 2 X=1.000D+00 Y=-1.383249355541D+03 DE= 1.85D-03 F=  4.41D-03
+     Reject lnstep minimum 7.053D-02 FVal=-1.383251212605D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=7.053D-02 Y=-1.383251220053D+03 DE=-1.60D-05 F= -2.07D-04
+     A contracting polynomial of degree  3 produced  0.0859
+ Iteration  18 EE= -1383.25122314055     Delta-E=       -0.000019046446 Grad=1.644D-03 Max rot=    0.0262 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.51D-05 Max=1.52D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.94D-05 Max=3.22D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.24D-05 Max=7.81D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.46D-05 Max=2.90D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.09D-05 Max=1.87D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.89D-06 Max=2.95D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.06D-06 Max=1.49D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.00D-07 Max=4.17D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.08D-07 Max=1.72D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.70D-08 Max=5.79D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.54D-08 Max=2.32D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.54D-09 Max=5.09D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     0 RMS=1.24D-09 Max=1.47D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    12 iterations.
+ Angle between quadratic step and gradient=  77.00 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251223141D+03 DE= 0.00D+00 F= -4.86D-05
+     ILin= 2 X=1.000D+00 Y=-1.383251224469D+03 DE=-1.33D-06 F=  7.28D-05
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.5659
+ Iteration  19 EE= -1383.25123908383     Delta-E=       -0.000015943279 Grad=7.508D-04 Max rot=    0.0091 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.27D-05 Max=3.50D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.48D-05 Max=2.48D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.52D-05 Max=1.94D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=9.51D-06 Max=1.39D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.22D-06 Max=4.00D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.34D-06 Max=1.57D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.45D-07 Max=7.34D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.97D-07 Max=2.26D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.03D-08 Max=6.83D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.36D-08 Max=2.30D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=7.16D-09 Max=1.09D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.65D-09 Max=3.48D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     0 RMS=7.85D-10 Max=9.23D-09 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    12 iterations.
+ Angle between quadratic step and gradient=  72.54 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251239084D+03 DE= 0.00D+00 F= -2.58D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251240393D+03 DE=-1.31D-06 F= -4.69D-08
+     Reject lnstep minimum 1.019D+00 FVal=-1.383251240393D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=2.000D+00 Y=-1.383251239191D+03 DE=-1.07D-07 F=  2.44D-06
+     An  expanding polynomial of degree  3 produced  1.0213
+     Minimum is close to point  2 DX=  2.13D-02 DF= -5.68D-10 DXR=  2.08D-02 DFR=  4.34D-04 which will be used.
+ Iteration  20 EE= -1383.25124039293     Delta-E=       -0.000001309107 Grad=2.388D-04 Max rot=    0.0037 deg.
+ QCNR:  CnvC1=2.39D-09 CnvC2=2.39D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.35D-06 Max=2.55D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.05D-06 Max=1.45D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.36D-06 Max=2.19D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=9.50D-07 Max=9.10D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.41D-07 Max=8.49D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.74D-07 Max=2.07D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.39D-08 Max=6.84D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.87D-08 Max=1.96D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.41D-09 Max=5.42D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     0 RMS=1.48D-09 Max=1.38D-08 NDo=     1
+ Linear equations converged to 2.388D-09 2.388D-08 after     9 iterations.
+ Angle between quadratic step and gradient=  87.04 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251240393D+03 DE= 0.00D+00 F= -7.90D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251233897D+03 DE= 6.50D-06 F=  3.86D-05
+     Reject lnstep minimum 4.454D-01 FVal=-1.383251242652D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=4.000D-01 Y=-1.383251242245D+03 DE=-1.85D-06 F= -8.91D-07
+     A contracting polynomial of degree  3 produced  0.3248
+ Iteration  21 EE= -1383.25124211277     Delta-E=       -0.000001719835 Grad=2.719D-03 Max rot=    0.0428 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.74D-05 Max=2.58D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.74D-05 Max=2.38D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.65D-05 Max=1.89D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.38D-05 Max=1.77D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.71D-06 Max=7.63D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.66D-06 Max=2.63D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.85D-07 Max=6.96D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.56D-07 Max=3.56D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.02D-07 Max=8.29D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.82D-08 Max=2.68D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=8.53D-09 Max=1.15D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=3.06D-09 Max=2.76D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  85.51 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251242113D+03 DE= 0.00D+00 F= -4.58D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251244306D+03 DE=-2.19D-06 F=  1.80D-07
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9619
+     Minimum is close to point  2 DX= -3.81D-02 DF= -3.43D-09 DXR=  3.96D-02 DFR=  1.56D-03 which will be used.
+ Iteration  22 EE= -1383.25124430565     Delta-E=       -0.000002192878 Grad=7.537D-04 Max rot=    0.0131 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=6.66D-06 Max=6.98D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=4.79D-06 Max=8.04D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.58D-06 Max=6.35D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.72D-06 Max=4.34D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.13D-06 Max=1.58D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.50D-07 Max=7.20D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.22D-07 Max=2.54D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.11D-08 Max=6.33D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.73D-08 Max=1.90D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=6.44D-09 Max=6.61D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.64D-09 Max=3.01D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  87.35 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251244306D+03 DE= 0.00D+00 F= -8.91D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251244763D+03 DE=-4.58D-07 F= -2.09D-08
+     Reject lnstep minimum 1.024D+00 FVal=-1.383251244764D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=2.000D+00 Y=-1.383251244341D+03 DE=-3.51D-08 F=  8.69D-07
+     An  expanding polynomial of degree  3 produced  1.0200
+     Minimum is close to point  2 DX=  2.00D-02 DF= -1.75D-10 DXR=  1.96D-02 DFR=  3.83D-04 which will be used.
+ Iteration  23 EE= -1383.25124476326     Delta-E=       -0.000000457615 Grad=4.251D-04 Max rot=    0.0037 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.44D-06 Max=1.08D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.03D-06 Max=8.57D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.52D-06 Max=3.04D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.42D-06 Max=7.06D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.48D-06 Max=1.52D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.19D-07 Max=5.33D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.40D-07 Max=1.63D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.50D-08 Max=5.55D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.54D-08 Max=1.81D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.13D-09 Max=1.09D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.21D-09 Max=4.19D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=9.21D-10 Max=9.27D-09 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  84.11 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251244763D+03 DE= 0.00D+00 F= -1.28D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251245190D+03 DE=-4.27D-07 F=  4.16D-07
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.7523
+ Iteration  24 EE= -1383.25124524196     Delta-E=       -0.000000478700 Grad=9.968D-04 Max rot=    0.0142 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.39D-05 Max=1.36D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=8.16D-06 Max=1.83D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.30D-06 Max=6.40D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.89D-06 Max=8.15D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.73D-06 Max=3.95D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.11D-07 Max=9.58D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.15D-07 Max=3.85D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.02D-07 Max=9.82D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.81D-08 Max=2.35D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.11D-08 Max=1.24D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=4.05D-09 Max=3.73D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=1.47D-09 Max=1.94D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  88.26 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251245242D+03 DE= 0.00D+00 F= -3.90D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251247317D+03 DE=-2.08D-06 F= -2.04D-07
+     Reject lnstep minimum 1.053D+00 FVal=-1.383251247323D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=1.900D+00 Y=-1.383251245858D+03 DE=-6.16D-07 F=  3.54D-06
+     An  expanding polynomial of degree  3 produced  1.0333
+     Minimum is close to point  2 DX=  3.33D-02 DF= -2.16D-09 DXR=  3.22D-02 DFR=  1.04D-03 which will be used.
+ Iteration  25 EE= -1383.25124731729     Delta-E=       -0.000002075329 Grad=1.146D-03 Max rot=    0.0131 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.89D-05 Max=2.55D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.23D-05 Max=1.74D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.25D-05 Max=9.99D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.54D-06 Max=1.35D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.70D-06 Max=7.07D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.60D-06 Max=2.53D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.53D-07 Max=4.75D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.42D-07 Max=1.56D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=6.00D-08 Max=5.78D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.39D-08 Max=2.11D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=7.18D-09 Max=7.19D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=2.60D-09 Max=2.41D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  82.25 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251247317D+03 DE= 0.00D+00 F= -4.21D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251249430D+03 DE=-2.11D-06 F= -5.50D-08
+     Reject lnstep minimum 1.014D+00 FVal=-1.383251249431D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=2.000D+00 Y=-1.383251247494D+03 DE=-1.76D-07 F=  3.90D-06
+     An  expanding polynomial of degree  3 produced  1.0218
+     Minimum is close to point  2 DX=  2.18D-02 DF= -9.59D-10 DXR=  2.13D-02 DFR=  4.54D-04 which will be used.
+ Iteration  26 EE= -1383.25124943048     Delta-E=       -0.000002113193 Grad=5.908D-04 Max rot=    0.0061 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.05D-06 Max=9.28D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.56D-06 Max=1.24D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.10D-06 Max=5.69D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.82D-06 Max=6.82D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.94D-06 Max=3.47D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.96D-07 Max=8.26D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.85D-07 Max=1.84D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.69D-08 Max=5.87D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.26D-08 Max=1.99D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.55D-09 Max=7.68D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.51D-09 Max=2.11D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  86.51 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251249430D+03 DE= 0.00D+00 F= -3.10D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251250746D+03 DE=-1.32D-06 F=  5.23D-07
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.8611
+ Iteration  27 EE= -1383.25125078207     Delta-E=       -0.000001351590 Grad=1.558D-03 Max rot=    0.0214 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.76D-05 Max=1.97D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.16D-05 Max=2.05D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.26D-06 Max=6.81D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.39D-06 Max=3.42D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.77D-06 Max=3.71D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.44D-06 Max=2.24D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.33D-07 Max=5.98D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.23D-07 Max=1.10D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.81D-08 Max=6.35D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.37D-08 Max=2.78D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=7.05D-09 Max=7.59D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=1.26D-09 Max=1.73D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  86.94 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251250782D+03 DE= 0.00D+00 F= -3.43D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251252360D+03 DE=-1.58D-06 F=  2.64D-07
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9282
+     Minimum is close to point  2 DX= -7.18D-02 DF= -9.47D-09 DXR=  7.74D-02 DFR=  6.00D-03 which will be used.
+ Iteration  28 EE= -1383.25125236035     Delta-E=       -0.000001578273 Grad=9.395D-04 Max rot=    0.0103 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.93D-05 Max=2.66D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.68D-06 Max=6.39D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.53D-06 Max=1.41D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.29D-06 Max=4.84D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.08D-06 Max=3.22D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.17D-06 Max=1.89D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.48D-07 Max=3.97D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.15D-07 Max=1.26D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=4.24D-08 Max=4.57D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.21D-08 Max=9.97D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.53D-09 Max=3.90D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=1.72D-09 Max=1.86D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  86.02 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251252360D+03 DE= 0.00D+00 F= -2.21D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251253507D+03 DE=-1.15D-06 F= -7.59D-08
+     Reject lnstep minimum 1.035D+00 FVal=-1.383251253509D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=2.000D+00 Y=-1.383251252500D+03 DE=-1.40D-07 F=  2.10D-06
+     An  expanding polynomial of degree  3 produced  1.0325
+     Minimum is close to point  2 DX=  3.25D-02 DF= -1.14D-09 DXR=  3.15D-02 DFR=  9.91D-04 which will be used.
+ Iteration  29 EE= -1383.25125350722     Delta-E=       -0.000001146872 Grad=5.579D-04 Max rot=    0.0062 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.49D-06 Max=1.04D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.41D-06 Max=1.15D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.03D-06 Max=2.60D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.54D-07 Max=1.07D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.13D-06 Max=1.52D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.79D-07 Max=8.63D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.38D-07 Max=2.68D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.87D-08 Max=8.13D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.58D-08 Max=3.56D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.18D-08 Max=1.15D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.88D-09 Max=4.02D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=1.31D-09 Max=1.27D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  84.68 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251253507D+03 DE= 0.00D+00 F= -1.62D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251254231D+03 DE=-7.24D-07 F=  1.68D-07
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9056
+ Iteration  30 EE= -1383.25125423866     Delta-E=       -0.000000731441 Grad=8.932D-04 Max rot=    0.0109 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.21D-05 Max=1.16D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.22D-06 Max=1.04D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.82D-06 Max=9.22D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.00D-06 Max=5.48D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.86D-06 Max=6.11D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.64D-07 Max=1.28D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.07D-07 Max=2.85D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.05D-07 Max=1.08D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.72D-08 Max=3.93D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.25D-09 Max=6.69D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.27D-09 Max=2.84D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  86.72 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251254239D+03 DE= 0.00D+00 F= -1.57D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251255078D+03 DE=-8.39D-07 F= -1.01D-07
+     Reject lnstep minimum 1.068D+00 FVal=-1.383251255082D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=2.000D+00 Y=-1.383251254432D+03 DE=-1.93D-07 F=  1.40D-06
+     An  expanding polynomial of degree  3 produced  1.0650
+     Minimum is close to point  2 DX=  6.50D-02 DF= -3.14D-09 DXR=  6.10D-02 DFR=  3.74D-03 which will be used.
+ Iteration  31 EE= -1383.25125507808     Delta-E=       -0.000000839418 Grad=3.812D-04 Max rot=    0.0043 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.41D-06 Max=1.03D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=8.15D-06 Max=1.66D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.58D-06 Max=5.92D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.19D-06 Max=5.39D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.17D-06 Max=1.70D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.11D-07 Max=5.16D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.45D-07 Max=2.28D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.53D-08 Max=9.02D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.17D-08 Max=1.87D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.22D-09 Max=8.36D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.70D-09 Max=3.23D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=7.41D-10 Max=5.37D-09 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  83.24 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251255078D+03 DE= 0.00D+00 F= -1.83D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251255284D+03 DE=-2.06D-07 F=  1.42D-06
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.5638
+ Iteration  32 EE= -1383.25125559398     Delta-E=       -0.000000515899 Grad=1.216D-03 Max rot=    0.0220 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.07D-05 Max=8.26D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.94D-06 Max=5.80D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.82D-06 Max=1.92D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.95D-06 Max=6.33D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.27D-06 Max=2.83D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=8.25D-07 Max=1.10D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.17D-07 Max=4.08D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.00D-08 Max=9.04D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.53D-08 Max=2.84D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.22D-09 Max=1.57D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.70D-09 Max=4.15D-08 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=1.13D-09 Max=1.24D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    11 iterations.
+ Angle between quadratic step and gradient=  88.48 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251255594D+03 DE= 0.00D+00 F= -3.53D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251257698D+03 DE=-2.10D-06 F= -6.36D-07
+     Reject lnstep minimum 1.209D+00 FVal=-1.383251257764D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=1.900D+00 Y=-1.383251257012D+03 DE=-1.42D-06 F=  2.19D-06
+     An  expanding polynomial of degree  3 produced  1.1975
+ Iteration  33 EE= -1383.25125776378     Delta-E=       -0.000002169799 Grad=1.461D-03 Max rot=    0.0243 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.25D-05 Max=2.39D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.16D-05 Max=2.13D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.45D-05 Max=1.34D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.99D-06 Max=7.44D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.46D-06 Max=7.69D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.52D-06 Max=1.98D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.93D-07 Max=7.71D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.82D-07 Max=1.72D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.95D-08 Max=4.81D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.40D-08 Max=2.38D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=9.61D-09 Max=1.13D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=3.35D-09 Max=2.74D-08 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     0 RMS=8.87D-10 Max=8.80D-09 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    12 iterations.
+ Angle between quadratic step and gradient=  84.34 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251257764D+03 DE= 0.00D+00 F= -2.66D-06
+     ILin= 2 X=1.000D+00 Y=-1.383251259045D+03 DE=-1.28D-06 F=  8.58D-08
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9684
+     Minimum is close to point  2 DX= -3.16D-02 DF= -1.36D-09 DXR=  3.26D-02 DFR=  1.06D-03 which will be used.
+ Iteration  34 EE= -1383.25125904526     Delta-E=       -0.000001281486 Grad=3.381D-04 Max rot=    0.0051 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.19D-06 Max=4.54D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.99D-06 Max=5.48D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.43D-06 Max=1.91D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.05D-06 Max=3.81D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.06D-06 Max=2.04D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.37D-07 Max=3.59D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=9.53D-08 Max=1.17D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.67D-08 Max=3.78D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.21D-08 Max=1.17D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.18D-09 Max=5.16D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.32D-09 Max=1.06D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  86.22 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251259045D+03 DE= 0.00D+00 F= -5.94D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251259309D+03 DE=-2.64D-07 F=  6.89D-08
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.8974
+ Iteration  35 EE= -1383.25125931294     Delta-E=       -0.000000267674 Grad=4.170D-04 Max rot=    0.0059 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=5.65D-06 Max=4.56D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=4.98D-06 Max=1.13D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.08D-06 Max=3.13D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.14D-06 Max=4.57D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.10D-06 Max=1.86D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.26D-07 Max=5.10D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.65D-07 Max=1.68D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.28D-08 Max=6.48D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.99D-08 Max=1.90D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.26D-09 Max=9.27D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.66D-09 Max=2.21D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  84.08 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251259313D+03 DE= 0.00D+00 F= -4.06D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251259511D+03 DE=-1.98D-07 F=  9.13D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9778
+     Minimum is close to point  2 DX= -2.22D-02 DF= -1.01D-10 DXR=  2.27D-02 DFR=  5.13D-04 which will be used.
+ Iteration  36 EE= -1383.25125951071     Delta-E=       -0.000000197775 Grad=3.003D-04 Max rot=    0.0034 deg.
+ QCNR:  CnvC1=3.00D-09 CnvC2=3.00D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.16D-06 Max=3.55D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.25D-06 Max=3.14D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.99D-06 Max=2.77D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.86D-06 Max=1.98D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=9.75D-07 Max=1.45D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.48D-07 Max=4.31D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=9.64D-08 Max=1.60D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.52D-08 Max=3.89D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.19D-08 Max=1.45D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.43D-09 Max=4.39D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.93D-09 Max=1.92D-08 NDo=     1
+ Linear equations converged to 3.003D-09 3.003D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  86.53 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251259511D+03 DE= 0.00D+00 F= -4.28D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251259687D+03 DE=-1.76D-07 F=  7.76D-08
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.8479
+ Iteration  37 EE= -1383.25125969277     Delta-E=       -0.000000182062 Grad=4.292D-04 Max rot=    0.0048 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=5.29D-06 Max=6.02D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.13D-06 Max=1.13D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.89D-06 Max=4.54D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.70D-06 Max=3.88D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.17D-06 Max=1.61D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.38D-07 Max=6.89D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.59D-07 Max=1.68D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.50D-08 Max=5.28D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.74D-08 Max=1.83D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.44D-09 Max=9.54D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.70D-09 Max=2.49D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  84.53 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251259693D+03 DE= 0.00D+00 F= -2.98D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251259839D+03 DE=-1.46D-07 F=  4.75D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9842
+     Minimum is close to point  2 DX= -1.58D-02 DF= -3.75D-11 DXR=  1.61D-02 DFR=  2.57D-04 which will be used.
+ Iteration  38 EE= -1383.25125983886     Delta-E=       -0.000000146087 Grad=2.174D-04 Max rot=    0.0030 deg.
+ QCNR:  CnvC1=2.17D-09 CnvC2=2.17D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.35D-06 Max=3.14D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.88D-06 Max=2.12D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.21D-06 Max=3.88D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.64D-06 Max=2.35D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=8.28D-07 Max=1.32D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.90D-07 Max=4.15D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.64D-08 Max=9.68D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.42D-08 Max=2.43D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.94D-09 Max=1.21D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.12D-09 Max=3.11D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.32D-09 Max=1.42D-08 NDo=     1
+ Linear equations converged to 2.174D-09 2.174D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  86.26 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251259839D+03 DE= 0.00D+00 F= -4.25D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251259991D+03 DE=-1.52D-07 F=  1.24D-07
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.7763
+ Iteration  39 EE= -1383.25126000443     Delta-E=       -0.000000165574 Grad=4.602D-04 Max rot=    0.0049 deg.
+ QCNR:  CnvC1=3.22D-09 CnvC2=3.22D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.50D-06 Max=4.14D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.80D-06 Max=1.49D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.97D-06 Max=6.15D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.26D-06 Max=4.15D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.01D-06 Max=1.11D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.41D-07 Max=4.32D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.02D-07 Max=1.11D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.60D-08 Max=5.24D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.37D-08 Max=1.51D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=5.45D-09 Max=4.68D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.22D-09 Max=2.25D-08 NDo=     1
+ Linear equations converged to 3.216D-09 3.216D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  85.18 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260004D+03 DE= 0.00D+00 F= -2.68D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251260129D+03 DE=-1.24D-07 F=  1.88D-08
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9340
+     Minimum is close to point  2 DX= -6.60D-02 DF= -6.19D-10 DXR=  7.06D-02 DFR=  4.99D-03 which will be used.
+ Iteration  40 EE= -1383.25126012852     Delta-E=       -0.000000124090 Grad=1.473D-04 Max rot=    0.0019 deg.
+ QCNR:  CnvC1=1.47D-09 CnvC2=1.47D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.11D-06 Max=2.02D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.25D-06 Max=1.84D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.72D-07 Max=8.16D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.78D-07 Max=4.40D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.93D-07 Max=4.80D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.11D-07 Max=2.88D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.85D-08 Max=7.46D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.73D-08 Max=2.06D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.22D-09 Max=6.96D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.60D-09 Max=3.15D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.03D-09 Max=1.20D-08 NDo=     1
+ Linear equations converged to 1.473D-09 1.473D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  85.46 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260129D+03 DE= 0.00D+00 F= -1.39D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251260193D+03 DE=-6.46D-08 F=  9.74D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9347
+     Minimum is close to point  2 DX= -6.53D-02 DF= -3.18D-10 DXR=  6.98D-02 DFR=  4.91D-03 which will be used.
+ Iteration  41 EE= -1383.25126019317     Delta-E=       -0.000000064643 Grad=2.341D-04 Max rot=    0.0036 deg.
+ QCNR:  CnvC1=2.34D-09 CnvC2=2.34D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.18D-06 Max=3.84D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.85D-06 Max=6.30D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.67D-06 Max=2.64D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.15D-06 Max=1.75D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.53D-07 Max=7.45D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.25D-07 Max=3.10D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=7.18D-08 Max=9.74D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.51D-08 Max=3.70D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.17D-09 Max=1.06D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.54D-09 Max=2.97D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.53D-09 Max=1.44D-08 NDo=     1
+ Linear equations converged to 2.341D-09 2.341D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  84.18 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260193D+03 DE= 0.00D+00 F= -1.28D-07
+     ILin= 2 X=1.000D+00 Y=-1.383251260252D+03 DE=-5.90D-08 F=  1.00D-08
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9270
+     Minimum is close to point  2 DX= -7.30D-02 DF= -3.67D-10 DXR=  7.88D-02 DFR=  6.22D-03 which will be used.
+ Iteration  42 EE= -1383.25126025216     Delta-E=       -0.000000058996 Grad=1.649D-04 Max rot=    0.0021 deg.
+ QCNR:  CnvC1=1.65D-09 CnvC2=1.65D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.90D-06 Max=1.72D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.27D-06 Max=2.07D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.94D-07 Max=7.51D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.77D-07 Max=8.61D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.12D-07 Max=9.77D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.01D-07 Max=2.57D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.75D-08 Max=6.67D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.68D-08 Max=1.92D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=6.70D-09 Max=6.52D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.75D-09 Max=3.10D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.05D-09 Max=1.37D-08 NDo=     1
+ Linear equations converged to 1.649D-09 1.649D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  86.18 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260252D+03 DE= 0.00D+00 F= -8.04D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260293D+03 DE=-4.05D-08 F= -5.29D-10
+     Reject lnstep minimum 1.007D+00 FVal=-1.383251260293D+03 Lims=  0.00D+00  1.00D+00
+     ILin= 3 X=2.000D+00 Y=-1.383251260253D+03 DE=-8.24D-10 F=  8.00D-08
+     An  expanding polynomial of degree  3 produced  1.0051
+     Minimum is close to point  2 DX=  5.14D-03 DF= -9.09D-13 DXR=  5.11D-03 DFR=  2.24D-05 which will be used.
+ Iteration  43 EE= -1383.25126029268     Delta-E=       -0.000000040517 Grad=1.401D-04 Max rot=    0.0016 deg.
+ QCNR:  CnvC1=1.40D-09 CnvC2=1.40D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.36D-06 Max=3.12D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.55D-06 Max=3.21D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.29D-06 Max=1.28D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.47D-07 Max=1.14D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.78D-07 Max=4.72D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.53D-07 Max=1.97D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.89D-08 Max=7.92D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.90D-08 Max=2.78D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.52D-09 Max=9.93D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.49D-09 Max=2.34D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.05D-09 Max=8.11D-09 NDo=     1
+ Linear equations converged to 1.401D-09 1.401D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  83.82 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260293D+03 DE= 0.00D+00 F= -6.99D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260323D+03 DE=-3.05D-08 F=  8.76D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.8881
+ Iteration  44 EE= -1383.25126032366     Delta-E=       -0.000000030984 Grad=1.881D-04 Max rot=    0.0022 deg.
+ QCNR:  CnvC1=1.88D-09 CnvC2=1.88D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.79D-06 Max=1.27D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.05D-06 Max=1.49D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.14D-06 Max=1.76D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.80D-07 Max=1.23D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.81D-07 Max=6.88D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.75D-07 Max=2.22D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.37D-08 Max=7.24D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.64D-08 Max=2.13D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.53D-09 Max=5.60D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.39D-09 Max=2.67D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=9.44D-10 Max=9.87D-09 NDo=     1
+ Linear equations converged to 1.881D-09 1.881D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  87.05 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260324D+03 DE= 0.00D+00 F= -7.23D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260359D+03 DE=-3.52D-08 F=  1.99D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9732
+     Minimum is close to point  2 DX= -2.68D-02 DF= -2.66D-11 DXR=  2.75D-02 DFR=  7.56D-04 which will be used.
+ Iteration  45 EE= -1383.25126035886     Delta-E=       -0.000000035192 Grad=9.268D-05 Max rot=    0.0010 deg.
+ QCNR:  CnvC1=9.27D-10 CnvC2=9.27D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.98D-06 Max=2.03D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.06D-06 Max=4.49D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.81D-06 Max=1.94D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=9.77D-07 Max=1.56D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.75D-07 Max=5.79D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.51D-07 Max=1.95D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.93D-08 Max=6.34D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.79D-08 Max=2.03D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.26D-09 Max=7.28D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.37D-09 Max=2.25D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.02D-09 Max=8.95D-09 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=2.11D-10 Max=2.77D-09 NDo=     1
+ Linear equations converged to 9.268D-10 9.268D-09 after    11 iterations.
+ Angle between quadratic step and gradient=  82.68 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260359D+03 DE= 0.00D+00 F= -9.70D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260390D+03 DE=-3.12D-08
+ Iteration  46 EE= -1383.25126039005     Delta-E=       -0.000000031197 Grad=2.529D-04 Max rot=    0.0026 deg.
+ QCNR:  CnvC1=2.53D-09 CnvC2=2.53D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.95D-06 Max=5.21D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.54D-06 Max=5.42D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.78D-06 Max=3.29D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.44D-06 Max=2.90D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=6.83D-07 Max=1.15D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.33D-07 Max=2.87D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=7.24D-08 Max=9.72D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.37D-08 Max=2.92D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.29D-09 Max=7.80D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.60D-09 Max=2.66D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=9.78D-10 Max=1.08D-08 NDo=     1
+ Linear equations converged to 2.529D-09 2.529D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  84.67 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260390D+03 DE= 0.00D+00 F= -7.18D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260426D+03 DE=-3.56D-08 F=  5.64D-10
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9922
+     Minimum is close to point  2 DX= -7.78D-03 DF= -2.27D-12 DXR=  7.85D-03 DFR=  6.38D-05 which will be used.
+ Iteration  47 EE= -1383.25126042568     Delta-E=       -0.000000035629 Grad=6.096D-05 Max rot=    0.0006 deg.
+ QCNR:  CnvC1=6.10D-10 CnvC2=6.10D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.17D-06 Max=1.28D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.36D-07 Max=8.50D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.09D-07 Max=3.14D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.11D-07 Max=6.29D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.87D-07 Max=2.43D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=7.17D-08 Max=8.93D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.14D-08 Max=2.45D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.16D-09 Max=9.90D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.45D-09 Max=5.50D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.14D-09 Max=1.31D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.96D-10 Max=4.64D-09 NDo=     1
+ Linear equations converged to 6.096D-10 6.096D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  83.86 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260426D+03 DE= 0.00D+00 F= -3.62D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260442D+03 DE=-1.65D-08
+ Iteration  48 EE= -1383.25126044220     Delta-E=       -0.000000016520 Grad=1.169D-04 Max rot=    0.0016 deg.
+ QCNR:  CnvC1=1.17D-09 CnvC2=1.17D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.92D-06 Max=1.81D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.80D-06 Max=2.76D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.69D-06 Max=1.25D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.09D-06 Max=2.18D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.75D-07 Max=9.57D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.68D-07 Max=2.28D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.23D-08 Max=4.82D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.38D-08 Max=1.56D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=4.50D-09 Max=4.06D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.36D-09 Max=1.86D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=6.12D-10 Max=7.83D-09 NDo=     1
+ Linear equations converged to 1.169D-09 1.169D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  84.10 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260442D+03 DE= 0.00D+00 F= -3.44D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260459D+03 DE=-1.63D-08 F=  1.82D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.9499
+     Minimum is close to point  2 DX= -5.01D-02 DF= -4.55D-11 DXR=  5.28D-02 DFR=  2.79D-03 which will be used.
+ Iteration  49 EE= -1383.25126045850     Delta-E=       -0.000000016302 Grad=8.010D-05 Max rot=    0.0007 deg.
+ QCNR:  CnvC1=8.01D-10 CnvC2=8.01D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.20D-06 Max=1.52D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.42D-07 Max=1.49D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.17D-07 Max=8.04D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.01D-07 Max=5.26D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.06D-07 Max=2.34D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.43D-08 Max=7.64D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.12D-08 Max=2.96D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.39D-09 Max=1.17D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.84D-09 Max=4.76D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.17D-09 Max=1.53D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.41D-10 Max=5.28D-09 NDo=     1
+ Linear equations converged to 8.010D-10 8.010D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  85.63 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260459D+03 DE= 0.00D+00 F= -2.57D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260471D+03 DE=-1.20D-08
+ Iteration  50 EE= -1383.25126047054     Delta-E=       -0.000000012034 Grad=6.234D-05 Max rot=    0.0009 deg.
+ QCNR:  CnvC1=6.23D-10 CnvC2=6.23D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.38D-06 Max=1.66D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.05D-06 Max=1.63D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.58D-07 Max=7.41D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.57D-07 Max=1.58D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.15D-07 Max=6.83D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.16D-07 Max=1.96D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.32D-08 Max=3.74D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=8.56D-09 Max=1.03D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.24D-09 Max=2.85D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.91D-10 Max=1.28D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.17D-10 Max=4.78D-09 NDo=     1
+ Linear equations converged to 6.234D-10 6.234D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  81.67 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260471D+03 DE= 0.00D+00 F= -2.31D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260481D+03 DE=-1.04D-08
+ Iteration  51 EE= -1383.25126048095     Delta-E=       -0.000000010411 Grad=9.734D-05 Max rot=    0.0013 deg.
+ QCNR:  CnvC1=9.73D-10 CnvC2=9.73D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.19D-06 Max=1.37D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=8.85D-07 Max=1.30D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.69D-07 Max=8.44D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.96D-07 Max=6.51D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.15D-07 Max=3.30D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.94D-08 Max=7.55D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.66D-08 Max=3.98D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=9.90D-09 Max=1.66D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.39D-09 Max=4.96D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.38D-09 Max=1.62D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.72D-10 Max=4.78D-09 NDo=     1
+ Linear equations converged to 9.734D-10 9.734D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  86.60 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260481D+03 DE= 0.00D+00 F= -1.98D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260490D+03 DE=-9.09D-09
+ Iteration  52 EE= -1383.25126049004     Delta-E=       -0.000000009089 Grad=4.987D-05 Max rot=    0.0006 deg.
+ QCNR:  CnvC1=4.99D-10 CnvC2=4.99D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.06D-06 Max=1.06D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=8.70D-07 Max=1.67D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.37D-07 Max=7.97D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.66D-07 Max=7.37D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.75D-07 Max=3.60D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.01D-08 Max=1.99D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.53D-08 Max=3.06D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.26D-09 Max=7.42D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.38D-09 Max=3.28D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.28D-10 Max=1.09D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.83D-10 Max=4.36D-09 NDo=     1
+ Linear equations converged to 4.987D-10 4.987D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  81.57 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260490D+03 DE= 0.00D+00 F= -1.58D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260497D+03 DE=-7.33D-09
+ Iteration  53 EE= -1383.25126049737     Delta-E=       -0.000000007331 Grad=8.300D-05 Max rot=    0.0013 deg.
+ QCNR:  CnvC1=8.30D-10 CnvC2=8.30D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.01D-06 Max=1.15D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.75D-07 Max=8.58D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.15D-07 Max=5.75D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.96D-07 Max=3.88D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.83D-07 Max=2.67D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.44D-08 Max=7.71D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.33D-08 Max=3.41D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.96D-09 Max=1.36D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.32D-09 Max=4.62D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.10D-09 Max=1.21D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.06D-10 Max=4.02D-09 NDo=     1
+ Linear equations converged to 8.300D-10 8.300D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  86.74 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260497D+03 DE= 0.00D+00 F= -1.51D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260505D+03 DE=-7.20D-09
+ Iteration  54 EE= -1383.25126050456     Delta-E=       -0.000000007196 Grad=5.605D-05 Max rot=    0.0007 deg.
+ QCNR:  CnvC1=5.61D-10 CnvC2=5.61D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.99D-07 Max=8.86D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.02D-07 Max=1.62D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.14D-07 Max=8.12D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.32D-07 Max=7.67D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.93D-07 Max=4.44D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=8.36D-08 Max=1.72D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.30D-08 Max=2.67D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.13D-09 Max=7.16D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.44D-09 Max=2.75D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.36D-10 Max=1.01D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=4.11D-10 Max=5.83D-09 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     0 RMS=1.06D-10 Max=1.08D-09 NDo=     1
+ Linear equations converged to 5.605D-10 5.605D-09 after    11 iterations.
+ Angle between quadratic step and gradient=  84.80 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260505D+03 DE= 0.00D+00 F= -1.57D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260510D+03 DE=-5.60D-09
+ Iteration  55 EE= -1383.25126051016     Delta-E=       -0.000000005599 Grad=1.395D-04 Max rot=    0.0019 deg.
+ QCNR:  CnvC1=1.39D-09 CnvC2=1.39D-08
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.02D-06 Max=2.05D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=8.12D-07 Max=8.38D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.10D-06 Max=1.71D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.09D-07 Max=7.91D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.38D-07 Max=3.05D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.08D-07 Max=1.53D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.85D-08 Max=4.09D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.11D-08 Max=2.07D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=4.97D-09 Max=9.67D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.48D-09 Max=2.26D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.78D-10 Max=2.96D-09 NDo=     1
+ Linear equations converged to 1.395D-09 1.395D-08 after    10 iterations.
+ Angle between quadratic step and gradient=  87.94 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260510D+03 DE= 0.00D+00 F= -2.39D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260521D+03 DE=-1.05D-08 F=  2.96D-09
+     Accept linear search using points  1 and  2.
+     An  expanding polynomial of degree  2 produced  0.8898
+ Iteration  56 EE= -1383.25126052081     Delta-E=       -0.000000010642 Grad=9.115D-05 Max rot=    0.0013 deg.
+ QCNR:  CnvC1=9.12D-10 CnvC2=9.12D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.15D-07 Max=6.42D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.10D-06 Max=2.78D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.95D-07 Max=8.71D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.78D-07 Max=9.70D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.95D-07 Max=1.66D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.99D-08 Max=7.89D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.97D-08 Max=2.44D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.16D-09 Max=5.97D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.39D-09 Max=3.42D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.68D-10 Max=1.15D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.72D-10 Max=3.90D-09 NDo=     1
+ Linear equations converged to 9.115D-10 9.115D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  85.22 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260521D+03 DE= 0.00D+00 F= -1.11D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260526D+03 DE=-5.53D-09
+ Iteration  57 EE= -1383.25126052633     Delta-E=       -0.000000005527 Grad=4.985D-05 Max rot=    0.0005 deg.
+ QCNR:  CnvC1=4.99D-10 CnvC2=4.99D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.75D-07 Max=8.22D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.36D-07 Max=5.90D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=7.19D-07 Max=9.96D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.07D-07 Max=3.94D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.43D-07 Max=1.55D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.00D-08 Max=5.44D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.96D-08 Max=2.92D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.59D-09 Max=7.61D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.23D-09 Max=2.01D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=5.60D-10 Max=6.97D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.99D-10 Max=3.11D-09 NDo=     1
+ Linear equations converged to 4.985D-10 4.985D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  87.55 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260526D+03 DE= 0.00D+00 F= -2.98D-08
+     ILin= 2 X=1.000D+00 Y=-1.383251260540D+03 DE=-1.38D-08
+ Iteration  58 EE= -1383.25126054013     Delta-E=       -0.000000013801 Grad=9.712D-05 Max rot=    0.0014 deg.
+ QCNR:  CnvC1=9.71D-10 CnvC2=9.71D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.23D-06 Max=1.91D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.00D-06 Max=1.92D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.84D-07 Max=7.83D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.90D-07 Max=9.38D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.11D-07 Max=4.47D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.85D-08 Max=1.10D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.36D-08 Max=2.49D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.86D-09 Max=9.53D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.62D-09 Max=2.03D-08 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.21D-10 Max=1.43D-08 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.65D-10 Max=4.11D-09 NDo=     1
+ Linear equations converged to 9.712D-10 9.712D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  83.60 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260540D+03 DE= 0.00D+00 F= -7.34D-09
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-3.66D-09
+ Iteration  59 EE= -1383.25126054380     Delta-E=       -0.000000003662 Grad=7.133D-06 Max rot=    0.0001 deg.
+ QCNR:  CnvC1=7.13D-11 CnvC2=7.13D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.11D-07 Max=1.32D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=8.24D-08 Max=9.40D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.04D-07 Max=1.32D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.12D-08 Max=6.96D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.02D-08 Max=1.86D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.43D-09 Max=5.98D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.60D-09 Max=3.56D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=9.80D-10 Max=1.03D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.11D-10 Max=2.68D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.82D-11 Max=1.38D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.50D-11 Max=4.68D-10 NDo=     1
+ Linear equations converged to 7.133D-11 7.133D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  86.54 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -3.48D-10
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.49D-10
+ Iteration  60 EE= -1383.25126054394     Delta-E=       -0.000000000149 Grad=2.256D-05 Max rot=    0.0003 deg.
+ QCNR:  CnvC1=2.26D-10 CnvC2=2.26D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.39D-07 Max=2.52D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.13D-07 Max=1.78D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.03D-07 Max=2.06D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.82D-08 Max=7.31D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.42D-08 Max=5.88D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.75D-08 Max=2.59D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.23D-09 Max=4.94D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.80D-09 Max=1.43D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.69D-10 Max=5.85D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.05D-10 Max=2.72D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=9.80D-11 Max=1.31D-09 NDo=     1
+ Linear equations converged to 2.256D-10 2.256D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  85.23 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -3.12D-10
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.54D-10
+ Iteration  61 EE= -1383.25126054410     Delta-E=       -0.000000000154 Grad=4.710D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=4.71D-11 CnvC2=4.71D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.33D-08 Max=1.16D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.91D-08 Max=9.95D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=7.90D-08 Max=7.81D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.68D-08 Max=4.76D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.25D-08 Max=1.12D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.22D-09 Max=4.65D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.70D-09 Max=2.14D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.84D-10 Max=7.27D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.86D-10 Max=1.64D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=6.92D-11 Max=1.07D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.00D-11 Max=2.90D-10 NDo=     1
+ Linear equations converged to 4.710D-11 4.710D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  85.63 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -8.99D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-2.89D-11
+ Iteration  62 EE= -1383.25126054413     Delta-E=       -0.000000000029 Grad=1.419D-05 Max rot=    0.0002 deg.
+ QCNR:  CnvC1=1.42D-10 CnvC2=1.42D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.41D-07 Max=1.37D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.99D-08 Max=6.83D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.44D-08 Max=1.30D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.94D-08 Max=5.15D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.27D-08 Max=3.88D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.21D-09 Max=1.30D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.91D-09 Max=3.55D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=9.44D-10 Max=8.92D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.76D-10 Max=2.33D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     0 RMS=8.54D-11 Max=1.03D-09 NDo=     1
+ Linear equations converged to 1.419D-10 1.419D-09 after     9 iterations.
+ Angle between quadratic step and gradient=  86.84 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -1.16D-10
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-6.21D-11
+ Iteration  63 EE= -1383.25126054419     Delta-E=       -0.000000000062 Grad=2.518D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=2.52D-11 CnvC2=2.52D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.36D-08 Max=5.26D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=4.37D-08 Max=9.03D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.92D-08 Max=3.07D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.89D-08 Max=2.05D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=7.78D-09 Max=1.26D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.76D-09 Max=3.91D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.02D-09 Max=9.98D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.84D-10 Max=3.30D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.32D-10 Max=1.15D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=6.36D-11 Max=8.41D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.91D-11 Max=2.21D-10 NDo=     1
+ Linear equations converged to 2.518D-11 2.518D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  82.60 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -7.44D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-2.52D-11
+ Iteration  64 EE= -1383.25126054421     Delta-E=       -0.000000000025 Grad=9.294D-06 Max rot=    0.0001 deg.
+ QCNR:  CnvC1=9.29D-11 CnvC2=9.29D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.31D-07 Max=1.50D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.71D-08 Max=9.30D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.05D-07 Max=2.08D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.55D-08 Max=7.71D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.91D-08 Max=4.13D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.11D-08 Max=1.36D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.08D-09 Max=3.69D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.88D-10 Max=9.31D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.30D-10 Max=3.19D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.01D-10 Max=1.08D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=5.09D-11 Max=4.91D-10 NDo=     1
+ Linear equations converged to 9.294D-11 9.294D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  85.78 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -9.89D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-4.48D-11
+ Iteration  65 EE= -1383.25126054426     Delta-E=       -0.000000000045 Grad=4.898D-06 Max rot=    0.0001 deg.
+ QCNR:  CnvC1=4.90D-11 CnvC2=4.90D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.44D-08 Max=4.28D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.16D-08 Max=1.39D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.67D-08 Max=5.01D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.29D-08 Max=3.42D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=9.92D-09 Max=1.06D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.72D-09 Max=3.56D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.15D-09 Max=1.50D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.90D-10 Max=4.29D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.50D-10 Max=1.40D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=6.83D-11 Max=8.76D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.14D-11 Max=2.64D-10 NDo=     1
+ Linear equations converged to 4.898D-11 4.898D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  86.02 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -6.21D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.86D-11
+ Iteration  66 EE= -1383.25126054428     Delta-E=       -0.000000000019 Grad=1.000D-05 Max rot=    0.0002 deg.
+ QCNR:  CnvC1=1.00D-10 CnvC2=1.00D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.49D-08 Max=1.17D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=4.08D-08 Max=4.09D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.98D-08 Max=1.14D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.92D-08 Max=4.54D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.14D-08 Max=3.25D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=7.25D-09 Max=7.76D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.70D-09 Max=3.78D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=8.21D-10 Max=1.16D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.99D-10 Max=3.65D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.11D-10 Max=1.05D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=5.08D-11 Max=4.56D-10 NDo=     1
+ Linear equations converged to 1.000D-10 1.000D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  86.89 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -5.90D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-3.00D-11
+ Iteration  67 EE= -1383.25126054431     Delta-E=       -0.000000000030 Grad=2.810D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=2.81D-11 CnvC2=2.81D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.23D-08 Max=2.87D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.70D-08 Max=8.19D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.60D-08 Max=2.93D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.41D-08 Max=1.61D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=6.84D-09 Max=7.39D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.21D-09 Max=3.13D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=7.98D-10 Max=1.01D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.95D-10 Max=3.62D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.07D-10 Max=9.66D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.34D-11 Max=4.66D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.62D-11 Max=1.84D-10 NDo=     1
+ Linear equations converged to 2.810D-11 2.810D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  85.01 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -4.22D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.46D-11
+ Iteration  68 EE= -1383.25126054432     Delta-E=       -0.000000000015 Grad=7.939D-06 Max rot=    0.0001 deg.
+ QCNR:  CnvC1=7.94D-11 CnvC2=7.94D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.03D-08 Max=1.02D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=4.83D-08 Max=5.13D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.93D-08 Max=1.37D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.09D-08 Max=5.35D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.45D-08 Max=3.75D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=7.35D-09 Max=7.68D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.31D-09 Max=3.03D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=8.17D-10 Max=1.08D-08 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.04D-10 Max=3.88D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.12D-10 Max=1.18D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=4.48D-11 Max=4.29D-10 NDo=     1
+ Linear equations converged to 7.939D-11 7.939D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  86.05 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -4.80D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-2.27D-11
+ Iteration  69 EE= -1383.25126054435     Delta-E=       -0.000000000023 Grad=1.758D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=1.76D-11 CnvC2=1.76D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.66D-08 Max=2.54D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.66D-08 Max=5.71D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.70D-08 Max=2.44D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.03D-08 Max=1.21D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.11D-09 Max=5.81D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.86D-09 Max=2.64D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.06D-10 Max=7.60D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.88D-10 Max=2.46D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=8.29D-11 Max=9.16D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.85D-11 Max=3.02D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.08D-11 Max=1.22D-10 NDo=     1
+ Linear equations converged to 1.758D-11 1.758D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  83.73 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -3.70D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.09D-11
+ Iteration  70 EE= -1383.25126054436     Delta-E=       -0.000000000011 Grad=1.000D-05 Max rot=    0.0002 deg.
+ QCNR:  CnvC1=1.00D-10 CnvC2=1.00D-09
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.57D-08 Max=9.72D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.19D-08 Max=9.05D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.59D-08 Max=3.69D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.28D-08 Max=5.66D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.47D-08 Max=2.86D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.47D-09 Max=7.00D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.33D-09 Max=3.06D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.97D-10 Max=9.42D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.90D-10 Max=3.78D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.01D-10 Max=1.15D-09 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.94D-11 Max=4.71D-10 NDo=     1
+ Linear equations converged to 1.000D-10 1.000D-09 after    10 iterations.
+ Angle between quadratic step and gradient=  86.04 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -4.80D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.86D-11
+ Iteration  71 EE= -1383.25126054437     Delta-E=       -0.000000000019 Grad=1.017D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=1.02D-11 CnvC2=1.02D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.05D-08 Max=2.44D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.84D-09 Max=1.10D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.66D-08 Max=2.67D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.01D-09 Max=6.58D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.45D-09 Max=4.29D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.36D-09 Max=1.78D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.90D-10 Max=6.08D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.14D-10 Max=1.54D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=5.45D-11 Max=6.66D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.55D-11 Max=1.80D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=6.65D-12 Max=6.61D-11 NDo=     1
+ Linear equations converged to 1.017D-11 1.017D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  82.61 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -4.56D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.32D-11
+ Iteration  72 EE= -1383.25126054439     Delta-E=       -0.000000000013 Grad=9.485D-06 Max rot=    0.0001 deg.
+ QCNR:  CnvC1=9.49D-11 CnvC2=9.49D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.76D-08 Max=7.80D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.17D-08 Max=1.71D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.01D-08 Max=4.79D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.98D-08 Max=7.82D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.44D-08 Max=2.67D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.61D-09 Max=5.43D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.65D-09 Max=2.39D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.92D-10 Max=5.81D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.43D-10 Max=3.06D-09 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     0 RMS=7.87D-11 Max=8.06D-10 NDo=     1
+ Linear equations converged to 9.485D-11 9.485D-10 after     9 iterations.
+ Angle between quadratic step and gradient=  85.80 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -5.39D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-2.96D-11
+ Iteration  73 EE= -1383.25126054442     Delta-E=       -0.000000000030 Grad=9.905D-07 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=9.91D-12 CnvC2=9.91D-11
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.36D-08 Max=1.39D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.30D-08 Max=2.06D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.53D-08 Max=2.04D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.08D-09 Max=5.99D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.15D-09 Max=2.84D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.28D-10 Max=1.42D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.13D-10 Max=3.81D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.13D-10 Max=1.95D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.77D-11 Max=5.14D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.23D-11 Max=1.14D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=5.31D-12 Max=6.07D-11 NDo=     1
+ Linear equations converged to 9.905D-12 9.905D-11 after    10 iterations.
+ Angle between quadratic step and gradient=  84.93 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -1.61D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-4.55D-12
+ Iteration  74 EE= -1383.25126054442     Delta-E=       -0.000000000005 Grad=3.026D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=3.03D-11 CnvC2=3.03D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.07D-08 Max=4.66D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.13D-08 Max=3.28D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.14D-08 Max=1.18D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.59D-08 Max=3.59D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.10D-08 Max=2.30D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.14D-09 Max=3.55D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=7.81D-10 Max=1.05D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.18D-10 Max=4.41D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=8.07D-11 Max=7.26D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.64D-11 Max=5.18D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.70D-11 Max=1.87D-10 NDo=     1
+ Linear equations converged to 3.026D-11 3.026D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  84.56 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -1.16D-11
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-4.32D-12
+ Iteration  75 EE= -1383.25126054443     Delta-E=       -0.000000000004 Grad=5.146D-07 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=5.15D-12 CnvC2=5.15D-11
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.47D-09 Max=1.04D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.39D-09 Max=1.55D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.04D-08 Max=1.16D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.60D-09 Max=4.08D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.56D-09 Max=2.12D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.86D-10 Max=8.83D-09 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.03D-10 Max=2.62D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=7.10D-11 Max=1.48D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.94D-11 Max=3.91D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.38D-12 Max=8.20D-11 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=3.75D-12 Max=3.19D-11 NDo=     1
+ Linear equations converged to 5.146D-12 5.146D-11 after    10 iterations.
+ Angle between quadratic step and gradient=  82.72 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -5.40D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-5.68D-12
+ Iteration  76 EE= -1383.25126054443     Delta-E=       -0.000000000006 Grad=2.776D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=2.78D-11 CnvC2=2.78D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.07D-08 Max=2.65D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.55D-08 Max=2.72D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.36D-09 Max=1.32D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.26D-09 Max=7.00D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.53D-09 Max=3.15D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.23D-09 Max=2.54D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.59D-10 Max=8.07D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.27D-10 Max=3.35D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=6.62D-11 Max=5.36D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     0 RMS=2.24D-11 Max=2.65D-10 NDo=     1
+ Linear equations converged to 2.776D-11 2.776D-10 after     9 iterations.
+ Angle between quadratic step and gradient=  85.58 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -5.61D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.82D-12
+ Iteration  77 EE= -1383.25126054443     Delta-E=       -0.000000000002 Grad=4.331D-07 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=4.33D-12 CnvC2=4.33D-11
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.84D-09 Max=9.25D-08 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.26D-09 Max=1.20D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.25D-09 Max=4.61D-08 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.37D-09 Max=3.62D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.11D-09 Max=1.27D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.96D-10 Max=5.03D-09 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.61D-10 Max=2.21D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.36D-11 Max=7.43D-10 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.73D-11 Max=1.72D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.06D-12 Max=1.40D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.60D-12 Max=2.15D-11 NDo=     1
+ Linear equations converged to 4.331D-12 4.331D-11 after    10 iterations.
+ Angle between quadratic step and gradient=  82.79 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -4.53D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-3.18D-12
+ Iteration  78 EE= -1383.25126054444     Delta-E=       -0.000000000003 Grad=2.406D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=2.41D-11 CnvC2=2.41D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.49D-08 Max=2.71D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.79D-08 Max=1.96D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.11D-08 Max=6.17D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.39D-08 Max=1.67D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=7.20D-09 Max=1.12D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.75D-09 Max=3.38D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=8.48D-10 Max=1.06D-08 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.72D-10 Max=2.92D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=7.32D-11 Max=7.84D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.94D-11 Max=3.12D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.44D-11 Max=1.60D-10 NDo=     1
+ Linear equations converged to 2.406D-11 2.406D-10 after    10 iterations.
+ Angle between quadratic step and gradient=  84.57 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -5.12D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-4.09D-12
+ Iteration  79 EE= -1383.25126054444     Delta-E=       -0.000000000004 Grad=3.597D-07 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=3.60D-12 CnvC2=3.60D-11
+ LinEq1:  Iter=  0 NonCon=     1 RMS=5.37D-09 Max=5.94D-08 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.71D-09 Max=1.21D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.71D-09 Max=5.34D-08 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.60D-09 Max=3.00D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.18D-09 Max=1.70D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.94D-10 Max=4.25D-09 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.30D-10 Max=1.79D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.84D-11 Max=5.57D-10 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.82D-11 Max=1.73D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.20D-12 Max=1.26D-10 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=2.85D-12 Max=2.63D-11 NDo=     1
+ Linear equations converged to 3.597D-12 3.597D-11 after    10 iterations.
+ Angle between quadratic step and gradient=  83.03 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -2.41D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE= 6.82D-13 F=  6.34D-13
+     ILin= 3 X=2.000D+00 Y=-1.383251260544D+03 DE= 3.64D-12 F=  3.68D-12
+ QCLLim is confused:  Bigger=T Turned=T
+ NLin=  3 IMin12=  1  2 I12=  0  2 IX=  1 XLMin= 0.000D+00 XLMax= 0.000D+00
+ X = 0.000D+00 1.000D+00 2.000D+00
+ DE= 0.000D+00 6.821D-13 3.638D-12
+     An  expanding polynomial of degree  3 produced  0.2500
+ Iteration  80 EE= -1383.25126054444     Delta-E=       -0.000000000000 Grad=3.917D-07 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=3.92D-12 CnvC2=3.92D-11
+ LinEq1:  Iter=  0 NonCon=     1 RMS=6.91D-09 Max=7.31D-08 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.02D-09 Max=9.06D-08 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=7.56D-09 Max=9.30D-08 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.17D-09 Max=3.10D-08 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.07D-09 Max=1.49D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.17D-10 Max=8.96D-09 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.18D-10 Max=1.67D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.55D-11 Max=4.35D-10 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.10D-11 Max=1.10D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.60D-12 Max=4.08D-11 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     0 RMS=1.91D-12 Max=2.38D-11 NDo=     1
+ Linear equations converged to 3.917D-12 3.917D-11 after    10 iterations.
+ Angle between quadratic step and gradient=  84.62 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -4.89D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-9.09D-13
+ Iteration  81 EE= -1383.25126054444     Delta-E=       -0.000000000001 Grad=1.672D-06 Max rot=    0.0000 deg.
+ QCNR:  CnvC1=1.67D-11 CnvC2=1.67D-10
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.76D-08 Max=2.25D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.20D-08 Max=1.99D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.03D-08 Max=7.85D-08 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.02D-08 Max=1.67D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.72D-09 Max=6.08D-08 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.22D-09 Max=1.03D-08 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.81D-10 Max=4.49D-09 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.04D-10 Max=1.52D-09 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.04D-11 Max=3.19D-10 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     0 RMS=8.08D-12 Max=1.17D-10 NDo=     1
+ Linear equations converged to 1.672D-11 1.672D-10 after     9 iterations.
+ Angle between quadratic step and gradient=  85.48 degrees.
+     ILin= 1 X=0.000D+00 Y=-1.383251260544D+03 DE= 0.00D+00 F= -2.13D-12
+     ILin= 2 X=1.000D+00 Y=-1.383251260544D+03 DE=-1.59D-12
+ Iteration  82 EE= -1383.25126054444     Delta-E=       -0.000000000002 Grad=1.193D-07 Max rot=    0.0000 deg.
+ Rotation gradient small -- convergence achieved.
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ Density matrix is not symmetric, so final MOs not symmetrized.
+ SCF Done:  E(UM062X) =  -1383.25126054     a.u. after   82 cycles
+            Convg  =    0.1193D-06                   880 Fock formations.
+              S**2 =  2.2520                  -V/T =  2.0013
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 1.0000 <S**2>= 2.2520 S= 1.0818
+ <L.S>= 0.000000000000E+00
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     2.2520,   after     2.0032
+ Leave Link  508 at Sun Apr 18 07:52:14 2021, MaxMem=   104857600 cpu:            3941.1 elap:              85.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l801.exe)
+ DoSCS=F DFT=T ScalE2(SS,OS)=  1.000000  1.000000
+ Range of M.O.s used for correlation:     1    51
+ NBasis=    51 NAE=    15 NBE=    13 NFC=     0 NFV=     0
+ NROrb=     51 NOA=    15 NOB=    13 NVA=    36 NVB=    38
+ Leave Link  801 at Sun Apr 18 07:52:14 2021, MaxMem=   104857600 cpu:               3.1 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l914.exe)
+ UHF ground state
+ Doing stability rather than CIS.
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=51702368.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   1326 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ MDV=   104857600 DFT=T DoStab=T Mixed=T DoRPA=F DoScal=F NonHer=F
+ Making orbital integer symmetry assigments:
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG) (?A)
+                 (?A) (SG) (?A) (?A) (SG)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (?A) (?A) (?A) (?A) (SG)
+                 (SG) (?A) (?A) (?A) (?A) (SG) (SG) (PI) (PI) (PI)
+                 (PI) (SG) (SG) (SG) (?A) (?A) (?A) (?A) (SG) (?B)
+                 (?B) (?A) (?A) (?A) (?A) (?B)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (PI) (PI) (SG) (SG) (SG) (PI) (PI) (SG)
+                 (?A) (?A) (SG)
+       Virtual   (SG) (?A) (?A) (?A) (?A) (SG) (SG) (?A) (?A) (?A)
+                 (?A) (SG) (SG) (?A) (?A) (?A) (?A) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (?B) (?B) (?B) (?B)
+                 (SG) (?C) (?B) (?B) (?C) (?B) (?B) (?C)
+    12 initial guesses have been made.
+ Convergence on wavefunction:    0.001000000000000
+ Davidson Disk Diagonalization:  ConvIn= 1.00D-03 SkipCon=T Conv= 1.00D-03.
+ Max sub-space:  2000 roots to seek:    12 dimension of matrix:         1034
+ Iteration     1 Dimension    12 NMult     0 NNew     12
+ CISAX will form    12 AO SS matrices at one time.
+ NMat=    12 NSing=    12 JSym2X= 2.
+ New state      1 was old state      4
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     1.913303011206947
+ Root      2 :     1.913551719496165
+ Root      3 :     2.015930633073908
+ Root      4 :     2.317759665686502
+ Root      5 :     2.317818914211183
+ Root      6 :     4.086262172417703
+ Root      7 :     4.791780990292459
+ Root      8 :     5.050377017791476
+ Root      9 :     5.050848508533656
+ Root     10 :     6.337454585600850
+ Root     11 :     6.338424929743010
+ Root     12 :     9.193554334710788
+ Iteration     2 Dimension    24 NMult    12 NNew     12
+ CISAX will form    12 AO SS matrices at one time.
+ NMat=    12 NSing=    12 JSym2X= 2.
+ New state      1 was old state      3
+ Root      1 not converged, maximum delta is    0.256070879412536
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.674182003276313   Change is   -1.341748629797595
+ Root      2 :     0.775549385336778   Change is   -1.137753625870168
+ Root      3 :     0.775970066592239   Change is   -1.137581652903926
+ Root      4 :     1.489184261864360   Change is   -0.828634652346823
+ Root      5 :     1.489261156083711   Change is   -0.828498509602791
+ Root      6 :     2.717011842228521   Change is   -1.369250330189182
+ Root      7 :     4.022366252371282   Change is   -0.769414737921177
+ Root      8 :     4.095018321164864   Change is   -0.955358696626613
+ Root      9 :     4.095184693947756   Change is   -0.955663814585900
+ Root     10 :     4.874281215956821   Change is   -1.463173369644029
+ Root     11 :     4.874383735336715   Change is   -1.464041194406296
+ Root     12 :     6.903749932413578   Change is   -2.289804402297211
+ Iteration     3 Dimension    27 NMult    24 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.059577524582059
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.404199525360047   Change is   -0.269982477916266
+ Root      2 :     0.679499636232599   Change is   -0.096049749104179
+ Root      3 :     0.679856907777190   Change is   -0.096113158815049
+ Iteration     4 Dimension    30 NMult    27 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.033515197709463
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.356602142781134   Change is   -0.047597382578913
+ Root      2 :     0.657735671111052   Change is   -0.021763965121547
+ Root      3 :     0.658013538693112   Change is   -0.021843369084078
+ Iteration     5 Dimension    33 NMult    30 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.057284543836062
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.331334573527196   Change is   -0.025267569253938
+ Root      2 :     0.462387820661040   Change is   -0.195625718032072
+ Root      3 :     0.462398367104038   Change is   -0.195337304007014
+ Iteration     6 Dimension    36 NMult    33 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ New state      1 was old state      3
+ Root      1 not converged, maximum delta is    0.285483594922557
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.195816155073319   Change is   -0.266582212030719
+ Root      2 :     0.197976892913474   Change is   -0.264410927747566
+ Root      3 :     0.288775042812529   Change is   -0.042559530714667
+ Iteration     7 Dimension    39 NMult    36 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.026925464442034
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.173760560090631   Change is   -0.022055594982687
+ Root      2 :     0.176031676570369   Change is   -0.021945216343104
+ Root      3 :     0.270288991284859   Change is   -0.018486051527670
+ Iteration     8 Dimension    42 NMult    39 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.008789824640105
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.172292950512209   Change is   -0.001467609578423
+ Root      2 :     0.174568563179527   Change is   -0.001463113390843
+ Root      3 :     0.267879963113367   Change is   -0.002409028171492
+ Iteration     9 Dimension    45 NMult    42 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 has converged.
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.172250176313266   Change is   -0.000042774198943
+ Root      2 :     0.174525718154683   Change is   -0.000042845024844
+ Root      3 :     0.267701695648589   Change is   -0.000178267464779
+ Convergence achieved on expansion vectors.
+ ***********************************************************************
+ Stability analysis using <AA,BB:AA,BB> singles matrix:
+ ***********************************************************************
+ 1PDM for each excited state written to RWF  633
+ Ground to excited state transition densities written to RWF  633
+
+ Eigenvectors of the stability matrix:
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   1:  3.157-?Sym  Eigenvalue= 0.0063301  <S**2>=2.241
+     10B -> 16B       -0.10414
+     11B -> 14B        0.11558
+     11B -> 16B        0.62088
+     11B -> 23B       -0.19778
+     12B -> 15B       -0.62696
+     12B -> 24B        0.19978
+     13B -> 16B        0.28619
+ The wavefunction is stable under the perturbations considered.
+ Leave Link  914 at Sun Apr 18 07:52:24 2021, MaxMem=   104857600 cpu:             451.0 elap:               9.6
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l508.exe)
+ The wavefunction is already stable.
+ Leave Link  508 at Sun Apr 18 07:52:24 2021, MaxMem=   104857600 cpu:               2.2 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+ SCF density gives NOpUse=  1 NOpAll=  4.
+ Marking SCF density as not fully symmetric.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG) (?A)
+                 (?A) (SG) (?A) (?A) (SG)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (?A) (?A) (?A) (?A) (SG)
+                 (SG) (?A) (?A) (?A) (?A) (SG) (SG) (PI) (PI) (PI)
+                 (PI) (SG) (SG) (SG) (?A) (?A) (?A) (?A) (SG) (?B)
+                 (?B) (?A) (?A) (?A) (?A) (?B)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (PI) (PI) (SG) (SG) (SG) (PI) (PI) (SG)
+                 (?A) (?A) (SG)
+       Virtual   (SG) (?A) (?A) (?A) (?A) (SG) (SG) (?A) (?A) (?A)
+                 (?A) (SG) (SG) (?A) (?A) (?A) (?A) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (SG) (SG) (SG) (?B) (?B) (?B) (?B)
+                 (SG) (?C) (?B) (?B) (?C) (?B) (?B) (?C)
+ Unable to determine electronic state:  an orbital has unidentified symmetry.
+ Alpha  occ. eigenvalues -- -279.42088 -33.45341 -29.09345 -29.09342 -29.08378
+ Alpha  occ. eigenvalues --   -3.98549  -2.65941  -2.65935  -2.64420  -0.44545
+ Alpha  occ. eigenvalues --   -0.44544  -0.44188  -0.41490  -0.41488  -0.29761
+ Alpha virt. eigenvalues --   -0.07129   0.09391   0.09392   0.12844   0.14320
+ Alpha virt. eigenvalues --    0.18669   0.18670   0.19951   0.19951   0.28416
+ Alpha virt. eigenvalues --    0.48992   0.97644   0.97646   1.00333   1.00334
+ Alpha virt. eigenvalues --    1.02681   1.63607   1.63610   1.63611   1.88277
+ Alpha virt. eigenvalues --    1.88281   2.20576   2.55564   2.92582   3.85648
+ Alpha virt. eigenvalues --    3.85650   3.88524   3.88526   3.94465   4.90853
+ Alpha virt. eigenvalues --    4.91036   4.91401   4.91403   4.93294   4.93297
+ Alpha virt. eigenvalues --    5.07838
+  Beta  occ. eigenvalues -- -279.42104 -33.38776 -29.03543 -29.03543 -29.03287
+  Beta  occ. eigenvalues --   -3.87623  -2.51210  -2.50715  -2.50714  -0.35601
+  Beta  occ. eigenvalues --   -0.33885  -0.33883  -0.23405
+  Beta virt. eigenvalues --   -0.03391   0.05600   0.05600   0.09487   0.09487
+  Beta virt. eigenvalues --    0.16681   0.19863   0.23215   0.23216   0.26164
+  Beta virt. eigenvalues --    0.26164   0.30232   0.50463   1.02134   1.02135
+  Beta virt. eigenvalues --    1.05773   1.05775   1.07524   1.63760   1.63761
+  Beta virt. eigenvalues --    1.65132   1.92802   1.92805   2.22435   2.59129
+  Beta virt. eigenvalues --    2.99669   3.91726   3.91731   4.01311   4.01315
+  Beta virt. eigenvalues --    4.02198   5.00992   5.01184   5.01190   5.01815
+  Beta virt. eigenvalues --    5.02889   5.02890   5.16474
+          Condensed to atoms (all electrons):
+               1          2
+     1  Co  26.521791   0.331060
+     2  H    0.331060   0.816089
+          Atomic-Atomic Spin Densities.
+               1          2
+     1  Co   1.926809   0.036856
+     2  H    0.036856  -0.000522
+ Mulliken charges and spin densities:
+               1          2
+     1  Co   0.147149   1.963665
+     2  H   -0.147149   0.036335
+ Sum of Mulliken charges =   0.00000   2.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  Co   0.000000   2.000000
+ Electronic spatial extent (au):  <R**2>=             44.9044
+ Charge=              0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=              0.0001    Y=              0.0001    Z=              2.5126  Tot=              2.5126
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=            -16.2471   YY=            -16.2471   ZZ=            -17.0473
+   XY=              0.0003   XZ=              0.0001   YZ=              0.0001
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=              0.2667   YY=              0.2667   ZZ=             -0.5334
+   XY=              0.0003   XZ=              0.0001   YZ=              0.0001
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=              0.0370  YYY=              0.0370  ZZZ=              9.0451  XYY=             -0.0370
+  XXY=             -0.0370  XXZ=              2.1357  XZZ=              0.0001  YZZ=              0.0001
+  YYZ=              2.1357  XYZ=              0.0001
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=            -26.0379 YYYY=            -26.0379 ZZZZ=            -45.1786 XXXY=              0.0003
+ XXXZ=              0.1335 YYYX=              0.0003 YYYZ=              0.1335 ZZZX=              0.0002
+ ZZZY=              0.0002 XXYY=             -8.6796 XXZZ=            -11.7802 YYZZ=            -11.7802
+ XXYZ=             -0.1332 YYXZ=             -0.1332 ZZXY=              0.0002
+ N-N= 9.332321812436D+00 E-N=-3.317053953598D+03  KE= 1.381396724252D+03
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  Co(59)            -1.17117    -619.49820    -221.05236    -206.64236
+     2  H(1)              -0.02185     -48.83139     -17.42425     -16.28840
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        0.512003      0.512001     -1.024003
+     2   Atom       -0.080403     -0.080403      0.160806
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.001508      0.000045      0.000045
+     2   Atom        0.000007      0.000004      0.000004
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -1.0240  -129.310   -46.141   -43.133 -0.0000 -0.0000  1.0000
+     1 Co(59) Bbb     0.5105    64.465    23.003    21.503 -0.7069  0.7073 -0.0000
+              Bcc     0.5135    64.846    23.138    21.630  0.7073  0.7069  0.0000
+ 
+              Baa    -0.0804   -42.903   -15.309   -14.311 -0.7071  0.7071  0.0000
+     2 H(1)   Bbb    -0.0804   -42.895   -15.306   -14.308  0.7071  0.7071 -0.0000
+              Bcc     0.1608    85.798    30.615    28.619  0.0000  0.0000  1.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Sun Apr 18 07:52:26 2021, MaxMem=   104857600 cpu:              73.6 elap:               1.6
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l9999.exe)
+
+ Test job not archived.
+ 1\1\GINC-N178\Stability\UM062X\def2TZVP\Co1H1(3)\KNVVV\18-Apr-2021\0\\
+ #P M062X/Def2TZVP Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt)
+  IOp(1/33=1)\\Database calculations.\\0,3\Co,0,0.,0.,0.\H,0,0.,0.,1.53
+ 1\\Version=ES64L-G16RevA.03\HF=-1383.2512605\S2=2.251961\S2-1=0.\S2A=2
+ .003234\RMSD=3.711e-09\Dipole=0.0000201,-0.0000199,-0.9885372\Quadrupo
+ le=0.1982874,0.1982872,-0.3965746,-0.0002426,-0.0000503,0.0000501\PG=C
+ *V [C*(H1Co1)]\\@
+
+
+ SUPPORT THE RIGHT TO ARM BEARS!
+ (ADD A CLAWS TO THE BILL OF RIGHTS)
+ Job cpu time:       0 days  1 hours 33 minutes  9.6 seconds.
+ Elapsed time:       0 days  0 hours  2 minutes  0.6 seconds.
+ File lengths (MBytes):  RWF=     45 Int=      0 D2E=      0 Chk=      2 Scr=      1
+ Normal termination of Gaussian 16 at Sun Apr 18 07:52:26 2021.

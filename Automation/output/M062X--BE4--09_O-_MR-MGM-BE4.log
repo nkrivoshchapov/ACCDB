@@ -1,0 +1,2443 @@
+ Entering Gaussian System, Link 0=/opt/g16avx/g16
+ Input=M062X--BE4--09_O-_MR-MGM-BE4.gjf
+ Output=M062X--BE4--09_O-_MR-MGM-BE4.log
+ Initial command:
+ /opt/g16avx/l1.exe "/scratch/gaussian/Gau-30666.inp" -scrdir="/scratch/gaussian/"
+ Entering Link 1 = /opt/g16avx/l1.exe PID=     30668.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                20-Apr-2021 
+ ******************************************
+ %nprocshared=24
+ Will use up to   24 processors via shared memory.
+ ----------------------------------------------------------------------
+ #P M062X/GEN Integral=UltraFineGrid scf=(nosymm,xqc,maxconven=155) Sta
+ ble=(RExt, Opt) IOp(1/33=1)
+ ----------------------------------------------------------------------
+ 1/33=1,38=1,172=1/1;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=7,11=2,25=1,30=1,74=-55,75=-5/1,2,3;
+ 4/9=2/1;
+ 5/5=2,8=3,13=1,38=5,85=155/2,8;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 8/6=1,10=90,11=11/1;
+ 9/8=-3,42=1,46=1/14;
+ 5/5=2,8=3,17=40,38=5/8(-2);
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 99/5=1,9=1/99;
+ Leave Link    1 at Tue Apr 20 07:17:14 2021, MaxMem=           0 cpu:               2.0 elap:               0.1
+ (Enter /opt/g16avx/l101.exe)
+ ONIOM data not found on unit 2.
+ ----------------------
+ Database calculations.
+ ----------------------
+ TstMul:  ICh=    -1
+ TstMul:  Mul=     2
+ TstMul:  ICh=    -1
+ TstMul:  Mul=     2
+ Symbolic Z-matrix:
+ Charge = -1 Multiplicity = 2
+ O                     0.        0.        0. 
+ 
+ RdStrC is calling ZToCFu for IStruc=1 NZ=     1.
+ PrtBox:  NBox=     1 Levels=  0 BoxLen=    8.00 SMaxX=        0.00
+          Shift=            0.000000            0.000000            0.000000
+ Box      1 Number                   0 centers from      1 to      1:
+ After GenITR:
+ ITRead=  0
+ MicOpt= -1
+ ITRead=  0
+ MicOpt= -1
+ NAtoms=      1 NQM=        1 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1
+ IAtWgt=          16
+ AtmWgt=  15.9949146
+ NucSpn=           0
+ AtZEff=  -0.0000000
+ NQMom=    0.0000000
+ NMagM=    0.0000000
+ AtZNuc=   8.0000000
+ No MM parameters found.
+ Leave Link  101 at Tue Apr 20 07:17:15 2021, MaxMem=   104857600 cpu:               4.4 elap:               0.3
+ (Enter /opt/g16avx/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          8           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Stoichiometry    O(1-,2)
+ Framework group  OH[O(O)]
+ Deg. of freedom     0
+ Full point group                 OH      NOp  48
+ Largest Abelian subgroup         D2H     NOp   8
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          8           0        0.000000    0.000000    0.000000
+ ---------------------------------------------------------------------
+ Leave Link  202 at Tue Apr 20 07:17:17 2021, MaxMem=   104857600 cpu:              29.7 elap:               1.9
+ (Enter /opt/g16avx/l301.exe)
+ General basis read from cards:  (5D, 7F)
+ Centers:       1
+ S 12 1.00
+     Exponent=  6.1420000000D+04 Coefficients=  9.0000000000D-05
+     Exponent=  9.1990000000D+03 Coefficients=  6.9800000000D-04
+     Exponent=  2.0910000000D+03 Coefficients=  3.6640000000D-03
+     Exponent=  5.9090000000D+02 Coefficients=  1.5218000000D-02
+     Exponent=  1.9230000000D+02 Coefficients=  5.2423000000D-02
+     Exponent=  6.9320000000D+01 Coefficients=  1.4592100000D-01
+     Exponent=  2.6970000000D+01 Coefficients=  3.0525800000D-01
+     Exponent=  1.1100000000D+01 Coefficients=  3.9850800000D-01
+     Exponent=  4.6820000000D+00 Coefficients=  2.1698000000D-01
+     Exponent=  1.4280000000D+00 Coefficients=  1.7594000000D-02
+     Exponent=  5.5470000000D-01 Coefficients= -2.5020000000D-03
+     Exponent=  2.0670000000D-01 Coefficients=  9.5400000000D-04
+ S 12 1.00
+     Exponent=  6.1420000000D+04 Coefficients= -2.0000000000D-05
+     Exponent=  9.1990000000D+03 Coefficients= -1.5900000000D-04
+     Exponent=  2.0910000000D+03 Coefficients= -8.2900000000D-04
+     Exponent=  5.9090000000D+02 Coefficients= -3.5080000000D-03
+     Exponent=  1.9230000000D+02 Coefficients= -1.2156000000D-02
+     Exponent=  6.9320000000D+01 Coefficients= -3.6261000000D-02
+     Exponent=  2.6970000000D+01 Coefficients= -8.2992000000D-02
+     Exponent=  1.1100000000D+01 Coefficients= -1.5209000000D-01
+     Exponent=  4.6820000000D+00 Coefficients= -1.1533100000D-01
+     Exponent=  1.4280000000D+00 Coefficients=  2.8897900000D-01
+     Exponent=  5.5470000000D-01 Coefficients=  5.8612800000D-01
+     Exponent=  2.0670000000D-01 Coefficients=  2.7762400000D-01
+ S 1 1.00
+     Exponent=  9.3881000000D+01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  3.4900000000D+01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  1.2974000000D+01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  1.4280000000D+00 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  5.5470000000D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  2.0670000000D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  6.9590000000D-02 Coefficients=  1.0000000000D+00
+ P 6 1.00
+     Exponent=  6.3420000000D+01 Coefficients=  6.0440000000D-03
+     Exponent=  1.4660000000D+01 Coefficients=  4.1799000000D-02
+     Exponent=  4.4590000000D+00 Coefficients=  1.6114300000D-01
+     Exponent=  1.5310000000D+00 Coefficients=  3.5673100000D-01
+     Exponent=  5.3020000000D-01 Coefficients=  4.4830900000D-01
+     Exponent=  1.7500000000D-01 Coefficients=  2.4494000000D-01
+ P 1 1.00
+     Exponent=  1.2614000000D+02 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  4.2730000000D+01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  1.4475000000D+01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  1.5310000000D+00 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  5.3020000000D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  1.7500000000D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  5.3480000000D-02 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  5.7544000000D+01 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  1.4927000000D+01 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  3.7750000000D+00 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  1.3000000000D+00 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  4.4400000000D-01 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  1.5400000000D-01 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  2.6483000000D+01 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  2.6660000000D+00 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  8.5900000000D-01 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  3.2400000000D-01 Coefficients=  1.0000000000D+00
+ G 1 1.00
+     Exponent=  1.8460000000D+00 Coefficients=  1.0000000000D+00
+ G 1 1.00
+     Exponent=  7.1400000000D-01 Coefficients=  1.0000000000D+00
+ ****
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ Ernie:  8 primitive shells out of 56 were deleted.
+ There are    39 symmetry adapted cartesian basis functions of AG  symmetry.
+ There are    12 symmetry adapted cartesian basis functions of B1G symmetry.
+ There are    12 symmetry adapted cartesian basis functions of B2G symmetry.
+ There are    12 symmetry adapted cartesian basis functions of B3G symmetry.
+ There are     4 symmetry adapted cartesian basis functions of AU  symmetry.
+ There are    20 symmetry adapted cartesian basis functions of B1U symmetry.
+ There are    20 symmetry adapted cartesian basis functions of B2U symmetry.
+ There are    20 symmetry adapted cartesian basis functions of B3U symmetry.
+ There are    27 symmetry adapted basis functions of AG  symmetry.
+ There are    10 symmetry adapted basis functions of B1G symmetry.
+ There are    10 symmetry adapted basis functions of B2G symmetry.
+ There are    10 symmetry adapted basis functions of B3G symmetry.
+ There are     4 symmetry adapted basis functions of AU  symmetry.
+ There are    16 symmetry adapted basis functions of B1U symmetry.
+ There are    16 symmetry adapted basis functions of B2U symmetry.
+ There are    16 symmetry adapted basis functions of B3U symmetry.
+   109 basis functions,   168 primitive gaussians,   139 cartesian basis functions
+     5 alpha electrons        4 beta electrons
+       nuclear repulsion energy         0.0000000000 Hartrees.
+ IExCor= 4336 DFT=T Ex+Corr=M062X ExCW=0 ScaHFX=  0.540000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    1 NActive=    1 NUniq=    1 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Tue Apr 20 07:17:17 2021, MaxMem=   104857600 cpu:               2.0 elap:               0.1
+ (Enter /opt/g16avx/l302.exe)
+ NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
+         NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
+ One-electron integrals computed using PRISM.
+ One-electron integral symmetry used in STVInt
+ PrsmSu:  requested number of processors reduced to:   4 ShMem   1 Linda.
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ NBasis=   109 RedAO= T EigKep=  4.43D-04  NBF=    27    10    10    10     4    16    16    16
+ NBsUse=   109 1.00D-06 EigRej= -1.00D+00 NBFU=    27    10    10    10     4    16    16    16
+ Precomputing XC quadrature grid using
+ IXCGrd= 4 IRadAn=           5 IRanWt=          -1 IRanGd=           0 AccXCQ= 0.00D+00.
+ Generated NRdTot=       0 NPtTot=           0 NUsed=           0 NTot=          32
+ NSgBfM=   139   139   139   139   139 MxSgAt=     1 MxSgA2=     1.
+ Leave Link  302 at Tue Apr 20 07:18:04 2021, MaxMem=   104857600 cpu:             766.2 elap:              47.6
+ (Enter /opt/g16avx/l303.exe)
+ DipDrv:  MaxL=1.
+ Leave Link  303 at Tue Apr 20 07:18:06 2021, MaxMem=   104857600 cpu:              27.5 elap:               1.8
+ (Enter /opt/g16avx/l401.exe)
+ SCF N**3 symmetry information disabled.
+ ExpMin= 5.35D-02 ExpMax= 6.14D+04 ExpMxC= 5.91D+02 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
+ Harris functional with IExCor= 1009 and IRadAn=       5 diagonalized for initial guess.
+ HarFok:  IExCor= 1009 AccDes= 0.00D+00 IRadAn=         5 IDoV= 1 UseB2=F ITyADJ=14
+ ICtDFT=  3500011 ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=           0
+         NFxFlg=           0 DoJE=T BraDBF=F KetDBF=T FulRan=T
+         wScrn=  0.000000 ICntrl=       500 IOpCl=  0 I1Cent=   200000004 NGrid=           0
+         NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ DSYEVD-2 returned Info=         167 IAlg= 4 N=   109 NDim=   109 NE2=      961608 trying  DSYEV.
+ Harris En= -75.2475514289529    
+ JPrj=0 DoOrth=F DoCkMO=F.
+ Initial guess orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G) (A1G) (T1U) (T1U) (T1U)
+       Virtual   (A1G) (T1U) (T1U) (T1U) (T2G) (T2G) (T2G) (EG)
+                 (EG) (T1U) (T1U) (T1U) (A1G) (T2U) (T2U) (T2U)
+                 (A2U) (T1U) (T1U) (T1U) (T2G) (T2G) (T2G) (EG)
+                 (EG) (T1U) (T1U) (T1U) (A1G) (T1G) (T1G) (T1G)
+                 (T2G) (T2G) (T2G) (EG) (EG) (A1G) (T2U) (T2U)
+                 (T2U) (A2U) (T1U) (T1U) (T1U) (T2G) (T2G) (T2G)
+                 (EG) (EG) (T1U) (T1U) (T1U) (T1G) (T1G) (T1G)
+                 (T2G) (T2G) (T2G) (EG) (EG) (A1G) (T2U) (T2U)
+                 (T2U) (A2U) (T1U) (T1U) (T1U) (T2G) (T2G) (T2G)
+                 (EG) (EG) (A1G) (T1U) (T1U) (T1U) (T2G) (T2G)
+                 (T2G) (EG) (EG) (A1G) (?A) (?A) (?A) (?A) (?A)
+                 (?A) (?A) (T1U) (T1U) (T1U) (?B) (?B) (?B) (?B)
+                 (?B) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Beta  Orbitals:
+       Occupied  (A1G) (A1G) (T1U) (T1U)
+       Virtual   (T1U) (A1G) (T1U) (T1U) (T1U) (T2G) (T2G) (T2G)
+                 (EG) (EG) (T1U) (T1U) (T1U) (A1G) (T2U) (T2U)
+                 (T2U) (A2U) (T1U) (T1U) (T1U) (T2G) (T2G) (T2G)
+                 (EG) (EG) (T1U) (T1U) (T1U) (A1G) (T1G) (T1G)
+                 (T1G) (T2G) (T2G) (T2G) (EG) (EG) (A1G) (T2U)
+                 (T2U) (T2U) (A2U) (T1U) (T1U) (T1U) (T2G) (T2G)
+                 (T2G) (EG) (EG) (T1U) (T1U) (T1U) (T1G) (T1G)
+                 (T1G) (T2G) (T2G) (T2G) (EG) (EG) (A1G) (T2U)
+                 (T2U) (T2U) (A2U) (T1U) (T1U) (T1U) (T2G) (T2G)
+                 (T2G) (EG) (EG) (A1G) (T1U) (T1U) (T1U) (T2G)
+                 (T2G) (T2G) (EG) (EG) (A1G) (?A) (?A) (?A) (?A)
+                 (?A) (?A) (?A) (T1U) (T1U) (T1U) (?B) (?B) (?B)
+                 (?B) (?B) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ Leave Link  401 at Tue Apr 20 07:18:38 2021, MaxMem=   104857600 cpu:             517.5 elap:              32.3
+ (Enter /opt/g16avx/l502.exe)
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=45120993.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   5995 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ CoulSu:  requested number of processors reduced to:  19 ShMem   1 Linda.
+ UHF open shell SCF:
+ Using DIIS extrapolation, IDIIS=  1040.
+ NGot=   104857600 LenX=   100202785 LenY=   100183023
+ Requested convergence on RMS density matrix=1.00D-08 within 155 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+ Integral accuracy reduced to 1.0D-05 until final iterations.
+
+ Cycle   1  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.0240961519772    
+ DIIS: error= 1.06D-01 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin= -75.0240961519772     IErMin= 1 ErrMin= 1.06D-01
+ ErrMax= 1.06D-01  0.00D+00 EMaxC= 1.00D-01 BMatC= 8.01D-01 BMatP= 8.01D-01
+ IDIUse=3 WtCom= 0.00D+00 WtEn= 1.00D+00
+ Coeff-Com:  0.100D+01
+ Coeff-En:   0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.249 Goal=   None    Shift=    0.000
+ Gap=     0.327 Goal=   None    Shift=    0.000
+ GapD=    0.249 DampG=1.000 DampE=0.250 DampFc=0.2500 IDamp=-1.
+ Damping current iteration by 2.50D-01
+ RMSDP=8.71D-03 MaxDP=5.13D-01              OVMax= 4.09D-01
+
+ Cycle   2  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.0527901755732     Delta-E=       -0.028694023596 Rises=F Damp=T
+ DIIS: error= 7.94D-02 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin= -75.0527901755732     IErMin= 2 ErrMin= 7.94D-02
+ ErrMax= 7.94D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.84D-01 BMatP= 8.01D-01
+ IDIUse=3 WtCom= 2.06D-01 WtEn= 7.94D-01
+ Coeff-Com: -0.745D+00 0.175D+01
+ Coeff-En:   0.000D+00 0.100D+01
+ Coeff:     -0.153D+00 0.115D+01
+ Gap=     0.313 Goal=   None    Shift=    0.000
+ Gap=     0.196 Goal=   None    Shift=    0.000
+ RMSDP=2.08D-03 MaxDP=1.28D-01 DE=-2.87D-02 OVMax= 2.32D-01
+
+ Cycle   3  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1184276147014     Delta-E=       -0.065637439128 Rises=F Damp=F
+ DIIS: error= 1.54D-02 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1184276147014     IErMin= 3 ErrMin= 1.54D-02
+ ErrMax= 1.54D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.07D-02 BMatP= 2.84D-01
+ IDIUse=3 WtCom= 8.46D-01 WtEn= 1.54D-01
+ Coeff-Com:  0.429D+00-0.563D+00 0.113D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.363D+00-0.477D+00 0.111D+01
+ Gap=     0.332 Goal=   None    Shift=    0.000
+ Gap=     0.230 Goal=   None    Shift=    0.000
+ RMSDP=7.05D-04 MaxDP=4.84D-02 DE=-6.56D-02 OVMax= 1.98D-02
+
+ Cycle   4  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1218925625312     Delta-E=       -0.003464947830 Rises=F Damp=F
+ DIIS: error= 1.94D-03 at cycle   4 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1218925625312     IErMin= 4 ErrMin= 1.94D-03
+ ErrMax= 1.94D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.22D-04 BMatP= 2.07D-02
+ IDIUse=3 WtCom= 9.81D-01 WtEn= 1.94D-02
+ Coeff-Com:  0.859D-01-0.119D+00 0.156D+00 0.877D+00
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.842D-01-0.117D+00 0.153D+00 0.879D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.228 Goal=   None    Shift=    0.000
+ RMSDP=9.33D-05 MaxDP=5.73D-03 DE=-3.46D-03 OVMax= 3.65D-03
+
+ Cycle   5  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219405036643     Delta-E=       -0.000047941133 Rises=F Damp=F
+ DIIS: error= 1.06D-03 at cycle   5 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -75.1219405036643     IErMin= 5 ErrMin= 1.06D-03
+ ErrMax= 1.06D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.20D-05 BMatP= 2.22D-04
+ IDIUse=3 WtCom= 9.89D-01 WtEn= 1.06D-02
+ Coeff-Com: -0.286D-02 0.490D-02-0.470D-01-0.447D+00 0.149D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:     -0.283D-02 0.485D-02-0.465D-01-0.443D+00 0.149D+01
+ Gap=     0.342 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.35D-05 MaxDP=5.49D-03 DE=-4.79D-05 OVMax= 3.29D-03
+
+ Cycle   6  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219607882962     Delta-E=       -0.000020284632 Rises=F Damp=F
+ DIIS: error= 1.31D-04 at cycle   6 NSaved=   6.
+ NSaved= 6 IEnMin= 6 EnMin= -75.1219607882962     IErMin= 6 ErrMin= 1.31D-04
+ ErrMax= 1.31D-04  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.01D-06 BMatP= 6.20D-05
+ IDIUse=3 WtCom= 9.99D-01 WtEn= 1.31D-03
+ Coeff-Com: -0.782D-02 0.104D-01 0.686D-03 0.122D+00-0.606D+00 0.148D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:     -0.781D-02 0.104D-01 0.685D-03 0.122D+00-0.605D+00 0.148D+01
+ Gap=     0.342 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.35D-05 MaxDP=1.44D-03 DE=-2.03D-05 OVMax= 8.16D-04
+
+ Cycle   7  Pass 0  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219617485252     Delta-E=       -0.000000960229 Rises=F Damp=F
+ DIIS: error= 8.93D-05 at cycle   7 NSaved=   7.
+ NSaved= 7 IEnMin= 7 EnMin= -75.1219617485252     IErMin= 7 ErrMin= 8.93D-05
+ ErrMax= 8.93D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 5.05D-07 BMatP= 1.01D-06
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.133D-02 0.170D-02-0.721D-03 0.969D-02 0.569D-01-0.413D+00
+ Coeff-Com:  0.135D+01
+ Coeff:     -0.133D-02 0.170D-02-0.721D-03 0.969D-02 0.569D-01-0.413D+00
+ Coeff:      0.135D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.92D-06 MaxDP=3.63D-04 DE=-9.60D-07 OVMax= 2.72D-04
+
+ Initial convergence to 1.0D-05 achieved.  Increase integral accuracy.
+ Cycle   8  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624567806     Delta-E=       -0.000000708255 Rises=F Damp=F
+ DIIS: error= 4.02D-05 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin= -75.1219624567806     IErMin= 1 ErrMin= 4.02D-05
+ ErrMax= 4.02D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.64D-07 BMatP= 1.64D-07
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.92D-06 MaxDP=3.63D-04 DE=-7.08D-07 OVMax= 1.03D-04
+
+ Cycle   9  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624669843     Delta-E=       -0.000000010204 Rises=F Damp=F
+ DIIS: error= 1.84D-05 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin= -75.1219624669843     IErMin= 2 ErrMin= 1.84D-05
+ ErrMax= 1.84D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.79D-08 BMatP= 1.64D-07
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.186D+00 0.814D+00
+ Coeff:      0.186D+00 0.814D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.52D-06 MaxDP=1.02D-04 DE=-1.02D-08 OVMax= 5.89D-05
+
+ Cycle  10  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624681008     Delta-E=       -0.000000001117 Rises=F Damp=F
+ DIIS: error= 1.69D-05 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624681008     IErMin= 3 ErrMin= 1.69D-05
+ ErrMax= 1.69D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.43D-08 BMatP= 2.79D-08
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.232D-01 0.486D+00 0.537D+00
+ Coeff:     -0.232D-01 0.486D+00 0.537D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.43D-07 MaxDP=5.20D-05 DE=-1.12D-09 OVMax= 3.22D-05
+
+ Cycle  11  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624726590     Delta-E=       -0.000000004558 Rises=F Damp=F
+ DIIS: error= 1.20D-06 at cycle   4 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624726590     IErMin= 4 ErrMin= 1.20D-06
+ ErrMax= 1.20D-06  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.61D-11 BMatP= 2.43D-08
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.891D-02-0.275D+00-0.286D+00 0.155D+01
+ Coeff:      0.891D-02-0.275D+00-0.286D+00 0.155D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.81D-07 MaxDP=1.14D-05 DE=-4.56D-09 OVMax= 1.01D-05
+
+ Cycle  12  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727398     Delta-E=       -0.000000000081 Rises=F Damp=F
+ DIIS: error= 3.11D-07 at cycle   5 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -75.1219624727398     IErMin= 5 ErrMin= 3.11D-07
+ ErrMax= 3.11D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.88D-12 BMatP= 6.61D-11
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.222D-02 0.772D-01 0.836D-01-0.582D+00 0.142D+01
+ Coeff:     -0.222D-02 0.772D-01 0.836D-01-0.582D+00 0.142D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.71D-08 MaxDP=3.68D-06 DE=-8.08D-11 OVMax= 2.54D-06
+
+ Cycle  13  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727462     Delta-E=       -0.000000000006 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle   6 NSaved=   6.
+ NSaved= 6 IEnMin= 6 EnMin= -75.1219624727462     IErMin= 6 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.02D-12 BMatP= 4.88D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.146D-03-0.141D-01-0.169D-01 0.195D+00-0.803D+00 0.164D+01
+ Coeff:      0.146D-03-0.141D-01-0.169D-01 0.195D+00-0.803D+00 0.164D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.59D-08 MaxDP=2.14D-06 DE=-6.41D-12 OVMax= 2.80D-06
+
+ Cycle  14  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727493     Delta-E=       -0.000000000003 Rises=F Damp=F
+ DIIS: error= 2.29D-07 at cycle   7 NSaved=   7.
+ NSaved= 7 IEnMin= 7 EnMin= -75.1219624727493     IErMin= 7 ErrMin= 2.29D-07
+ ErrMax= 2.29D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.67D-13 BMatP= 1.02D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.978D-04 0.153D-02 0.276D-02-0.634D-03 0.479D-01-0.514D+00
+ Coeff-Com:  0.146D+01
+ Coeff:     -0.978D-04 0.153D-02 0.276D-02-0.634D-03 0.479D-01-0.514D+00
+ Coeff:      0.146D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.24D-08 MaxDP=2.08D-06 DE=-3.04D-12 OVMax= 2.85D-06
+
+ Cycle  15  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727520     Delta-E=       -0.000000000003 Rises=F Damp=F
+ DIIS: error= 2.29D-07 at cycle   8 NSaved=   8.
+ NSaved= 8 IEnMin= 8 EnMin= -75.1219624727520     IErMin= 8 ErrMin= 2.29D-07
+ ErrMax= 2.29D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.55D-13 BMatP= 6.67D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.162D-04-0.967D-03 0.209D-02-0.371D-02 0.144D+00-0.112D+01
+ Coeff-Com:  0.422D+01-0.225D+01
+ Coeff:      0.162D-04-0.967D-03 0.209D-02-0.371D-02 0.144D+00-0.112D+01
+ Coeff:      0.422D+01-0.225D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.01D-08 MaxDP=3.74D-06 DE=-2.73D-12 OVMax= 5.15D-06
+
+ Cycle  16  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727471     Delta-E=        0.000000000005 Rises=F Damp=F
+ DIIS: error= 2.29D-07 at cycle   9 NSaved=   9.
+ NSaved= 9 IEnMin= 8 EnMin= -75.1219624727520     IErMin= 9 ErrMin= 2.29D-07
+ ErrMax= 2.29D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.48D-13 BMatP= 6.55D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.230D-03 0.740D-02 0.772D-02-0.506D-01 0.214D+00-0.697D+00
+ Coeff-Com:  0.403D-01-0.589D+01 0.737D+01
+ Coeff:     -0.230D-03 0.740D-02 0.772D-02-0.506D-01 0.214D+00-0.697D+00
+ Coeff:      0.403D-01-0.589D+01 0.737D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.23D-07 MaxDP=2.09D-05 DE= 4.89D-12 OVMax= 2.86D-05
+
+ Cycle  17  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727197     Delta-E=        0.000000000027 Rises=F Damp=F
+ DIIS: error= 2.28D-07 at cycle  10 NSaved=  10.
+ NSaved=10 IEnMin= 8 EnMin= -75.1219624727520     IErMin=10 ErrMin= 2.28D-07
+ ErrMax= 2.28D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.42D-13 BMatP= 6.48D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved= 10 BigCof=   13.60 CofMax=   10.00 Det=-4.27D-17
+ Inversion failed.  Reducing to  9 matrices.
+ Large coefficients: NSaved=  9 BigCof=   10.32 CofMax=   10.00 Det=-5.05D-17
+ Inversion failed.  Reducing to  8 matrices.
+ Coeff-Com:  0.205D-03-0.388D-02 0.132D+00-0.755D+00 0.114D+01-0.662D+01
+ Coeff-Com:  0.842D+01-0.131D+01
+ Coeff:      0.205D-03-0.388D-02 0.132D+00-0.755D+00 0.114D+01-0.662D+01
+ Coeff:      0.842D+01-0.131D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=         219 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ RMSDP=2.82D-07 MaxDP=2.65D-05 DE= 2.74D-11 OVMax= 3.62D-05
+
+ Cycle  18  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624727543     Delta-E=       -0.000000000035 Rises=F Damp=F
+ DIIS: error= 2.29D-07 at cycle  11 NSaved=   9.
+ NSaved= 9 IEnMin= 9 EnMin= -75.1219624727543     IErMin= 8 ErrMin= 2.28D-07
+ ErrMax= 2.29D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.42D-13 BMatP= 6.42D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.389D-03 0.306D-02 0.742D-01-0.533D+00 0.412D+00-0.496D+01
+ Coeff-Com:  0.501D+01-0.354D+01 0.453D+01
+ Coeff:      0.389D-03 0.306D-02 0.742D-01-0.533D+00 0.412D+00-0.496D+01
+ Coeff:      0.501D+01-0.354D+01 0.453D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ RMSDP=8.20D-07 MaxDP=7.69D-05 DE=-3.45D-11 OVMax= 1.05D-04
+
+ Cycle  19  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624728549     Delta-E=       -0.000000000101 Rises=F Damp=F
+ DIIS: error= 2.29D-07 at cycle  12 NSaved=  10.
+ NSaved=10 IEnMin=10 EnMin= -75.1219624728549     IErMin= 8 ErrMin= 2.28D-07
+ ErrMax= 2.29D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.42D-13 BMatP= 6.42D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved= 10 BigCof=   26.25 CofMax=   10.00 Det=-2.25D-18
+ Inversion failed.  Reducing to  9 matrices.
+ Large coefficients: NSaved=  9 BigCof=   23.41 CofMax=   10.00 Det=-2.42D-18
+ Inversion failed.  Reducing to  8 matrices.
+ Coeff-Com:  0.936D-01-0.536D+00 0.324D-01-0.593D+01 0.708D+01-0.471D+01
+ Coeff-Com:  0.812D+01-0.316D+01
+ Coeff:      0.936D-01-0.536D+00 0.324D-01-0.593D+01 0.708D+01-0.471D+01
+ Coeff:      0.812D+01-0.316D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.35D-06 MaxDP=2.20D-04 DE=-1.01D-10 OVMax= 3.02D-04
+
+ Cycle  20  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624725668     Delta-E=        0.000000000288 Rises=F Damp=F
+ DIIS: error= 2.28D-07 at cycle  13 NSaved=   9.
+ NSaved= 9 IEnMin= 8 EnMin= -75.1219624728549     IErMin= 9 ErrMin= 2.28D-07
+ ErrMax= 2.28D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.42D-13 BMatP= 6.42D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  9 BigCof=   12.74 CofMax=   10.00 Det=-7.08D-18
+ Inversion failed.  Reducing to  8 matrices.
+ Coeff-Com:  0.110D+00-0.687D+00 0.103D+01-0.635D+01 0.816D+01-0.153D+01
+ Coeff-Com: -0.207D+00 0.482D+00
+ Coeff:      0.110D+00-0.687D+00 0.103D+01-0.635D+01 0.816D+01-0.153D+01
+ Coeff:     -0.207D+00 0.482D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.66D-07 MaxDP=2.49D-05 DE= 2.88D-10 OVMax= 3.41D-05
+
+ Cycle  21  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624725994     Delta-E=       -0.000000000033 Rises=F Damp=F
+ DIIS: error= 2.28D-07 at cycle  14 NSaved=   9.
+ NSaved= 9 IEnMin= 7 EnMin= -75.1219624728549     IErMin= 8 ErrMin= 2.28D-07
+ ErrMax= 2.28D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.41D-13 BMatP= 6.42D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.107D+00-0.694D+00 0.116D+01-0.654D+01 0.863D+01-0.947D+01
+ Coeff-Com:  0.401D+01-0.857D+00 0.465D+01
+ Coeff:      0.107D+00-0.694D+00 0.116D+01-0.654D+01 0.863D+01-0.947D+01
+ Coeff:      0.401D+01-0.857D+00 0.465D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.12D-07 MaxDP=3.86D-05 DE=-3.25D-11 OVMax= 5.29D-05
+
+ Cycle  22  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624725490     Delta-E=        0.000000000050 Rises=F Damp=F
+ DIIS: error= 2.28D-07 at cycle  15 NSaved=  10.
+ NSaved=10 IEnMin= 7 EnMin= -75.1219624728549     IErMin=10 ErrMin= 2.28D-07
+ ErrMax= 2.28D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.41D-13 BMatP= 6.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved= 10 BigCof=  803.41 CofMax=   10.00 Det=-5.55D-19
+ Inversion failed.  Reducing to  9 matrices.
+ Large coefficients: NSaved=  9 BigCof=   85.77 CofMax=   10.00 Det=-1.59D-18
+ Inversion failed.  Reducing to  8 matrices.
+ Large coefficients: NSaved=  8 BigCof=   88.31 CofMax=   10.00 Det=-1.59D-18
+ Inversion failed.  Reducing to  7 matrices.
+ Large coefficients: NSaved=  7 BigCof=   53.62 CofMax=   10.00 Det=-1.99D-18
+ Inversion failed.  Reducing to  6 matrices.
+ Large coefficients: NSaved=  6 BigCof=   44.09 CofMax=   10.00 Det=-2.49D-18
+ Inversion failed.  Reducing to  5 matrices.
+ Large coefficients: NSaved=  5 BigCof=   54.19 CofMax=   10.00 Det=-2.54D-18
+ Inversion failed.  Reducing to  4 matrices.
+ Large coefficients: NSaved=  4 BigCof=   64.64 CofMax=   10.00 Det=-3.03D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.930D+00 0.146D+01 0.473D+00
+ Coeff:     -0.930D+00 0.146D+01 0.473D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.71D-06 MaxDP=1.60D-04 DE= 5.04D-11 OVMax= 2.19D-04
+
+ Cycle  23  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624723398     Delta-E=        0.000000000209 Rises=F Damp=F
+ DIIS: error= 2.28D-07 at cycle  16 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624728549     IErMin= 3 ErrMin= 2.28D-07
+ ErrMax= 2.28D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.70D-13 BMatP= 6.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.709D+00 0.553D+01-0.317D+01-0.207D+01
+ Coeff:      0.709D+00 0.553D+01-0.317D+01-0.207D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=9.31D-06 MaxDP=8.72D-04 DE= 2.09D-10 OVMax= 1.19D-03
+
+ Cycle  24  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624734818     Delta-E=       -0.000000001142 Rises=F Damp=F
+ DIIS: error= 2.30D-07 at cycle  17 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -75.1219624734818     IErMin= 3 ErrMin= 2.28D-07
+ ErrMax= 2.30D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 8.01D-13 BMatP= 6.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.334D+00-0.355D+01 0.667D+01-0.278D+01 0.997D+00
+ Coeff:     -0.334D+00-0.355D+01 0.667D+01-0.278D+01 0.997D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.45D-06 MaxDP=2.29D-04 DE=-1.14D-09 OVMax= 3.14D-04
+
+ Cycle  25  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624737833     Delta-E=       -0.000000000301 Rises=F Damp=F
+ DIIS: error= 2.30D-07 at cycle  18 NSaved=   6.
+ NSaved= 6 IEnMin= 6 EnMin= -75.1219624737833     IErMin= 3 ErrMin= 2.28D-07
+ ErrMax= 2.30D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.58D-13 BMatP= 6.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  6 BigCof=   39.94 CofMax=   10.00 Det=-8.29D-18
+ Inversion failed.  Reducing to  5 matrices.
+ Large coefficients: NSaved=  5 BigCof=   36.37 CofMax=   10.00 Det=-8.32D-18
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.162D+01 0.279D+01 0.535D+00-0.706D+00
+ Coeff:     -0.162D+01 0.279D+01 0.535D+00-0.706D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.60D-05 MaxDP=1.50D-03 DE=-3.01D-10 OVMax= 2.05D-03
+
+ Cycle  26  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624718268     Delta-E=        0.000000001956 Rises=F Damp=F
+ DIIS: error= 2.28D-07 at cycle  19 NSaved=   5.
+ NSaved= 5 IEnMin= 4 EnMin= -75.1219624737833     IErMin= 5 ErrMin= 2.28D-07
+ ErrMax= 2.28D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 8.97D-13 BMatP= 6.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.173D+01 0.277D+01 0.454D+00-0.280D+00-0.221D+00
+ Coeff:     -0.173D+01 0.277D+01 0.454D+00-0.280D+00-0.221D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.70D-06 MaxDP=4.41D-04 DE= 1.96D-09 OVMax= 6.03D-04
+
+ Cycle  27  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624724012     Delta-E=       -0.000000000574 Rises=F Damp=F
+ DIIS: error= 2.29D-07 at cycle  20 NSaved=   6.
+ NSaved= 6 IEnMin= 4 EnMin= -75.1219624737833     IErMin= 5 ErrMin= 2.28D-07
+ ErrMax= 2.29D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.82D-13 BMatP= 6.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  6 BigCof=   28.94 CofMax=   10.00 Det=-1.30D-16
+ Inversion failed.  Reducing to  5 matrices.
+ Large coefficients: NSaved=  5 BigCof=   16.53 CofMax=   10.00 Det=-2.00D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.759D+00 0.312D+01-0.154D+01 0.178D+00
+ Coeff:     -0.759D+00 0.312D+01-0.154D+01 0.178D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.57D-05 MaxDP=3.34D-03 DE=-5.74D-10 OVMax= 4.58D-03
+
+ Cycle  28  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624768060     Delta-E=       -0.000000004405 Rises=F Damp=F
+ DIIS: error= 5.43D-07 at cycle  21 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.28D-07
+ ErrMax= 5.43D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.00D-11 BMatP= 6.82D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof=  112.52 CofMax=   10.00 Det=-1.31D-17
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.908D+00 0.369D+01-0.167D+01-0.118D+00
+ Coeff:     -0.908D+00 0.369D+01-0.167D+01-0.118D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.31D-06 MaxDP=5.89D-04 DE=-4.40D-09 OVMax= 8.08D-04
+
+ Cycle  29  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624760247     Delta-E=        0.000000000781 Rises=F Damp=F
+ DIIS: error= 3.49D-07 at cycle  22 NSaved=   5.
+ NSaved= 5 IEnMin= 4 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.29D-07
+ ErrMax= 3.49D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.25D-11 BMatP= 6.82D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof=   57.04 CofMax=   10.00 Det=-1.48D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Large coefficients: NSaved=  4 BigCof=   26.67 CofMax=   10.00 Det=-4.12D-16
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   10.23 CofMax=   10.00 Det=-9.45D-16
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com: -0.173D+01 0.273D+01
+ Coeff:     -0.173D+01 0.273D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.09D-05 MaxDP=1.02D-03 DE= 7.81D-10 OVMax= 1.40D-03
+
+ Cycle  30  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624746722     Delta-E=        0.000000001352 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  23 NSaved=   3.
+ NSaved= 3 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.82D-12 BMatP= 1.25D-11
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.349D+01 0.595D+01-0.147D+01
+ Coeff:     -0.349D+01 0.595D+01-0.147D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.94D-06 MaxDP=4.62D-04 DE= 1.35D-09 OVMax= 6.33D-04
+
+ Cycle  31  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624752831     Delta-E=       -0.000000000611 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  24 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.63D-12 BMatP= 1.82D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.462D+01 0.734D+01-0.347D+01 0.175D+01
+ Coeff:     -0.462D+01 0.734D+01-0.347D+01 0.175D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.36D-06 MaxDP=4.08D-04 DE=-6.11D-10 OVMax= 5.59D-04
+
+ Cycle  32  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758235     Delta-E=       -0.000000000540 Rises=F Damp=F
+ DIIS: error= 3.08D-07 at cycle  25 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 3.08D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 9.69D-12 BMatP= 1.82D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.341D+01 0.110D+00-0.352D+01 0.161D+01 0.621D+01
+ Coeff:     -0.341D+01 0.110D+00-0.352D+01 0.161D+01 0.621D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.21D-06 MaxDP=1.13D-04 DE=-5.40D-10 OVMax= 1.55D-04
+
+ Cycle  33  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624756736     Delta-E=        0.000000000150 Rises=F Damp=F
+ DIIS: error= 2.85D-07 at cycle  26 NSaved=   6.
+ NSaved= 6 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.85D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 8.17D-12 BMatP= 1.82D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  6 BigCof=   24.53 CofMax=   10.00 Det=-4.33D-17
+ Inversion failed.  Reducing to  5 matrices.
+ Large coefficients: NSaved=  5 BigCof=   19.63 CofMax=   10.00 Det=-4.54D-17
+ Inversion failed.  Reducing to  4 matrices.
+ Large coefficients: NSaved=  4 BigCof=   19.15 CofMax=   10.00 Det=-4.72D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.153D+01 0.508D+01-0.255D+01
+ Coeff:     -0.153D+01 0.508D+01-0.255D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.80D-06 MaxDP=7.29D-04 DE= 1.50D-10 OVMax= 1.00D-03
+
+ Cycle  34  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624747085     Delta-E=        0.000000000965 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  27 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.75D-12 BMatP= 8.17D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.241D+01 0.766D+01-0.328D+01-0.976D+00
+ Coeff:     -0.241D+01 0.766D+01-0.328D+01-0.976D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.70D-06 MaxDP=2.53D-04 DE= 9.65D-10 OVMax= 3.46D-04
+
+ Cycle  35  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624750426     Delta-E=       -0.000000000334 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  28 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.20D-12 BMatP= 1.75D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof=   18.11 CofMax=   10.00 Det=-1.20D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.244D+01 0.454D+01-0.235D+01 0.125D+01
+ Coeff:     -0.244D+01 0.454D+01-0.235D+01 0.125D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.19D-07 MaxDP=2.99D-05 DE=-3.34D-10 OVMax= 4.09D-05
+
+ Cycle  36  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624750819     Delta-E=       -0.000000000039 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  29 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 5 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.11D-12 BMatP= 1.75D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof=   11.26 CofMax=   10.00 Det=-3.51D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.309D+01 0.801D+01 0.230D+00-0.415D+01
+ Coeff:     -0.309D+01 0.801D+01 0.230D+00-0.415D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.90D-06 MaxDP=4.58D-04 DE=-3.93D-11 OVMax= 6.28D-04
+
+ Cycle  37  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624756896     Delta-E=       -0.000000000608 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  30 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.25D-12 BMatP= 3.20D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof=   19.03 CofMax=   10.00 Det=-1.29D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.332D+01 0.867D+01-0.406D+01-0.301D+00
+ Coeff:     -0.332D+01 0.867D+01-0.406D+01-0.301D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.12D-07 MaxDP=5.71D-05 DE=-6.08D-10 OVMax= 7.85D-05
+
+ Cycle  38  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624756134     Delta-E=        0.000000000076 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  31 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.83D-12 BMatP= 4.11D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof=   15.08 CofMax=   10.00 Det=-2.02D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Coeff-Com: -0.132D+01 0.241D+01-0.604D+00 0.514D+00
+ Coeff:     -0.132D+01 0.241D+01-0.604D+00 0.514D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=8.95D-06 MaxDP=8.37D-04 DE= 7.62D-11 OVMax= 1.15D-03
+
+ Cycle  39  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624745054     Delta-E=        0.000000001108 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  32 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624768060     IErMin= 5 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.89D-12 BMatP= 4.25D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.400D+01 0.813D+01 0.168D+00 0.574D+00-0.387D+01
+ Coeff:     -0.400D+01 0.813D+01 0.168D+00 0.574D+00-0.387D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.90D-05 MaxDP=1.78D-03 DE= 1.11D-09 OVMax= 2.44D-03
+
+ Cycle  40  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624768642     Delta-E=       -0.000000002359 Rises=F Damp=F
+ DIIS: error= 4.26D-07 at cycle  33 NSaved=   6.
+ NSaved= 6 IEnMin= 6 EnMin= -75.1219624768642     IErMin= 5 ErrMin= 2.31D-07
+ ErrMax= 4.26D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.86D-11 BMatP= 1.89D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.560D+01 0.195D+01-0.161D+01 0.833D+00-0.895D+00 0.632D+01
+ Coeff:     -0.560D+01 0.195D+01-0.161D+01 0.833D+00-0.895D+00 0.632D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.01D-05 MaxDP=9.42D-04 DE=-2.36D-09 OVMax= 1.30D-03
+
+ Cycle  41  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624781283     Delta-E=       -0.000000001264 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  34 NSaved=   7.
+ NSaved= 7 IEnMin= 7 EnMin= -75.1219624781283     IErMin= 5 ErrMin= 2.31D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.52D-12 BMatP= 1.89D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  7 BigCof=   13.85 CofMax=   10.00 Det=-8.74D-17
+ Inversion failed.  Reducing to  6 matrices.
+ Large coefficients: NSaved=  6 BigCof=   12.80 CofMax=   10.00 Det=-2.42D-16
+ Inversion failed.  Reducing to  5 matrices.
+ Large coefficients: NSaved=  5 BigCof=   12.85 CofMax=   10.00 Det=-2.44D-16
+ Inversion failed.  Reducing to  4 matrices.
+ Large coefficients: NSaved=  4 BigCof=   12.19 CofMax=   10.00 Det=-2.81D-16
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.663D+01 0.920D+01-0.157D+01
+ Coeff:     -0.663D+01 0.920D+01-0.157D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.30D-05 MaxDP=2.15D-03 DE=-1.26D-09 OVMax= 2.95D-03
+
+ Cycle  42  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624752615     Delta-E=        0.000000002867 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  35 NSaved=   4.
+ NSaved= 4 IEnMin= 3 EnMin= -75.1219624781283     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.01D-12 BMatP= 4.52D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.685D+01 0.950D+01-0.103D+01-0.622D+00
+ Coeff:     -0.685D+01 0.950D+01-0.103D+01-0.622D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.37D-05 MaxDP=1.27D-03 DE= 2.87D-09 OVMax= 1.75D-03
+
+ Cycle  43  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624769595     Delta-E=       -0.000000001698 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  36 NSaved=   5.
+ NSaved= 5 IEnMin= 3 EnMin= -75.1219624781283     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.02D-12 BMatP= 4.01D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.685D+01 0.950D+01-0.103D+01-0.623D+00 0.210D-02
+ Coeff:     -0.685D+01 0.950D+01-0.103D+01-0.623D+00 0.210D-02
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.42D-08 MaxDP=1.32D-06 DE=-1.70D-09 OVMax= 1.82D-06
+
+ Cycle  44  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624769612     Delta-E=       -0.000000000002 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  37 NSaved=   6.
+ NSaved= 6 IEnMin= 3 EnMin= -75.1219624781283     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.03D-12 BMatP= 2.02D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  6 BigCof=21789.50 CofMax=   10.00 Det=-1.52D-22
+ Inversion failed.  Reducing to  5 matrices.
+ Large coefficients: NSaved=  5 BigCof= 7080.21 CofMax=   10.00 Det=-4.97D-22
+ Inversion failed.  Reducing to  4 matrices.
+ Large coefficients: NSaved=  4 BigCof= 2447.46 CofMax=   10.00 Det=-6.12D-22
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof= 1185.89 CofMax=   10.00 Det=-8.98D-21
+ Inversion failed.  Reducing to  2 matrices.
+ Large coefficients: NSaved=  2 BigCof=  481.59 CofMax=   10.00 Det=-5.81D-18
+ Coeff-Com:  0.482D+03-0.481D+03
+ Coeff:      0.482D+03-0.481D+03
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.81D-06 MaxDP=6.36D-04 DE=-1.73D-12 OVMax= 8.73D-04
+
+ Cycle  45  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624761137     Delta-E=        0.000000000847 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  38 NSaved=   3.
+ NSaved= 3 IEnMin= 2 EnMin= -75.1219624769612     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.78D-13 BMatP= 2.02D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=  601.82 CofMax=   10.00 Det=-7.25D-20
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com: -0.304D+00 0.130D+01
+ Coeff:     -0.304D+00 0.130D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.06D-06 MaxDP=1.92D-04 DE= 8.47D-10 OVMax= 2.64D-04
+
+ Cycle  46  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758577     Delta-E=        0.000000000256 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  39 NSaved=   3.
+ NSaved= 3 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.13D-13 BMatP= 7.78D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.206D+00 0.801D+00 0.406D+00
+ Coeff:     -0.206D+00 0.801D+00 0.406D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.67D-07 MaxDP=1.56D-05 DE= 2.56D-10 OVMax= 2.14D-05
+
+ Cycle  47  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758370     Delta-E=        0.000000000021 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  40 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.07D-13 BMatP= 7.13D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   24.50 CofMax=   10.00 Det=-1.16D-16
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.464D-01-0.201D+00 0.125D+01
+ Coeff:     -0.464D-01-0.201D+00 0.125D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.40D-07 MaxDP=4.11D-05 DE= 2.07D-11 OVMax= 5.64D-05
+
+ Cycle  48  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757824     Delta-E=        0.000000000055 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  41 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.07D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   44.83 CofMax=   10.00 Det=-4.25D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.499D-01-0.153D+01 0.248D+01
+ Coeff:      0.499D-01-0.153D+01 0.248D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.86D-07 MaxDP=1.74D-05 DE= 5.46D-11 OVMax= 2.39D-05
+
+ Cycle  49  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757592     Delta-E=        0.000000000023 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  42 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.05D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   32.23 CofMax=   10.00 Det=-2.16D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.864D-01-0.104D+01 0.196D+01
+ Coeff:      0.864D-01-0.104D+01 0.196D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.54D-07 MaxDP=6.10D-05 DE= 2.32D-11 OVMax= 8.38D-05
+
+ Cycle  50  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758404     Delta-E=       -0.000000000081 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  43 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   46.70 CofMax=   10.00 Det=-1.99D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.337D-01 0.514D+00 0.452D+00
+ Coeff:      0.337D-01 0.514D+00 0.452D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.87D-08 MaxDP=1.75D-06 DE=-8.12D-11 OVMax= 2.40D-06
+
+ Cycle  51  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758380     Delta-E=        0.000000000002 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  44 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  155.03 CofMax=   10.00 Det=-8.10D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.283D-01 0.363D+00 0.608D+00
+ Coeff:      0.283D-01 0.363D+00 0.608D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.76D-07 MaxDP=2.57D-05 DE= 2.39D-12 OVMax= 3.53D-05
+
+ Cycle  52  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758723     Delta-E=       -0.000000000034 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  45 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624769612     IErMin= 2 ErrMin= 2.33D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof= 3083.57 CofMax=   10.00 Det=-3.00D-20
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   44.49 CofMax=   10.00 Det=-2.89D-18
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.265D+01-0.165D+01
+ Coeff:      0.265D+01-0.165D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.18D-07 MaxDP=6.71D-05 DE=-3.42D-11 OVMax= 9.21D-05
+
+ Cycle  53  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757829     Delta-E=        0.000000000089 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  46 NSaved=   3.
+ NSaved= 3 IEnMin= 2 EnMin= -75.1219624758723     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.377D+01-0.323D+01 0.458D+00
+ Coeff:      0.377D+01-0.323D+01 0.458D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.36D-07 MaxDP=5.94D-05 DE= 8.94D-11 OVMax= 8.15D-05
+
+ Cycle  54  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757041     Delta-E=        0.000000000079 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  47 NSaved=   4.
+ NSaved= 4 IEnMin= 2 EnMin= -75.1219624758723     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.03D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  198.40 CofMax=   10.00 Det=-4.75D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.331D+00-0.327D+00 0.166D+01
+ Coeff:     -0.331D+00-0.327D+00 0.166D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.44D-07 MaxDP=6.01D-05 DE= 7.89D-11 OVMax= 8.25D-05
+
+ Cycle  55  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624756240     Delta-E=        0.000000000080 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  48 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624758723     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.03D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   19.76 CofMax=   10.00 Det=-7.90D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.101D+01-0.907D+01 0.906D+01
+ Coeff:      0.101D+01-0.907D+01 0.906D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.80D-06 MaxDP=3.55D-04 DE= 8.00D-11 OVMax= 4.88D-04
+
+ Cycle  56  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624751521     Delta-E=        0.000000000472 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  49 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624758723     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.06D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   12.50 CofMax=   10.00 Det=-8.64D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.187D+00 0.641D+00 0.171D+00
+ Coeff:      0.187D+00 0.641D+00 0.171D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.54D-06 MaxDP=3.31D-04 DE= 4.72D-10 OVMax= 4.54D-04
+
+ Cycle  57  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624755912     Delta-E=       -0.000000000439 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  50 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624758723     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.03D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  102.73 CofMax=   10.00 Det=-1.10D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.573D+01 0.414D+00 0.631D+01
+ Coeff:     -0.573D+01 0.414D+00 0.631D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.44D-05 MaxDP=1.35D-03 DE=-4.39D-10 OVMax= 1.85D-03
+
+ Cycle  58  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624738081     Delta-E=        0.000000001783 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  51 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624758723     IErMin= 4 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.30D-12 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   66.82 CofMax=   10.00 Det=-1.47D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.514D+01 0.612D+01 0.191D-01
+ Coeff:     -0.514D+01 0.612D+01 0.191D-01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.52D-06 MaxDP=2.36D-04 DE= 1.78D-09 OVMax= 3.24D-04
+
+ Cycle  59  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624741195     Delta-E=       -0.000000000311 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  52 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624758723     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.49D-12 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   85.59 CofMax=   10.00 Det=-1.92D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   53.84 CofMax=   10.00 Det=-2.64D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com: -0.236D+01 0.336D+01
+ Coeff:     -0.236D+01 0.336D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=5.98D-06 MaxDP=5.59D-04 DE=-3.11D-10 OVMax= 7.67D-04
+
+ Cycle  60  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624748589     Delta-E=       -0.000000000739 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  53 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624748589     IErMin= 1 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.86D-13 BMatP= 1.49D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.209D+01 0.291D+01 0.175D+00
+ Coeff:     -0.209D+01 0.291D+01 0.175D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.46D-07 MaxDP=3.23D-05 DE=-7.39D-10 OVMax= 4.44D-05
+
+ Cycle  61  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624749017     Delta-E=       -0.000000000043 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  54 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624749017     IErMin= 1 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.71D-13 BMatP= 7.86D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  420.10 CofMax=   10.00 Det=-7.18D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.303D+00-0.293D+01 0.423D+01
+ Coeff:     -0.303D+00-0.293D+01 0.423D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.94D-06 MaxDP=2.75D-04 DE=-4.28D-11 OVMax= 3.77D-04
+
+ Cycle  62  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624752665     Delta-E=       -0.000000000365 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  55 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624752665     IErMin= 1 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.14D-13 BMatP= 7.71D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  639.05 CofMax=   10.00 Det=-1.53D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.139D+01-0.236D+01 0.196D+01
+ Coeff:      0.139D+01-0.236D+01 0.196D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.37D-06 MaxDP=2.22D-04 DE=-3.65D-10 OVMax= 3.04D-04
+
+ Cycle  63  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624755608     Delta-E=       -0.000000000294 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  56 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624755608     IErMin= 1 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.06D-13 BMatP= 7.14D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  555.02 CofMax=   10.00 Det=-2.61D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.123D+01 0.377D+01-0.154D+01
+ Coeff:     -0.123D+01 0.377D+01-0.154D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.39D-06 MaxDP=2.24D-04 DE=-2.94D-10 OVMax= 3.07D-04
+
+ Cycle  64  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624752638     Delta-E=        0.000000000297 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  57 NSaved=   4.
+ NSaved= 4 IEnMin= 3 EnMin= -75.1219624755608     IErMin= 1 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.17D-13 BMatP= 7.06D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  352.82 CofMax=   10.00 Det=-1.29D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.565D+00 0.191D+01-0.347D+00
+ Coeff:     -0.565D+00 0.191D+01-0.347D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.58D-06 MaxDP=4.28D-04 DE= 2.97D-10 OVMax= 5.87D-04
+
+ Cycle  65  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758320     Delta-E=       -0.000000000568 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  58 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624758320     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.07D-13 BMatP= 7.06D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  115.89 CofMax=   10.00 Det=-4.33D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   28.06 CofMax=   10.00 Det=-2.02D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com: -0.334D+00 0.133D+01
+ Coeff:     -0.334D+00 0.133D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.54D-06 MaxDP=1.44D-04 DE=-5.68D-10 OVMax= 1.98D-04
+
+ Cycle  66  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624760236     Delta-E=       -0.000000000192 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  59 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624760236     IErMin= 1 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.08D-13 BMatP= 7.07D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=   14.26 CofMax=   10.00 Det=-3.23D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Large coefficients: NSaved=  2 BigCof=   12.06 CofMax=   10.00 Det=-4.59D-17
+ Coeff-Com:  0.121D+02-0.111D+02
+ Coeff:      0.121D+02-0.111D+02
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=         219 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.86D-05 MaxDP=1.74D-03 DE=-1.92D-10 OVMax= 2.38D-03
+
+ Cycle  67  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624737232     Delta-E=        0.000000002300 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  60 NSaved=   3.
+ NSaved= 3 IEnMin= 2 EnMin= -75.1219624760236     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.90D-12 BMatP= 7.07D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=   10.69 CofMax=   10.00 Det=-4.21D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.103D+01-0.307D-01
+ Coeff:      0.103D+01-0.307D-01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.92D-05 MaxDP=1.79D-03 DE= 2.30D-09 OVMax= 2.46D-03
+
+ Cycle  68  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624760962     Delta-E=       -0.000000002373 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  61 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624760962     IErMin= 2 ErrMin= 2.31D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.09D-13 BMatP= 7.08D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=   11.55 CofMax=   10.00 Det=-1.39D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com: -0.356D-01 0.104D+01
+ Coeff:     -0.356D-01 0.104D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.95D-07 MaxDP=6.49D-05 DE=-2.37D-09 OVMax= 8.91D-05
+
+ Cycle  69  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624761826     Delta-E=       -0.000000000086 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  62 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624761826     IErMin= 1 ErrMin= 2.31D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.11D-13 BMatP= 7.09D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=   26.70 CofMax=   10.00 Det=-7.96D-18
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.671D+01-0.571D+01
+ Coeff:      0.671D+01-0.571D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.65D-06 MaxDP=4.34D-04 DE=-8.64D-11 OVMax= 5.96D-04
+
+ Cycle  70  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624756049     Delta-E=        0.000000000578 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  63 NSaved=   3.
+ NSaved= 3 IEnMin= 2 EnMin= -75.1219624761826     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.13D-13 BMatP= 7.09D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=  226.80 CofMax=   10.00 Det=-2.52D-18
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.189D+01-0.892D+00
+ Coeff:      0.189D+01-0.892D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=8.81D-06 MaxDP=8.23D-04 DE= 5.78D-10 OVMax= 1.13D-03
+
+ Cycle  71  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624767004     Delta-E=       -0.000000001096 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  64 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624767004     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.44D-13 BMatP= 7.11D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  3 BigCof=  111.21 CofMax=   10.00 Det=-1.25D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.226D+01-0.126D+01
+ Coeff:      0.226D+01-0.126D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.99D-05 MaxDP=1.86D-03 DE=-1.10D-09 OVMax= 2.55D-03
+
+ Cycle  72  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624742353     Delta-E=        0.000000002465 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  65 NSaved=   3.
+ NSaved= 3 IEnMin= 2 EnMin= -75.1219624767004     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.16D-12 BMatP= 7.13D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.303D+01-0.211D+01 0.781D-01
+ Coeff:      0.303D+01-0.211D+01 0.781D-01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=8.38D-06 MaxDP=7.84D-04 DE= 2.47D-09 OVMax= 1.07D-03
+
+ Cycle  73  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624732025     Delta-E=        0.000000001033 Rises=F Damp=F
+ DIIS: error= 2.96D-07 at cycle  66 NSaved=   4.
+ NSaved= 4 IEnMin= 2 EnMin= -75.1219624767004     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.96D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 9.28D-12 BMatP= 7.13D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  101.16 CofMax=   10.00 Det=-1.74D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.401D+01 0.809D+01-0.308D+01
+ Coeff:     -0.401D+01 0.809D+01-0.308D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.55D-05 MaxDP=4.27D-03 DE= 1.03D-09 OVMax= 5.84D-03
+
+ Cycle  74  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624675775     Delta-E=        0.000000005625 Rises=F Damp=F
+ DIIS: error= 2.56D-06 at cycle  67 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624767004     IErMin= 2 ErrMin= 2.31D-07
+ ErrMax= 2.56D-06  0.00D+00 EMaxC= 1.00D-01 BMatC= 6.86D-10 BMatP= 7.44D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   21.08 CofMax=   10.00 Det=-4.74D-16
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   12.18 CofMax=   10.00 Det=-1.33D-15
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.113D+01-0.126D+00
+ Coeff:      0.113D+01-0.126D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=5.13D-05 MaxDP=4.81D-03 DE= 5.62D-09 OVMax= 6.57D-03
+
+ Cycle  75  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624739124     Delta-E=       -0.000000006335 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  68 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.1219624739124     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.52D-12 BMatP= 9.28D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.977D+00-0.119D+00 0.141D+00
+ Coeff:      0.977D+00-0.119D+00 0.141D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.68D-07 MaxDP=4.38D-05 DE=-6.33D-09 OVMax= 6.01D-05
+
+ Cycle  76  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624739702     Delta-E=       -0.000000000058 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  69 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624739702     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.21D-12 BMatP= 3.52D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  102.38 CofMax=   10.00 Det=-1.78D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.707D+00-0.679D+01 0.850D+01
+ Coeff:     -0.707D+00-0.679D+01 0.850D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.60D-06 MaxDP=7.10D-04 DE=-5.79D-11 OVMax= 9.74D-04
+
+ Cycle  77  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624749096     Delta-E=       -0.000000000939 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  70 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624749096     IErMin= 2 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 9.33D-13 BMatP= 3.21D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   22.19 CofMax=   10.00 Det=-3.32D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.818D+00-0.133D+01 0.151D+01
+ Coeff:      0.818D+00-0.133D+01 0.151D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.49D-06 MaxDP=3.26D-04 DE=-9.39D-10 OVMax= 4.48D-04
+
+ Cycle  78  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624753425     Delta-E=       -0.000000000433 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  71 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624753425     IErMin= 1 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.41D-13 BMatP= 9.33D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  279.98 CofMax=   10.00 Det=-2.93D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.160D+01 0.713D+01-0.453D+01
+ Coeff:     -0.160D+01 0.713D+01-0.453D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.14D-06 MaxDP=6.67D-04 DE=-4.33D-10 OVMax= 9.15D-04
+
+ Cycle  79  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624744583     Delta-E=        0.000000000884 Rises=F Damp=F
+ DIIS: error= 2.31D-07 at cycle  72 NSaved=   4.
+ NSaved= 4 IEnMin= 3 EnMin= -75.1219624753425     IErMin= 1 ErrMin= 2.31D-07
+ ErrMax= 2.31D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.59D-12 BMatP= 7.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  180.02 CofMax=   10.00 Det=-6.75D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.135D+00 0.135D+01-0.214D+00
+ Coeff:     -0.135D+00 0.135D+01-0.214D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=9.15D-06 MaxDP=8.55D-04 DE= 8.84D-10 OVMax= 1.17D-03
+
+ Cycle  80  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624755921     Delta-E=       -0.000000001134 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  73 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624755921     IErMin= 3 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.12D-13 BMatP= 7.41D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  274.69 CofMax=   10.00 Det=-6.05D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.212D+01-0.367D+00-0.749D+00
+ Coeff:      0.212D+01-0.367D+00-0.749D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=8.84D-07 MaxDP=8.26D-05 DE=-1.13D-09 OVMax= 1.13D-04
+
+ Cycle  81  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754824     Delta-E=        0.000000000110 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  74 NSaved=   4.
+ NSaved= 4 IEnMin= 3 EnMin= -75.1219624755921     IErMin= 2 ErrMin= 2.31D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.23D-13 BMatP= 7.12D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof= 1428.92 CofMax=   10.00 Det=-1.84D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.524D+00 0.238D+01-0.855D+00
+ Coeff:     -0.524D+00 0.238D+01-0.855D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.71D-06 MaxDP=2.53D-04 DE= 1.10D-10 OVMax= 3.47D-04
+
+ Cycle  82  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758185     Delta-E=       -0.000000000336 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  75 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624758185     IErMin= 1 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.05D-13 BMatP= 7.12D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  605.78 CofMax=   10.00 Det=-1.00D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.165D+01-0.119D+01 0.532D+00
+ Coeff:      0.165D+01-0.119D+01 0.532D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.08D-07 MaxDP=1.94D-05 DE=-3.36D-10 OVMax= 2.67D-05
+
+ Cycle  83  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758444     Delta-E=       -0.000000000026 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  76 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624758444     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.05D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof= 2957.79 CofMax=   10.00 Det=-2.22D-20
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.263D+00 0.383D+00 0.881D+00
+ Coeff:     -0.263D+00 0.383D+00 0.881D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=4.68D-07 MaxDP=4.37D-05 DE=-2.58D-11 OVMax= 6.00D-05
+
+ Cycle  84  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624759025     Delta-E=       -0.000000000058 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  77 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.1219624759025     IErMin= 1 ErrMin= 2.32D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  339.80 CofMax=   10.00 Det=-1.72D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.447D+00 0.725D+00 0.722D+00
+ Coeff:     -0.447D+00 0.725D+00 0.722D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.38D-08 MaxDP=2.23D-06 DE=-5.81D-11 OVMax= 3.05D-06
+
+ Cycle  85  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758996     Delta-E=        0.000000000003 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  78 NSaved=   4.
+ NSaved= 4 IEnMin= 3 EnMin= -75.1219624759025     IErMin= 1 ErrMin= 2.33D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  125.59 CofMax=   10.00 Det=-3.15D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com:  0.401D+00-0.158D+01 0.218D+01
+ Coeff:      0.401D+00-0.158D+01 0.218D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.03D-07 MaxDP=1.90D-05 DE= 2.90D-12 OVMax= 2.60D-05
+
+ Cycle  86  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624758744     Delta-E=        0.000000000025 Rises=F Damp=F
+ DIIS: error= 2.33D-07 at cycle  79 NSaved=   4.
+ NSaved= 4 IEnMin= 2 EnMin= -75.1219624759025     IErMin= 1 ErrMin= 2.33D-07
+ ErrMax= 2.33D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   81.62 CofMax=   10.00 Det=-1.09D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.553D+00-0.268D+01 0.424D+01
+ Coeff:     -0.553D+00-0.268D+01 0.424D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=6.57D-07 MaxDP=6.14D-05 DE= 2.52D-11 OVMax= 8.42D-05
+
+ Cycle  87  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757927     Delta-E=        0.000000000082 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  80 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624759025     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   50.26 CofMax=   10.00 Det=-1.33D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.196D+01 0.244D+01 0.521D+00
+ Coeff:     -0.196D+01 0.244D+01 0.521D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ RMSDP=1.16D-07 MaxDP=1.09D-05 DE= 8.16D-11 OVMax= 1.49D-05
+
+ Cycle  88  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757782     Delta-E=        0.000000000015 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  81 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624759025     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.03D-13 BMatP= 7.04D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   18.76 CofMax=   10.00 Det=-1.20D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.529D+01 0.867D-01 0.620D+01
+ Coeff:     -0.529D+01 0.867D-01 0.620D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=5.27D-06 MaxDP=4.92D-04 DE= 1.46D-11 OVMax= 6.75D-04
+
+ Cycle  89  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624751245     Delta-E=        0.000000000654 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  82 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624759025     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.34D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   14.97 CofMax=   10.00 Det=-2.78D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   10.13 CofMax=   10.00 Det=-3.78D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.948D+00 0.523D-01
+ Coeff:      0.948D+00 0.523D-01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=5.01D-06 MaxDP=4.68D-04 DE= 6.54D-10 OVMax= 6.42D-04
+
+ Cycle  90  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624757456     Delta-E=       -0.000000000621 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  83 NSaved=   3.
+ NSaved= 3 IEnMin= 1 EnMin= -75.1219624757782     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.03D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.410D+01 0.219D+00 0.488D+01
+ Coeff:     -0.410D+01 0.219D+00 0.488D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.16D-06 MaxDP=2.02D-04 DE=-6.21D-10 OVMax= 2.77D-04
+
+ Cycle  91  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754775     Delta-E=        0.000000000268 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  84 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624757782     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.03D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   38.28 CofMax=   10.00 Det=-6.66D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.123D+01 0.132D+01 0.907D+00
+ Coeff:     -0.123D+01 0.132D+01 0.907D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.09D-07 MaxDP=1.01D-05 DE= 2.68D-10 OVMax= 1.39D-05
+
+ Cycle  92  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754642     Delta-E=        0.000000000013 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  85 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624757782     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.04D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   31.04 CofMax=   10.00 Det=-2.10D-17
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   33.01 CofMax=   10.00 Det=-2.15D-17
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com:  0.568D+00 0.432D+00
+ Coeff:      0.568D+00 0.432D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=7.49D-08 MaxDP=6.99D-06 DE= 1.34D-11 OVMax= 9.60D-06
+
+ Cycle  93  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754734     Delta-E=       -0.000000000009 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  86 NSaved=   3.
+ NSaved= 3 IEnMin= 1 EnMin= -75.1219624754775     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.02D-13 BMatP= 7.03D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.873D+00-0.583D+00 0.246D+01
+ Coeff:     -0.873D+00-0.583D+00 0.246D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ DSYEVD-2 returned Info=        6159 IAlg= 4 N=   109 NDim=   109 NE2=      919109 trying  DSYEV.
+ RMSDP=2.74D-08 MaxDP=2.56D-06 DE=-9.27D-12 OVMax= 3.51D-06
+
+ Cycle  94  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754768     Delta-E=       -0.000000000003 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  87 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624754775     IErMin= 2 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.02D-13 BMatP= 7.02D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=   16.23 CofMax=   10.00 Det=-1.84D-19
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.100D+00 0.393D+01-0.283D+01
+ Coeff:     -0.100D+00 0.393D+01-0.283D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=9.51D-08 MaxDP=8.88D-06 DE=-3.40D-12 OVMax= 1.22D-05
+
+ Cycle  95  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754650     Delta-E=        0.000000000012 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  88 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624754775     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.02D-13 BMatP= 7.02D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  315.85 CofMax=   10.00 Det=-2.18D-20
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.149D+00-0.383D+01 0.498D+01
+ Coeff:     -0.149D+00-0.383D+01 0.498D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=3.66D-07 MaxDP=3.42D-05 DE= 1.19D-11 OVMax= 4.70D-05
+
+ Cycle  96  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624754196     Delta-E=        0.000000000045 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  89 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624754775     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.02D-13 BMatP= 7.02D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  4 BigCof=  300.34 CofMax=   10.00 Det=-8.15D-20
+ Inversion failed.  Reducing to  3 matrices.
+ Coeff-Com: -0.195D+00-0.564D+01 0.683D+01
+ Coeff:     -0.195D+00-0.564D+01 0.683D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=2.14D-06 MaxDP=2.00D-04 DE= 4.54D-11 OVMax= 2.75D-04
+
+ Cycle  97  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624751537     Delta-E=        0.000000000266 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  90 NSaved=   4.
+ NSaved= 4 IEnMin= 1 EnMin= -75.1219624754775     IErMin= 4 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.02D-13 BMatP= 7.02D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.113D+00-0.497D+01 0.594D+01 0.139D+00
+ Coeff:     -0.113D+00-0.497D+01 0.594D+01 0.139D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=1.29D-08 MaxDP=1.21D-06 DE= 2.66D-10 OVMax= 1.66D-06
+
+ Cycle  98  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624751521     Delta-E=        0.000000000002 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  91 NSaved=   5.
+ NSaved= 5 IEnMin= 1 EnMin= -75.1219624754775     IErMin= 5 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.01D-13 BMatP= 7.02D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Large coefficients: NSaved=  5 BigCof= 1218.06 CofMax=   10.00 Det=-7.85D-20
+ Inversion failed.  Reducing to  4 matrices.
+ Large coefficients: NSaved=  4 BigCof=   94.69 CofMax=   10.00 Det=-1.10D-18
+ Inversion failed.  Reducing to  3 matrices.
+ Large coefficients: NSaved=  3 BigCof=   31.92 CofMax=   10.00 Det=-3.08D-18
+ Inversion failed.  Reducing to  2 matrices.
+ Coeff-Com: -0.808D+01 0.908D+01
+ Coeff:     -0.808D+01 0.908D+01
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=9.14D-08 MaxDP=8.55D-06 DE= 1.58D-12 OVMax= 1.17D-05
+
+ Cycle  99  Pass 1  IDiag  1:
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ E= -75.1219624751408     Delta-E=        0.000000000011 Rises=F Damp=F
+ DIIS: error= 2.32D-07 at cycle  92 NSaved=   3.
+ NSaved= 3 IEnMin= 1 EnMin= -75.1219624751537     IErMin= 3 ErrMin= 2.32D-07
+ ErrMax= 2.32D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 7.00D-13 BMatP= 7.01D-13
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.298D+01 0.315D+01 0.827D+00
+ Coeff:     -0.298D+01 0.315D+01 0.827D+00
+ Gap=     0.341 Goal=   None    Shift=    0.000
+ Gap=     0.229 Goal=   None    Shift=    0.000
+ RMSDP=9.60D-09 MaxDP=8.99D-07 DE= 1.13D-11 OVMax= 1.23D-06
+
+ Density matrix breaks symmetry, PCut= 1.00D-04
+ Density matrix has no symmetry -- integrals replicated.
+ SCF Done:  E(UM062X) =  -75.1219624751     A.U. after   99 cycles
+            NFock= 99  Conv=0.96D-08     -V/T= 2.0028
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7579 S= 0.5039
+ <L.S>=  0.00000000000    
+ KE= 7.491129713980D+01 PE=-1.816334779798D+02 EE= 3.160021836485D+01
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     0.7579,   after     0.7500
+ Leave Link  502 at Tue Apr 20 08:06:12 2021, MaxMem=   104857600 cpu:           46343.6 elap:            2853.6
+ (Enter /opt/g16avx/l508.exe)
+ QCSCF skips out because SCF is already converged.
+ Leave Link  508 at Tue Apr 20 08:06:12 2021, MaxMem=   104857600 cpu:               0.8 elap:               0.1
+ (Enter /opt/g16avx/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+ SCF density gives NOpUse=  1 NOpAll= 48.
+ Marking SCF density as not fully symmetric.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G) (?A) (?B) (?B) (?B)
+       Virtual   (?B) (?B) (?B) (?A) (?A) (?A) (?A) (?A) (?A) (?B)
+                 (?B) (?B) (?A) (?B) (?B) (?B) (?B) (?B) (?B) (?B)
+                 (?A) (?A) (?A) (?A) (?A) (?B) (?B) (?B) (?C) (?C)
+                 (?C) (?C) (?C) (?C) (?C) (?C) (?C) (?C) (?D) (?D)
+                 (?D) (?D) (?D) (?D) (?D) (?C) (?C) (?C) (?C) (?C)
+                 (?E) (?E) (?E) (?F) (?F) (?F) (?F) (?F) (?F) (?F)
+                 (?F) (?F) (?E) (?E) (?E) (?E) (?E) (?E) (?E) (?F)
+                 (?F) (?F) (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F)
+                 (?F) (?F) (?F) (?F) (A1G) (?F) (?F) (?F) (?F)
+                 (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F) (?F) (?F)
+                 (?F) (?F) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Beta  Orbitals:
+       Occupied  (A1G) (?A) (?B) (?B)
+       Virtual   (?B) (?A) (?B) (?B) (?B) (?A) (?A) (?A) (?A) (?A)
+                 (?B) (?B) (?B) (?A) (?B) (?B) (?B) (?B) (?B) (?B)
+                 (?B) (?A) (?A) (?A) (?A) (?A) (?B) (?B) (?B) (?A)
+                 (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?B)
+                 (?B) (?B) (?B) (?B) (?B) (?B) (?A) (?A) (?A) (?A)
+                 (?A) (?C) (?C) (?C) (?D) (?D) (?D) (?D) (?D) (?D)
+                 (?D) (?D) (?D) (?C) (?C) (?C) (?C) (?C) (?C) (?C)
+                 (?D) (?D) (?D) (?D) (?D) (A1G) (T1U) (T1U) (T1U)
+                 (?E) (?E) (?E) (?E) (?E) (A1G) (?F) (?F) (?F)
+                 (?F) (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F) (?F)
+                 (?F) (?F) (?F) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Unable to determine electronic state:  an orbital has unidentified symmetry.
+ Alpha  occ. eigenvalues --  -19.30104  -0.67857  -0.10595  -0.04694  -0.04694
+ Alpha virt. eigenvalues --    0.29431   0.29431   0.29639   0.32058   0.65791
+ Alpha virt. eigenvalues --    0.65791   0.65877   0.65877   0.66465   0.88078
+ Alpha virt. eigenvalues --    0.90712   0.90712   1.09215   1.50966   1.50966
+ Alpha virt. eigenvalues --    1.51107   1.51163   1.51163   1.51697   1.51697
+ Alpha virt. eigenvalues --    1.68776   1.69418   1.69418   1.70937   1.70937
+ Alpha virt. eigenvalues --    2.72745   2.76561   2.76561   3.72432   3.72508
+ Alpha virt. eigenvalues --    3.72508   3.72787   3.72787   3.73194   3.73194
+ Alpha virt. eigenvalues --    3.73861   3.73861   3.76308   4.08300   4.08643
+ Alpha virt. eigenvalues --    4.08643   4.09525   4.09525   4.11361   4.11361
+ Alpha virt. eigenvalues --    4.35309   4.36551   4.36551   4.40437   4.40437
+ Alpha virt. eigenvalues --    9.07008   9.15368   9.15368  10.35027  10.35429
+ Alpha virt. eigenvalues --   10.35429  10.36678  10.36678  10.38998  10.38998
+ Alpha virt. eigenvalues --   10.42496  10.42496  11.44376  11.45377  11.45377
+ Alpha virt. eigenvalues --   11.48237  11.48237  11.53266  11.53266  12.22838
+ Alpha virt. eigenvalues --   12.25165  12.25165  12.31177  12.31177  16.06388
+ Alpha virt. eigenvalues --   32.33750  32.40058  32.40058  46.32039  46.33244
+ Alpha virt. eigenvalues --   46.33244  46.38047  46.38047  61.89578 102.12061
+ Alpha virt. eigenvalues --  102.12377 102.12377 102.13523 102.13523 102.15935
+ Alpha virt. eigenvalues --  102.15935 115.24752 115.27404 115.27404 196.50414
+ Alpha virt. eigenvalues --  196.50845 196.50845 196.52507 196.52507 212.61382
+ Alpha virt. eigenvalues --  390.06335 390.07501 390.07501 882.19054
+  Beta  occ. eigenvalues --  -19.28555  -0.58966  -0.00954  -0.00954
+  Beta virt. eigenvalues --    0.21922   0.30532   0.31431   0.31431   0.34516
+  Beta virt. eigenvalues --    0.59311   0.64647   0.64647   0.65925   0.65925
+  Beta virt. eigenvalues --    0.89421   0.92690   0.92690   1.09330   1.41966
+  Beta virt. eigenvalues --    1.47553   1.47554   1.49820   1.49820   1.51799
+  Beta virt. eigenvalues --    1.51799   1.69643   1.70775   1.70775   1.71338
+  Beta virt. eigenvalues --    1.71338   2.79955   2.79955   2.82780   3.66112
+  Beta virt. eigenvalues --    3.67342   3.67342   3.70189   3.70189   3.71227
+  Beta virt. eigenvalues --    3.71227   3.71853   3.71853   3.83198   4.07245
+  Beta virt. eigenvalues --    4.09029   4.09029   4.10048   4.10048   4.12115
+  Beta virt. eigenvalues --    4.12115   4.39071   4.39385   4.39385   4.40702
+  Beta virt. eigenvalues --    4.40702   9.17206   9.17206   9.20375  10.39306
+  Beta virt. eigenvalues --   10.39306  10.40860  10.40860  10.42490  10.42490
+  Beta virt. eigenvalues --   10.42707  10.44044  10.44044  11.56254  11.56254
+  Beta virt. eigenvalues --   11.62820  11.62821  11.63895  11.63895  11.67532
+  Beta virt. eigenvalues --   12.37531  12.37531  12.43089  12.43089  12.48496
+  Beta virt. eigenvalues --   16.15485  32.50208  32.50208  32.67731  46.40611
+  Beta virt. eigenvalues --   46.40611  46.41941  46.41941  46.45090  62.09586
+  Beta virt. eigenvalues --  102.18310 102.18310 102.23962 102.23963 102.27082
+  Beta virt. eigenvalues --  102.27082 102.27295 115.25392 115.28815 115.28815
+  Beta virt. eigenvalues --  196.47121 196.47121 196.47504 196.51449 196.51449
+  Beta virt. eigenvalues --  212.60510 390.03557 390.05582 390.05582 882.26639
+          Condensed to atoms (all electrons):
+               1
+     1  O    9.000000
+          Atomic-Atomic Spin Densities.
+               1
+     1  O    1.000000
+ Mulliken charges and spin densities:
+               1          2
+     1  O   -1.000000   1.000000
+ Sum of Mulliken charges =  -1.00000   1.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  O   -1.000000   1.000000
+ Electronic spatial extent (au):  <R**2>=             20.0960
+ Charge=             -1.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=             -0.0000    Y=             -0.0000    Z=             -0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -9.7379   YY=             -7.6524   ZZ=             -9.6396
+   XY=             -0.0000   XZ=              0.0000   YZ=             -0.4528
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -0.7279   YY=              1.3576   ZZ=             -0.6296
+   XY=             -0.0000   XZ=              0.0000   YZ=             -0.4528
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=             -0.0000  YYY=             -0.0000  ZZZ=             -0.0000  XYY=             -0.0000
+  XXY=             -0.0000  XXZ=             -0.0000  XZZ=             -0.0000  YZZ=              0.0000
+  YYZ=             -0.0000  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=            -18.2873 YYYY=            -10.5686 ZZZZ=            -17.9246 XXXY=             -0.0000
+ XXXZ=              0.0000 YYYX=             -0.0000 YYYZ=             -0.8409 ZZZX=              0.0000
+ ZZZY=             -0.8352 XXYY=             -4.8139 XXZZ=             -6.0353 YYZZ=             -4.7521
+ XXYZ=             -0.2783 YYXZ=              0.0000 ZZXY=             -0.0000
+ N-N= 0.000000000000D+00 E-N=-1.816334779393D+02  KE= 7.491129713980D+01
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  O(17)              0.13970     -84.68356     -30.21720     -28.24739
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom       -1.707271      3.184014     -1.476743
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom       -0.000000      0.000000     -1.061888
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -1.7073   123.537    44.081    41.208  0.0000  0.2122  0.9772
+     1 O(17)  Bbb    -1.7073   123.537    44.081    41.207  1.0000 -0.0000 -0.0000
+              Bcc     3.4145  -247.074   -88.162   -82.415 -0.0000  0.9772 -0.2122
+ 
+
+ ---------------------------------------------------------------------------------
+
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Tue Apr 20 08:06:43 2021, MaxMem=   104857600 cpu:             499.4 elap:              31.2
+ (Enter /opt/g16avx/l801.exe)
+ DoSCS=F DFT=T ScalE2(SS,OS)=  1.000000  1.000000
+ Range of M.O.s used for correlation:     1   109
+ NBasis=   109 NAE=     5 NBE=     4 NFC=     0 NFV=     0
+ NROrb=    109 NOA=     5 NOB=     4 NVA=   104 NVB=   105
+
+ **** Warning!!: The largest alpha MO coefficient is  0.40872924D+02
+
+
+ **** Warning!!: The largest beta MO coefficient is  0.40872982D+02
+
+ Leave Link  801 at Tue Apr 20 08:06:44 2021, MaxMem=   104857600 cpu:               1.7 elap:               0.1
+ (Enter /opt/g16avx/l914.exe)
+ UHF ground state
+ Doing stability rather than CIS.
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=88142811.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   5995 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ CoulSu:  requested number of processors reduced to:  19 ShMem   1 Linda.
+ MDV=   104857600 DFT=T DoStab=T Mixed=T DoRPA=F DoScal=F NonHer=F
+ Making orbital integer symmetry assigments:
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G) (?A) (?B) (?B) (?B)
+       Virtual   (?B) (?B) (?B) (?A) (?A) (?A) (?A) (?A) (?A) (?B)
+                 (?B) (?B) (?A) (?B) (?B) (?B) (?B) (?B) (?B) (?B)
+                 (?A) (?A) (?A) (?A) (?A) (?B) (?B) (?B) (?C) (?C)
+                 (?C) (?C) (?C) (?C) (?C) (?C) (?C) (?C) (?D) (?D)
+                 (?D) (?D) (?D) (?D) (?D) (?C) (?C) (?C) (?C) (?C)
+                 (?E) (?E) (?E) (?F) (?F) (?F) (?F) (?F) (?F) (?F)
+                 (?F) (?F) (?E) (?E) (?E) (?E) (?E) (?E) (?E) (?F)
+                 (?F) (?F) (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F)
+                 (?F) (?F) (?F) (?F) (A1G) (?F) (?F) (?F) (?F)
+                 (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F) (?F) (?F)
+                 (?F) (?F) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Beta  Orbitals:
+       Occupied  (A1G) (?A) (?B) (?B)
+       Virtual   (?B) (?A) (?B) (?B) (?B) (?A) (?A) (?A) (?A) (?A)
+                 (?B) (?B) (?B) (?A) (?B) (?B) (?B) (?B) (?B) (?B)
+                 (?B) (?A) (?A) (?A) (?A) (?A) (?B) (?B) (?B) (?A)
+                 (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?B)
+                 (?B) (?B) (?B) (?B) (?B) (?B) (?A) (?A) (?A) (?A)
+                 (?A) (?C) (?C) (?C) (?D) (?D) (?D) (?D) (?D) (?D)
+                 (?D) (?D) (?D) (?C) (?C) (?C) (?C) (?C) (?C) (?C)
+                 (?D) (?D) (?D) (?D) (?D) (A1G) (T1U) (T1U) (T1U)
+                 (?E) (?E) (?E) (?E) (?E) (A1G) (?F) (?F) (?F)
+                 (?F) (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F) (?F)
+                 (?F) (?F) (?F) (A1G) (T1U) (T1U) (T1U) (A1G)
+    24 initial guesses have been made.
+ Convergence on wavefunction:    0.001000000000000
+ Davidson Disk Diagonalization:  ConvIn= 1.00D-03 SkipCon=T Conv= 1.00D-03.
+ Max sub-space:  1880 roots to seek:    24 dimension of matrix:          940
+ Iteration     1 Dimension    24 NMult     0 NNew     24
+ CISAX will form    24 AO SS matrices at one time.
+ NMat=    24 NSing=    24 JSym2X= 2.
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.406872980243830
+ Root      2 :     0.407459450623273
+ Root      3 :     4.728676697244411
+ Root      4 :     4.728688438667548
+ Root      5 :     5.476558684383625
+ Root      6 :     5.477540964362044
+ Root      7 :     5.675127553166003
+ Root      8 :     5.678297801327810
+ Root      9 :     5.894268671881341
+ Root     10 :     5.956243914344225
+ Root     11 :     5.956244174984229
+ Root     12 :     6.389239499100893
+ Root     13 :     6.395745795602199
+ Root     14 :     6.453108402046593
+ Root     15 :     6.453195858914944
+ Root     16 :     6.471523745929566
+ Root     17 :     6.471960011389655
+ Root     18 :     7.270575190911983
+ Root     19 :     7.650825232085645
+ Root     20 :     7.650825266990147
+ Root     21 :     7.668880591963513
+ Root     22 :    13.143443632427878
+ Root     23 :    13.790221892780863
+ Root     24 :    13.793606741749997
+ Iteration     2 Dimension    48 NMult    24 NNew     24
+ CISAX will form    24 AO SS matrices at one time.
+ NMat=    24 NSing=    24 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.112775421916531
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.001875429435864   Change is   -0.404997550807966
+ Root      2 :     0.002299160220895   Change is   -0.405160290402378
+ Root      3 :     4.545392088607183   Change is   -0.183284608637229
+ Root      4 :     4.545404135350151   Change is   -0.183284303317397
+ Root      5 :     5.252144560139908   Change is   -0.224414124243717
+ Root      6 :     5.253010653724326   Change is   -0.224530310637718
+ Root      7 :     5.536264542854116   Change is   -0.859481252748083
+ Root      8 :     5.571971608537241   Change is   -0.103155944628762
+ Root      9 :     5.575112957525534   Change is   -0.103184843802276
+ Root     10 :     5.660646858509707   Change is   -0.295597055834519
+ Root     11 :     5.660646999251400   Change is   -0.295597175732830
+ Root     12 :     5.863620532851700   Change is   -0.030648139029641
+ Root     13 :     6.221611371527316   Change is   -0.249912374402250
+ Root     14 :     6.221939603315820   Change is   -0.250020408073834
+ Root     15 :     6.318598987945115   Change is   -0.134509414101478
+ Root     16 :     6.318745074950018   Change is   -0.134450783964926
+ Root     17 :     6.361207442376523   Change is   -0.028032056724370
+ Root     18 :     6.769981342363931   Change is   -0.500593848548052
+ Root     19 :     7.519696250811459   Change is   -0.149184341152053
+ Root     20 :     7.541229441550378   Change is   -0.109595825439769
+ Root     21 :     7.541231758355184   Change is   -0.109593473730462
+ Root     22 :     9.519938245919098   Change is   -3.623505386508782
+ Root     23 :    13.524261742441297   Change is   -0.265960150339567
+ Root     24 :    13.527398482013092   Change is   -0.266208259736906
+ Iteration     3 Dimension    51 NMult    48 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.002937456436029
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.000045641102410   Change is   -0.001921070538274
+ Root      2 :     0.000376101010473   Change is   -0.001923059210421
+ Root      3 :     4.541334680078614   Change is   -0.004057408528569
+ Iteration     4 Dimension    54 NMult    51 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 has converged.
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.000048132745161   Change is   -0.000002491642751
+ Root      2 :     0.000373612703204   Change is   -0.000002488307269
+ Root      3 :     4.541280532706638   Change is   -0.000054147371975
+ Convergence achieved on expansion vectors.
+ ***********************************************************************
+ Stability analysis using <AA,BB:AA,BB> singles matrix:
+ ***********************************************************************
+ 1PDM for each excited state written to RWF  633
+ Ground to excited state transition densities written to RWF  633
+
+ Eigenvectors of the stability matrix:
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   1:  2.010-?Sym  Eigenvalue=-0.0000018  <S**2>=0.760
+      4B ->  5B        0.81592
+      4B ->  9B       -0.55924
+      4B -> 15B       -0.11302
+ The wavefunction is stable under the perturbations considered.
+ Leave Link  914 at Tue Apr 20 08:08:08 2021, MaxMem=   104857600 cpu:            1360.6 elap:              84.6
+ (Enter /opt/g16avx/l508.exe)
+ The wavefunction is already stable.
+ Leave Link  508 at Tue Apr 20 08:08:08 2021, MaxMem=   104857600 cpu:               0.9 elap:               0.1
+ (Enter /opt/g16avx/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+ SCF density gives NOpUse=  1 NOpAll= 48.
+ Marking SCF density as not fully symmetric.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A1G) (?A) (?B) (?B) (?B)
+       Virtual   (?B) (?B) (?B) (?A) (?A) (?A) (?A) (?A) (?A) (?B)
+                 (?B) (?B) (?A) (?B) (?B) (?B) (?B) (?B) (?B) (?B)
+                 (?A) (?A) (?A) (?A) (?A) (?B) (?B) (?B) (?C) (?C)
+                 (?C) (?C) (?C) (?C) (?C) (?C) (?C) (?C) (?D) (?D)
+                 (?D) (?D) (?D) (?D) (?D) (?C) (?C) (?C) (?C) (?C)
+                 (?E) (?E) (?E) (?F) (?F) (?F) (?F) (?F) (?F) (?F)
+                 (?F) (?F) (?E) (?E) (?E) (?E) (?E) (?E) (?E) (?F)
+                 (?F) (?F) (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F)
+                 (?F) (?F) (?F) (?F) (A1G) (?F) (?F) (?F) (?F)
+                 (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F) (?F) (?F)
+                 (?F) (?F) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Beta  Orbitals:
+       Occupied  (A1G) (?A) (?B) (?B)
+       Virtual   (?B) (?A) (?B) (?B) (?B) (?A) (?A) (?A) (?A) (?A)
+                 (?B) (?B) (?B) (?A) (?B) (?B) (?B) (?B) (?B) (?B)
+                 (?B) (?A) (?A) (?A) (?A) (?A) (?B) (?B) (?B) (?A)
+                 (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?A) (?B)
+                 (?B) (?B) (?B) (?B) (?B) (?B) (?A) (?A) (?A) (?A)
+                 (?A) (?C) (?C) (?C) (?D) (?D) (?D) (?D) (?D) (?D)
+                 (?D) (?D) (?D) (?C) (?C) (?C) (?C) (?C) (?C) (?C)
+                 (?D) (?D) (?D) (?D) (?D) (A1G) (T1U) (T1U) (T1U)
+                 (?E) (?E) (?E) (?E) (?E) (A1G) (?F) (?F) (?F)
+                 (?F) (?F) (?F) (?F) (T1U) (T1U) (T1U) (?F) (?F)
+                 (?F) (?F) (?F) (A1G) (T1U) (T1U) (T1U) (A1G)
+ Unable to determine electronic state:  an orbital has unidentified symmetry.
+ Alpha  occ. eigenvalues --  -19.30104  -0.67857  -0.10595  -0.04694  -0.04694
+ Alpha virt. eigenvalues --    0.29431   0.29431   0.29639   0.32058   0.65791
+ Alpha virt. eigenvalues --    0.65791   0.65877   0.65877   0.66465   0.88078
+ Alpha virt. eigenvalues --    0.90712   0.90712   1.09215   1.50966   1.50966
+ Alpha virt. eigenvalues --    1.51107   1.51163   1.51163   1.51697   1.51697
+ Alpha virt. eigenvalues --    1.68776   1.69418   1.69418   1.70937   1.70937
+ Alpha virt. eigenvalues --    2.72745   2.76561   2.76561   3.72432   3.72508
+ Alpha virt. eigenvalues --    3.72508   3.72787   3.72787   3.73194   3.73194
+ Alpha virt. eigenvalues --    3.73861   3.73861   3.76308   4.08300   4.08643
+ Alpha virt. eigenvalues --    4.08643   4.09525   4.09525   4.11361   4.11361
+ Alpha virt. eigenvalues --    4.35309   4.36551   4.36551   4.40437   4.40437
+ Alpha virt. eigenvalues --    9.07008   9.15368   9.15368  10.35027  10.35429
+ Alpha virt. eigenvalues --   10.35429  10.36678  10.36678  10.38998  10.38998
+ Alpha virt. eigenvalues --   10.42496  10.42496  11.44376  11.45377  11.45377
+ Alpha virt. eigenvalues --   11.48237  11.48237  11.53266  11.53266  12.22838
+ Alpha virt. eigenvalues --   12.25165  12.25165  12.31177  12.31177  16.06388
+ Alpha virt. eigenvalues --   32.33750  32.40058  32.40058  46.32039  46.33244
+ Alpha virt. eigenvalues --   46.33244  46.38047  46.38047  61.89578 102.12061
+ Alpha virt. eigenvalues --  102.12377 102.12377 102.13523 102.13523 102.15935
+ Alpha virt. eigenvalues --  102.15935 115.24752 115.27404 115.27404 196.50414
+ Alpha virt. eigenvalues --  196.50845 196.50845 196.52507 196.52507 212.61382
+ Alpha virt. eigenvalues --  390.06335 390.07501 390.07501 882.19054
+  Beta  occ. eigenvalues --  -19.28555  -0.58966  -0.00954  -0.00954
+  Beta virt. eigenvalues --    0.21922   0.30532   0.31431   0.31431   0.34516
+  Beta virt. eigenvalues --    0.59311   0.64647   0.64647   0.65925   0.65925
+  Beta virt. eigenvalues --    0.89421   0.92690   0.92690   1.09330   1.41966
+  Beta virt. eigenvalues --    1.47553   1.47554   1.49820   1.49820   1.51799
+  Beta virt. eigenvalues --    1.51799   1.69643   1.70775   1.70775   1.71338
+  Beta virt. eigenvalues --    1.71338   2.79955   2.79955   2.82780   3.66112
+  Beta virt. eigenvalues --    3.67342   3.67342   3.70189   3.70189   3.71227
+  Beta virt. eigenvalues --    3.71227   3.71853   3.71853   3.83198   4.07245
+  Beta virt. eigenvalues --    4.09029   4.09029   4.10048   4.10048   4.12115
+  Beta virt. eigenvalues --    4.12115   4.39071   4.39385   4.39385   4.40702
+  Beta virt. eigenvalues --    4.40702   9.17206   9.17206   9.20375  10.39306
+  Beta virt. eigenvalues --   10.39306  10.40860  10.40860  10.42490  10.42490
+  Beta virt. eigenvalues --   10.42707  10.44044  10.44044  11.56254  11.56254
+  Beta virt. eigenvalues --   11.62820  11.62821  11.63895  11.63895  11.67532
+  Beta virt. eigenvalues --   12.37531  12.37531  12.43089  12.43089  12.48496
+  Beta virt. eigenvalues --   16.15485  32.50208  32.50208  32.67731  46.40611
+  Beta virt. eigenvalues --   46.40611  46.41941  46.41941  46.45090  62.09586
+  Beta virt. eigenvalues --  102.18310 102.18310 102.23962 102.23963 102.27082
+  Beta virt. eigenvalues --  102.27082 102.27295 115.25392 115.28815 115.28815
+  Beta virt. eigenvalues --  196.47121 196.47121 196.47504 196.51449 196.51449
+  Beta virt. eigenvalues --  212.60510 390.03557 390.05582 390.05582 882.26639
+          Condensed to atoms (all electrons):
+               1
+     1  O    9.000000
+          Atomic-Atomic Spin Densities.
+               1
+     1  O    1.000000
+ Mulliken charges and spin densities:
+               1          2
+     1  O   -1.000000   1.000000
+ Sum of Mulliken charges =  -1.00000   1.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  O   -1.000000   1.000000
+ Electronic spatial extent (au):  <R**2>=             20.0960
+ Charge=             -1.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=             -0.0000    Y=             -0.0000    Z=             -0.0000  Tot=              0.0000
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -9.7379   YY=             -7.6524   ZZ=             -9.6396
+   XY=             -0.0000   XZ=              0.0000   YZ=             -0.4528
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -0.7279   YY=              1.3576   ZZ=             -0.6296
+   XY=             -0.0000   XZ=              0.0000   YZ=             -0.4528
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=             -0.0000  YYY=             -0.0000  ZZZ=             -0.0000  XYY=             -0.0000
+  XXY=             -0.0000  XXZ=             -0.0000  XZZ=             -0.0000  YZZ=              0.0000
+  YYZ=             -0.0000  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=            -18.2873 YYYY=            -10.5686 ZZZZ=            -17.9246 XXXY=             -0.0000
+ XXXZ=              0.0000 YYYX=             -0.0000 YYYZ=             -0.8409 ZZZX=              0.0000
+ ZZZY=             -0.8352 XXYY=             -4.8139 XXZZ=             -6.0353 YYZZ=             -4.7521
+ XXYZ=             -0.2783 YYXZ=              0.0000 ZZXY=             -0.0000
+ N-N= 0.000000000000D+00 E-N=-1.816334779393D+02  KE= 7.491129713980D+01
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  O(17)              0.13970     -84.68356     -30.21720     -28.24739
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom       -1.707271      3.184014     -1.476743
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom       -0.000000      0.000000     -1.061888
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -1.7073   123.537    44.081    41.208  0.0000  0.2122  0.9772
+     1 O(17)  Bbb    -1.7073   123.537    44.081    41.207  1.0000 -0.0000 -0.0000
+              Bcc     3.4145  -247.074   -88.162   -82.415 -0.0000  0.9772 -0.2122
+ 
+
+ ---------------------------------------------------------------------------------
+
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Tue Apr 20 08:08:45 2021, MaxMem=   104857600 cpu:             580.9 elap:              36.5
+ (Enter /opt/g16avx/l9999.exe)
+
+ Test job not archived.
+ 1\1\GINC-VERTEX\Stability\UM062X\Gen\O1(1-,2)\XRAY\20-Apr-2021\0\\#P M
+ 062X/GEN Integral=UltraFineGrid scf=(nosymm,xqc,maxconven=155) Stable=
+ (RExt, Opt) IOp(1/33=1)\\Database calculations.\\-1,2\O,0,0.,0.,0.\\Ve
+ rsion=ES64L-G16RevA.03\HF=-75.1219625\S2=0.757871\S2-1=0.\S2A=0.750042
+ \RMSD=9.595e-09\Dipole=0.,0.,0.\Quadrupole=-0.4681168,1.0093242,-0.541
+ 2074,-0.336633,0.,0.\PG=OH [O(O1)]\\@
+
+
+ "TIGER, TIGER BURNING BRIGHT
+ IN THE FOREST OF THE NIGHT.
+ WHAT IMMORTAL HAND OR EYE
+ CAN FRAME THY FEARFUL SYMMETRYE?"
+                     - WILLIAM BLAKE
+ Job cpu time:       0 days 13 hours 55 minutes 38.6 seconds.
+ Elapsed time:       0 days  0 hours 51 minutes 30.4 seconds.
+ File lengths (MBytes):  RWF=     46 Int=      0 D2E=      0 Chk=      3 Scr=      1
+ Normal termination of Gaussian 16 at Tue Apr 20 08:08:45 2021.

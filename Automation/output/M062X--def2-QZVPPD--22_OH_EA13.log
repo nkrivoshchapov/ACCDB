@@ -1,0 +1,932 @@
+ Entering Gaussian System, Link 0=/s/ls4/users/knvvv/bin/g16sse/g16
+ Input=data/database/M062X--def2-QZVPPD--22_OH_EA13.gjf
+ Output=data/database/M062X--def2-QZVPPD--22_OH_EA13.log
+ Initial command:
+ /s/ls4/users/knvvv/bin/g16sse/l1.exe "/s/ls4/users/knvvv/bin/scratch/Gau-24993.inp" -scrdir="/s/ls4/users/knvvv/bin/scratch/"
+ Entering Link 1 = /s/ls4/users/knvvv/bin/g16sse/l1.exe PID=     24994.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                17-Apr-2021 
+ ******************************************
+ %RWF=temp5_12868,70GB
+ %nprocshared=48
+ Will use up to   48 processors via shared memory.
+ Default route: MaxDisk=80GB
+ ----------------------------------------------------------------------
+ #P M062X/GEN Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt) IOp(
+ 1/33=1)
+ ----------------------------------------------------------------------
+ 1/33=1,38=1,172=1/1;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=7,11=2,25=1,30=1,74=-55,75=-5/1,2,3;
+ 4/9=2/1;
+ 5/5=2,38=5/2;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 8/6=1,10=90,11=11/1;
+ 9/8=-3,42=1,46=1/14;
+ 5/5=2,8=3,17=40,38=5/8(-2);
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 99/5=1,9=1/99;
+ Leave Link    1 at Sat Apr 17 20:44:30 2021, MaxMem=           0 cpu:              10.5 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l101.exe)
+ ONIOM data not found on unit 2.
+ ----------------------
+ Database calculations.
+ ----------------------
+ TstMul:  ICh=     0
+ TstMul:  Mul=     2
+ TstMul:  ICh=     0
+ TstMul:  Mul=     2
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 2
+ O                     0.        0.        0. 
+ H                     0.        0.        0.9689 
+ 
+ RdStrC is calling ZToCFu for IStruc=1 NZ=     2.
+ PrtBox:  NBox=     1 Levels=  1 BoxLen=    8.00 SMaxX=        1.83
+          Shift=            0.000000            0.000000            0.000000
+ Box      1 Number                   0 centers from      1 to      2:
+ After GenITR:
+ ITRead=  0  0
+ MicOpt= -1 -1
+ ITRead=  0  0
+ MicOpt= -1 -1
+ NAtoms=      2 NQM=        2 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2
+ IAtWgt=          16           1
+ AtmWgt=  15.9949146   1.0078250
+ NucSpn=           0           1
+ AtZEff=  -0.0000000  -0.0000000
+ NQMom=    0.0000000   0.0000000
+ NMagM=    0.0000000   2.7928460
+ AtZNuc=   8.0000000   1.0000000
+ No MM parameters found.
+ Leave Link  101 at Sat Apr 17 20:44:30 2021, MaxMem=   104857600 cpu:               6.7 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          8           0        0.000000    0.000000    0.000000
+      2          1           0        0.000000    0.000000    0.968898
+ ---------------------------------------------------------------------
+ Stoichiometry    HO(2)
+ Framework group  C*V[C*(HO)]
+ Deg. of freedom     1
+ Full point group                 C*V     NOp   4
+ Largest Abelian subgroup         C2V     NOp   4
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          8           0        0.000000    0.000000    0.107655
+      2          1           0        0.000000    0.000000   -0.861243
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):           0.0000000         567.8226943         567.8226943
+ Leave Link  202 at Sat Apr 17 20:44:31 2021, MaxMem=   104857600 cpu:               6.1 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l301.exe)
+ General basis read from cards:  (5D, 7F)
+ Centers:       2
+ S 4 1.00
+     Exponent=  1.9069169000D+02 Coefficients=  7.0815167000D-04
+     Exponent=  2.8605532000D+01 Coefficients=  5.4678827000D-03
+     Exponent=  6.5095943000D+00 Coefficients=  2.7966605000D-02
+     Exponent=  1.8412455000D+00 Coefficients=  1.0764538000D-01
+ S 1 1.00
+     Exponent=  5.9853725000D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  2.1397624000D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  8.0316286000D-02 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  2.2920000000D+00 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  8.3800000000D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  2.9200000000D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  8.4063199228D-02 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  2.0620000000D+00 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  6.6200000000D-01 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  1.3970000000D+00 Coefficients=  1.0000000000D+00
+ ****
+ Centers:       1
+ S 8 1.00
+     Exponent=  1.1650646908D+05 Coefficients=  4.0383857939D-05
+     Exponent=  1.7504349724D+04 Coefficients=  3.1255139004D-04
+     Exponent=  3.9934513230D+03 Coefficients=  1.6341473495D-03
+     Exponent=  1.1330063186D+03 Coefficients=  6.8283224757D-03
+     Exponent=  3.6999569594D+02 Coefficients=  2.4124410221D-02
+     Exponent=  1.3362074349D+02 Coefficients=  7.2730206154D-02
+     Exponent=  5.2035643649D+01 Coefficients=  1.7934429892D-01
+     Exponent=  2.1461939313D+01 Coefficients=  3.3059588895D-01
+ S 2 1.00
+     Exponent=  8.9835051252D+01 Coefficients=  9.6468652996D-02
+     Exponent=  2.6428010844D+01 Coefficients=  9.4117481120D-01
+ S 1 1.00
+     Exponent=  9.2822824649D+00 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  4.0947728533D+00 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  1.3255349078D+00 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  5.1877230787D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  1.9772676454D-01 Coefficients=  1.0000000000D+00
+ S 1 1.00
+     Exponent=  6.9638535104D-02 Coefficients=  1.0000000000D+00
+ P 5 1.00
+     Exponent=  1.9115255810D+02 Coefficients=  2.5115697705D-03
+     Exponent=  4.5233356739D+01 Coefficients=  2.0039240864D-02
+     Exponent=  1.4353465922D+01 Coefficients=  9.3609064762D-02
+     Exponent=  5.2422371832D+00 Coefficients=  3.0618127124D-01
+     Exponent=  2.0792418599D+00 Coefficients=  6.7810501439D-01
+ P 1 1.00
+     Exponent=  8.4282371424D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  3.3617694891D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  1.2863997974D-01 Coefficients=  1.0000000000D+00
+ P 1 1.00
+     Exponent=  4.3598162776D-02 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  3.7750000000D+00 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  1.3000000000D+00 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  4.4400000000D-01 Coefficients=  1.0000000000D+00
+ D 1 1.00
+     Exponent=  1.2546378695D-01 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  2.6660000000D+00 Coefficients=  1.0000000000D+00
+ F 1 1.00
+     Exponent=  8.5900000000D-01 Coefficients=  1.0000000000D+00
+ G 1 1.00
+     Exponent=  1.8460000000D+00 Coefficients=  1.0000000000D+00
+ ****
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+ There are    54 symmetry adapted cartesian basis functions of A1  symmetry.
+ There are    12 symmetry adapted cartesian basis functions of A2  symmetry.
+ There are    27 symmetry adapted cartesian basis functions of B1  symmetry.
+ There are    27 symmetry adapted cartesian basis functions of B2  symmetry.
+ There are    42 symmetry adapted basis functions of A1  symmetry.
+ There are    11 symmetry adapted basis functions of A2  symmetry.
+ There are    23 symmetry adapted basis functions of B1  symmetry.
+ There are    23 symmetry adapted basis functions of B2  symmetry.
+    99 basis functions,   143 primitive gaussians,   120 cartesian basis functions
+     5 alpha electrons        4 beta electrons
+       nuclear repulsion energy         4.3693111733 Hartrees.
+ IExCor= 4336 DFT=T Ex+Corr=M062X ExCW=0 ScaHFX=  0.540000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    2 NActive=    2 NUniq=    2 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 2 integral format.
+ Two-electron integral symmetry is turned on.
+ Leave Link  301 at Sat Apr 17 20:44:31 2021, MaxMem=   104857600 cpu:               6.9 elap:               0.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l302.exe)
+ NPDir=0 NMtPBC=     1 NCelOv=     1 NCel=       1 NClECP=     1 NCelD=      1
+         NCelK=      1 NCelE2=     1 NClLst=     1 CellRange=     0.0.
+ One-electron integrals computed using PRISM.
+ One-electron integral symmetry used in STVInt
+ PrsmSu:  requested number of processors reduced to:   4 ShMem   1 Linda.
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ NBasis=    99 RedAO= T EigKep=  1.92D-04  NBF=    42    11    23    23
+ NBsUse=    99 1.00D-06 EigRej= -1.00D+00 NBFU=    42    11    23    23
+ Precomputing XC quadrature grid using
+ IXCGrd= 4 IRadAn=           5 IRanWt=          -1 IRanGd=           0 AccXCQ= 0.00D+00.
+ Generated NRdTot=       0 NPtTot=           0 NUsed=           0 NTot=          32
+ NSgBfM=   120   120   120   120   120 MxSgAt=     2 MxSgA2=     2.
+ Leave Link  302 at Sat Apr 17 20:44:33 2021, MaxMem=   104857600 cpu:              81.8 elap:               1.8
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l303.exe)
+ DipDrv:  MaxL=1.
+ Leave Link  303 at Sat Apr 17 20:44:33 2021, MaxMem=   104857600 cpu:              17.9 elap:               0.4
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l401.exe)
+ SCF N**3 symmetry information disabled.
+ ExpMin= 4.36D-02 ExpMax= 1.17D+05 ExpMxC= 1.13D+03 IAcc=3 IRadAn=         5 AccDes= 0.00D+00
+ Harris functional with IExCor= 1009 and IRadAn=       5 diagonalized for initial guess.
+ HarFok:  IExCor= 1009 AccDes= 0.00D+00 IRadAn=         5 IDoV= 1 UseB2=F ITyADJ=14
+ ICtDFT=  3500011 ScaDFX=  1.000000  1.000000  1.000000  1.000000
+ FoFCou: FMM=F IPFlag=           0 FMFlag=      100000 FMFlg1=           0
+         NFxFlg=           0 DoJE=T BraDBF=F KetDBF=T FulRan=T
+         wScrn=  0.000000 ICntrl=       500 IOpCl=  0 I1Cent=   200000004 NGrid=           0
+         NMat0=    1 NMatS0=      1 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ CoulSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ Harris En= -75.6668057271675    
+ JPrj=0 DoOrth=F DoCkMO=F.
+ Initial guess orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI)
+       Virtual   (SG) (SG) (PI) (PI) (SG) (PI) (PI) (SG) (DLTA)
+                 (DLTA) (SG) (PI) (PI) (PI) (PI) (SG) (SG) (PI)
+                 (PI) (SG) (SG) (SG) (DLTA) (DLTA) (PI) (PI) (PI)
+                 (PI) (SG) (SG) (DLTA) (DLTA) (PI) (PI) (SG) (PI)
+                 (PI) (PHI) (PHI) (SG) (SG) (DLTA) (DLTA) (PI)
+                 (PI) (DLTA) (DLTA) (SG) (PI) (PI) (SG) (PI) (PI)
+                 (SG) (PHI) (PHI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (DLTA) (DLTA) (SG) (PI) (PI) (?A)
+                 (?A) (PHI) (PHI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (PHI) (PHI) (DLTA) (DLTA) (SG) (PI) (PI) (SG)
+                 (DLTA) (DLTA) (SG) (PI) (PI) (SG) (SG) (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (PI)
+       Virtual   (PI) (SG) (SG) (PI) (PI) (SG) (PI) (PI) (SG) (DLTA)
+                 (DLTA) (SG) (PI) (PI) (PI) (PI) (SG) (SG) (PI)
+                 (PI) (SG) (SG) (SG) (DLTA) (DLTA) (PI) (PI) (PI)
+                 (PI) (SG) (SG) (DLTA) (DLTA) (PI) (PI) (SG) (PI)
+                 (PI) (PHI) (PHI) (SG) (SG) (DLTA) (DLTA) (PI)
+                 (PI) (DLTA) (DLTA) (SG) (PI) (PI) (SG) (PI) (PI)
+                 (SG) (PHI) (PHI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (SG) (PI) (PI) (DLTA) (DLTA) (SG) (PI) (PI) (?A)
+                 (?A) (PHI) (PHI) (DLTA) (DLTA) (SG) (PI) (PI)
+                 (PHI) (PHI) (DLTA) (DLTA) (SG) (PI) (PI) (SG)
+                 (DLTA) (DLTA) (SG) (PI) (PI) (SG) (SG) (SG)
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ Leave Link  401 at Sat Apr 17 20:44:35 2021, MaxMem=   104857600 cpu:              69.6 elap:               1.6
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l502.exe)
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=66468029.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   4950 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ CoulSu:  requested number of processors reduced to:  20 ShMem   1 Linda.
+ UHF open shell SCF:
+ Using DIIS extrapolation, IDIIS=  1040.
+ NGot=   104857600 LenX=    98535459 LenY=    98520618
+ Requested convergence on RMS density matrix=1.00D-08 within 128 cycles.
+ Requested convergence on MAX density matrix=1.00D-06.
+ Requested convergence on             energy=1.00D-06.
+ No special actions if energy rises.
+
+ Cycle   1  Pass 1  IDiag  1:
+ E= -75.7244984564398    
+ DIIS: error= 5.21D-02 at cycle   1 NSaved=   1.
+ NSaved= 1 IEnMin= 1 EnMin= -75.7244984564398     IErMin= 1 ErrMin= 5.21D-02
+ ErrMax= 5.21D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.93D-01 BMatP= 1.93D-01
+ IDIUse=3 WtCom= 4.79D-01 WtEn= 5.21D-01
+ Coeff-Com:  0.100D+01
+ Coeff-En:   0.100D+01
+ Coeff:      0.100D+01
+ Gap=     0.476 Goal=   None    Shift=    0.000
+ Gap=     0.328 Goal=   None    Shift=    0.000
+ GapD=    0.328 DampG=1.000 DampE=0.500 DampFc=0.5000 IDamp=-1.
+ Damping current iteration by 5.00D-01
+ RMSDP=1.23D-03 MaxDP=4.58D-02              OVMax= 7.86D-02
+
+ Cycle   2  Pass 1  IDiag  1:
+ E= -75.7320797073453     Delta-E=       -0.007581250905 Rises=F Damp=T
+ DIIS: error= 2.72D-02 at cycle   2 NSaved=   2.
+ NSaved= 2 IEnMin= 2 EnMin= -75.7320797073453     IErMin= 2 ErrMin= 2.72D-02
+ ErrMax= 2.72D-02  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.87D-02 BMatP= 1.93D-01
+ IDIUse=3 WtCom= 7.28D-01 WtEn= 2.72D-01
+ Coeff-Com: -0.388D+00 0.139D+01
+ Coeff-En:   0.000D+00 0.100D+01
+ Coeff:     -0.282D+00 0.128D+01
+ Gap=     0.472 Goal=   None    Shift=    0.000
+ Gap=     0.306 Goal=   None    Shift=    0.000
+ RMSDP=6.33D-04 MaxDP=1.28D-02 DE=-7.58D-03 OVMax= 3.80D-02
+
+ Cycle   3  Pass 1  IDiag  1:
+ E= -75.7393221538348     Delta-E=       -0.007242446490 Rises=F Damp=F
+ DIIS: error= 5.16D-03 at cycle   3 NSaved=   3.
+ NSaved= 3 IEnMin= 3 EnMin= -75.7393221538348     IErMin= 3 ErrMin= 5.16D-03
+ ErrMax= 5.16D-03  0.00D+00 EMaxC= 1.00D-01 BMatC= 4.27D-03 BMatP= 3.87D-02
+ IDIUse=3 WtCom= 9.48D-01 WtEn= 5.16D-02
+ Coeff-Com: -0.211D+00 0.410D+00 0.801D+00
+ Coeff-En:   0.000D+00 0.000D+00 0.100D+01
+ Coeff:     -0.200D+00 0.389D+00 0.811D+00
+ Gap=     0.458 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=1.33D-04 MaxDP=4.45D-03 DE=-7.24D-03 OVMax= 1.06D-02
+
+ Cycle   4  Pass 1  IDiag  1:
+ E= -75.7400169025431     Delta-E=       -0.000694748708 Rises=F Damp=F
+ DIIS: error= 5.69D-04 at cycle   4 NSaved=   4.
+ NSaved= 4 IEnMin= 4 EnMin= -75.7400169025431     IErMin= 4 ErrMin= 5.69D-04
+ ErrMax= 5.69D-04  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.77D-05 BMatP= 4.27D-03
+ IDIUse=3 WtCom= 9.94D-01 WtEn= 5.69D-03
+ Coeff-Com:  0.407D-01-0.833D-01-0.110D+00 0.115D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.405D-01-0.828D-01-0.110D+00 0.115D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=3.52D-05 MaxDP=9.44D-04 DE=-6.95D-04 OVMax= 2.31D-03
+
+ Cycle   5  Pass 1  IDiag  1:
+ E= -75.7400328340413     Delta-E=       -0.000015931498 Rises=F Damp=F
+ DIIS: error= 1.59D-04 at cycle   5 NSaved=   5.
+ NSaved= 5 IEnMin= 5 EnMin= -75.7400328340413     IErMin= 5 ErrMin= 1.59D-04
+ ErrMax= 1.59D-04  0.00D+00 EMaxC= 1.00D-01 BMatC= 3.66D-06 BMatP= 3.77D-05
+ IDIUse=3 WtCom= 9.98D-01 WtEn= 1.59D-03
+ Coeff-Com:  0.199D-01-0.382D-01-0.707D-01-0.104D-01 0.110D+01
+ Coeff-En:   0.000D+00 0.000D+00 0.000D+00 0.000D+00 0.100D+01
+ Coeff:      0.199D-01-0.381D-01-0.706D-01-0.104D-01 0.110D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=1.13D-05 MaxDP=3.58D-04 DE=-1.59D-05 OVMax= 7.28D-04
+
+ Cycle   6  Pass 1  IDiag  1:
+ E= -75.7400347428257     Delta-E=       -0.000001908784 Rises=F Damp=F
+ DIIS: error= 5.08D-05 at cycle   6 NSaved=   6.
+ NSaved= 6 IEnMin= 6 EnMin= -75.7400347428257     IErMin= 6 ErrMin= 5.08D-05
+ ErrMax= 5.08D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.32D-07 BMatP= 3.66D-06
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.639D-02 0.125D-01 0.222D-01-0.593D-01-0.272D+00 0.130D+01
+ Coeff:     -0.639D-02 0.125D-01 0.222D-01-0.593D-01-0.272D+00 0.130D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=3.54D-06 MaxDP=8.20D-05 DE=-1.91D-06 OVMax= 2.77D-04
+
+ Cycle   7  Pass 1  IDiag  1:
+ E= -75.7400348849720     Delta-E=       -0.000000142146 Rises=F Damp=F
+ DIIS: error= 1.10D-05 at cycle   7 NSaved=   7.
+ NSaved= 7 IEnMin= 7 EnMin= -75.7400348849720     IErMin= 7 ErrMin= 1.10D-05
+ ErrMax= 1.10D-05  0.00D+00 EMaxC= 1.00D-01 BMatC= 1.06D-08 BMatP= 2.32D-07
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.546D-03 0.110D-02 0.144D-02 0.423D-02-0.345D-01-0.872D-01
+ Coeff-Com:  0.112D+01
+ Coeff:     -0.546D-03 0.110D-02 0.144D-02 0.423D-02-0.345D-01-0.872D-01
+ Coeff:      0.112D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=5.74D-07 MaxDP=1.36D-05 DE=-1.42D-07 OVMax= 6.33D-05
+
+ Cycle   8  Pass 1  IDiag  1:
+ E= -75.7400348913849     Delta-E=       -0.000000006413 Rises=F Damp=F
+ DIIS: error= 3.17D-06 at cycle   8 NSaved=   8.
+ NSaved= 8 IEnMin= 8 EnMin= -75.7400348913849     IErMin= 8 ErrMin= 3.17D-06
+ ErrMax= 3.17D-06  0.00D+00 EMaxC= 1.00D-01 BMatC= 5.92D-10 BMatP= 1.06D-08
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.255D-03-0.504D-03-0.693D-03-0.310D-03 0.179D-01-0.289D-01
+ Coeff-Com: -0.317D+00 0.133D+01
+ Coeff:      0.255D-03-0.504D-03-0.693D-03-0.310D-03 0.179D-01-0.289D-01
+ Coeff:     -0.317D+00 0.133D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=2.03D-07 MaxDP=7.90D-06 DE=-6.41D-09 OVMax= 1.93D-05
+
+ Cycle   9  Pass 1  IDiag  1:
+ E= -75.7400348917859     Delta-E=       -0.000000000401 Rises=F Damp=F
+ DIIS: error= 2.59D-07 at cycle   9 NSaved=   9.
+ NSaved= 9 IEnMin= 9 EnMin= -75.7400348917859     IErMin= 9 ErrMin= 2.59D-07
+ ErrMax= 2.59D-07  0.00D+00 EMaxC= 1.00D-01 BMatC= 8.32D-12 BMatP= 5.92D-10
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com: -0.354D-04 0.675D-04 0.750D-04 0.173D-03-0.304D-02 0.473D-02
+ Coeff-Com:  0.616D-01-0.319D+00 0.126D+01
+ Coeff:     -0.354D-04 0.675D-04 0.750D-04 0.173D-03-0.304D-02 0.473D-02
+ Coeff:      0.616D-01-0.319D+00 0.126D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=1.96D-08 MaxDP=7.39D-07 DE=-4.01D-10 OVMax= 1.51D-06
+
+ Cycle  10  Pass 1  IDiag  1:
+ E= -75.7400348917906     Delta-E=       -0.000000000005 Rises=F Damp=F
+ DIIS: error= 5.77D-08 at cycle  10 NSaved=  10.
+ NSaved=10 IEnMin=10 EnMin= -75.7400348917906     IErMin=10 ErrMin= 5.77D-08
+ ErrMax= 5.77D-08  0.00D+00 EMaxC= 1.00D-01 BMatC= 2.81D-13 BMatP= 8.32D-12
+ IDIUse=1 WtCom= 1.00D+00 WtEn= 0.00D+00
+ Coeff-Com:  0.262D-05-0.435D-05-0.702D-06-0.853D-04 0.464D-03 0.213D-03
+ Coeff-Com: -0.128D-01 0.615D-01-0.354D+00 0.130D+01
+ Coeff:      0.262D-05-0.435D-05-0.702D-06-0.853D-04 0.464D-03 0.213D-03
+ Coeff:     -0.128D-01 0.615D-01-0.354D+00 0.130D+01
+ Gap=     0.459 Goal=   None    Shift=    0.000
+ Gap=     0.301 Goal=   None    Shift=    0.000
+ RMSDP=3.07D-09 MaxDP=9.76D-08 DE=-4.72D-12 OVMax= 3.28D-07
+
+ SCF Done:  E(UM062X) =  -75.7400348918     A.U. after   10 cycles
+            NFock= 10  Conv=0.31D-08     -V/T= 2.0028
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7530 S= 0.5015
+ <L.S>= 0.000000000000E+00
+ KE= 7.553225008357D+01 PE=-1.881768406253D+02 EE= 3.253524447660D+01
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation     0.7530,   after     0.7500
+ Leave Link  502 at Sat Apr 17 20:44:40 2021, MaxMem=   104857600 cpu:             218.0 elap:               5.0
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG) (?A) (?A)
+                 (?A) (PI) (PI) (SG) (PI) (PI) (SG) (PI) (PI) (?B)
+                 (SG) (SG) (?B) (?B) (?C) (?C) (?C) (?C) (SG) (?D)
+                 (?D) (?D) (PI) (PI) (SG) (PI) (PI) (PHI) (PHI)
+                 (SG) (?E) (?E) (?E) (PI) (PI) (?F) (?F) (?F) (PI)
+                 (PI) (?F) (PI) (PI) (SG) (PHI) (PHI) (DLTA) (DLTA)
+                 (SG) (PI) (PI) (SG) (PI) (PI) (DLTA) (DLTA) (SG)
+                 (PI) (PI) (?G) (?G) (PHI) (PHI) (?H) (?H) (?H)
+                 (?I) (?I) (?I) (?I) (?H) (?H) (?H) (PI) (PI) (?F)
+                 (?F) (?F) (PI) (?F) (PI) (SG) (SG) (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (?A)
+       Virtual   (?A) (?B) (?A) (?B) (?A) (?B) (?A) (?A) (?B) (?B)
+                 (?B) (?B) (?A) (?A) (?A) (?B) (?A) (?B) (?A) (?A)
+                 (?C) (SG) (?C) (?C) (?C) (PI) (PI) (PI) (PI) (SG)
+                 (?D) (?D) (?D) (PI) (PI) (SG) (PI) (PI) (PHI)
+                 (PHI) (SG) (?E) (?E) (?E) (PI) (PI) (?F) (?F)
+                 (?F) (PI) (PI) (SG) (PI) (PI) (SG) (PHI) (PHI)
+                 (DLTA) (DLTA) (SG) (PI) (PI) (SG) (DLTA) (DLTA)
+                 (PI) (PI) (SG) (PI) (PI) (?G) (?G) (PHI) (PHI)
+                 (DLTA) (DLTA) (SG) (?H) (?H) (?H) (?H) (?I) (?I)
+                 (?I) (PI) (PI) (?C) (?C) (?C) (PI) (PI) (?C) (SG)
+                 (SG) (SG)
+ Unable to determine electronic state:  an orbital has unidentified symmetry.
+ Alpha  occ. eigenvalues --  -19.69889  -1.14853  -0.56875  -0.50728  -0.44401
+ Alpha virt. eigenvalues --    0.01545   0.05839   0.06517   0.07009   0.15607
+ Alpha virt. eigenvalues --    0.17412   0.17627   0.24750   0.34172   0.34195
+ Alpha virt. eigenvalues --    0.35993   0.41231   0.41343   0.48343   0.48478
+ Alpha virt. eigenvalues --    0.48554   0.51830   0.77585   0.77736   0.93747
+ Alpha virt. eigenvalues --    1.05481   1.18229   1.26089   1.26243   1.38988
+ Alpha virt. eigenvalues --    1.40991   1.51024   1.54373   1.56118   1.96318
+ Alpha virt. eigenvalues --    2.00776   2.00976   2.40143   2.40196   2.58512
+ Alpha virt. eigenvalues --    2.62369   2.63264   3.09418   3.09503   3.12304
+ Alpha virt. eigenvalues --    3.33701   3.44299   3.44370   3.86993   3.90233
+ Alpha virt. eigenvalues --    3.91883   3.91931   4.24873   4.33259   4.36257
+ Alpha virt. eigenvalues --    4.47631   5.13590   5.18872   5.29565   5.68841
+ Alpha virt. eigenvalues --    5.68844   6.38457   6.38510   7.00173   7.15494
+ Alpha virt. eigenvalues --    7.16310   7.25999   7.58034   7.59200   7.59275
+ Alpha virt. eigenvalues --    7.59317   8.27223   8.42759   8.44824   8.73044
+ Alpha virt. eigenvalues --    8.73071   8.89838   8.89844   9.94424   9.94532
+ Alpha virt. eigenvalues --   10.21610  10.63702  10.68466  10.71663  10.71790
+ Alpha virt. eigenvalues --   10.86249  10.89054  10.90182  11.45443  11.51938
+ Alpha virt. eigenvalues --   11.87512  11.90473  11.90689  13.48918  13.53148
+ Alpha virt. eigenvalues --   13.55111  16.27807  47.76990 250.79668
+  Beta  occ. eigenvalues --  -19.68213  -1.06488  -0.53663  -0.40802
+  Beta virt. eigenvalues --   -0.10741   0.01590   0.06560   0.06831   0.08016
+  Beta virt. eigenvalues --    0.15698   0.17527   0.17859   0.23536   0.31060
+  Beta virt. eigenvalues --    0.32547   0.35966   0.40226   0.41405   0.45647
+  Beta virt. eigenvalues --    0.47711   0.48206   0.52201   0.76144   0.77967
+  Beta virt. eigenvalues --    0.93243   1.06557   1.16661   1.28030   1.28212
+  Beta virt. eigenvalues --    1.40507   1.41572   1.53292   1.55209   1.56936
+  Beta virt. eigenvalues --    1.94775   2.00625   2.00871   2.39249   2.40776
+  Beta virt. eigenvalues --    2.59187   2.61609   2.64479   3.10043   3.11159
+  Beta virt. eigenvalues --    3.12054   3.37679   3.44896   3.45493   3.87417
+  Beta virt. eigenvalues --    3.90921   3.94470   3.95648   4.24008   4.34647
+  Beta virt. eigenvalues --    4.36371   4.52071   5.20070   5.20478   5.31317
+  Beta virt. eigenvalues --    5.68867   5.68916   6.39559   6.39576   7.02089
+  Beta virt. eigenvalues --    7.17489   7.18118   7.27332   7.59202   7.59282
+  Beta virt. eigenvalues --    7.60622   7.61489   8.30001   8.46538   8.46560
+  Beta virt. eigenvalues --    8.77992   8.79030   8.93159   8.95355   9.97102
+  Beta virt. eigenvalues --    9.99428  10.23463  10.67572  10.71016  10.85902
+  Beta virt. eigenvalues --   10.89883  10.94766  10.99447  11.02178  11.54353
+  Beta virt. eigenvalues --   11.62458  11.92469  12.06674  12.08701  13.58042
+  Beta virt. eigenvalues --   13.65284  13.66215  16.32940  47.88311 250.79083
+          Condensed to atoms (all electrons):
+               1          2
+     1  O    8.216738   0.205743
+     2  H    0.205743   0.371776
+          Atomic-Atomic Spin Densities.
+               1          2
+     1  O    1.013967   0.023145
+     2  H    0.023145  -0.060257
+ Mulliken charges and spin densities:
+               1          2
+     1  O   -0.422481   1.037112
+     2  H    0.422481  -0.037112
+ Sum of Mulliken charges =  -0.00000   1.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  O   -0.000000   1.000000
+ Electronic spatial extent (au):  <R**2>=             15.6644
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=              0.0000    Y=              0.0000    Z=             -1.6801  Tot=              1.6801
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -5.5472   YY=             -6.8460   ZZ=             -4.6679
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=              0.1399   YY=             -1.1590   ZZ=              1.0191
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=              0.0000  YYY=              0.0000  ZZZ=             -1.9066  XYY=              0.0000
+  XXY=             -0.0000  XXZ=             -0.1536  XZZ=              0.0000  YZZ=              0.0000
+  YYZ=             -0.2020  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -4.1284 YYYY=             -6.3209 ZZZZ=             -5.7784 XXXY=              0.0000
+ XXXZ=              0.0000 YYYX=              0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -1.7427 XXZZ=             -1.8890 YYZZ=             -2.2795
+ XXYZ=             -0.0000 YYXZ=              0.0000 ZZXY=              0.0000
+ N-N= 4.369311173303D+00 E-N=-1.881768403384D+02  KE= 7.553225008357D+01
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  O(17)              0.14692     -89.06309     -31.77993     -29.70825
+     2  H(1)              -0.01640     -73.32434     -26.16395     -24.45837
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        3.871477     -1.940640     -1.930836
+     2   Atom       -0.035509     -0.134891      0.170400
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+     2   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -1.9406   140.423    50.107    46.840 -0.0000  1.0000  0.0000
+     1 O(17)  Bbb    -1.9308   139.714    49.853    46.604  0.0000  0.0000  1.0000
+              Bcc     3.8715  -280.137   -99.960   -93.444  1.0000  0.0000  0.0000
+ 
+              Baa    -0.1349   -71.971   -25.681   -24.007 -0.0000  1.0000  0.0000
+     2 H(1)   Bbb    -0.0355   -18.946    -6.760    -6.320  1.0000  0.0000  0.0000
+              Bcc     0.1704    90.917    32.442    30.327  0.0000  0.0000  1.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Sat Apr 17 20:44:42 2021, MaxMem=   104857600 cpu:              92.7 elap:               2.2
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l801.exe)
+ DoSCS=F DFT=T ScalE2(SS,OS)=  1.000000  1.000000
+ Range of M.O.s used for correlation:     1    99
+ NBasis=    99 NAE=     5 NBE=     4 NFC=     0 NFV=     0
+ NROrb=     99 NOA=     5 NOB=     4 NVA=    94 NVB=    95
+
+ **** Warning!!: The largest alpha MO coefficient is  0.25656094D+02
+
+
+ **** Warning!!: The largest beta MO coefficient is  0.25264886D+02
+
+ Leave Link  801 at Sat Apr 17 20:44:42 2021, MaxMem=   104857600 cpu:               3.6 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l914.exe)
+ UHF ground state
+ Doing stability rather than CIS.
+ Keep R1 and R2 ints in memory in symmetry-blocked form, NReq=92131458.
+ FoFCou: FMM=F IPFlag=           0 FMFlag=           0 FMFlg1=           0
+         NFxFlg=           0 DoJE=F BraDBF=F KetDBF=F FulRan=T
+         wScrn=  0.000000 ICntrl=       600 IOpCl=  0 I1Cent=           0 NGrid=           0
+         NMat0=    1 NMatS0=   4950 NMatT0=    0 NMatD0=    1 NMtDS0=    0 NMtDT0=    0
+ Petite list used in FoFCou.
+ CoulSu:  requested number of processors reduced to:  20 ShMem   1 Linda.
+ MDV=   104857600 DFT=T DoStab=T Mixed=T DoRPA=F DoScal=F NonHer=F
+ Making orbital integer symmetry assigments:
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG) (?A) (?A)
+                 (?A) (PI) (PI) (SG) (PI) (PI) (SG) (PI) (PI) (?B)
+                 (SG) (SG) (?B) (?B) (?C) (?C) (?C) (?C) (SG) (?D)
+                 (?D) (?D) (PI) (PI) (SG) (PI) (PI) (PHI) (PHI)
+                 (SG) (?E) (?E) (?E) (PI) (PI) (?F) (?F) (?F) (PI)
+                 (PI) (?F) (PI) (PI) (SG) (PHI) (PHI) (DLTA) (DLTA)
+                 (SG) (PI) (PI) (SG) (PI) (PI) (DLTA) (DLTA) (SG)
+                 (PI) (PI) (?G) (?G) (PHI) (PHI) (?H) (?H) (?H)
+                 (?I) (?I) (?I) (?I) (?H) (?H) (?H) (PI) (PI) (?F)
+                 (?F) (?F) (PI) (?F) (PI) (SG) (SG) (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (?A)
+       Virtual   (?A) (?B) (?A) (?B) (?A) (?B) (?A) (?A) (?B) (?B)
+                 (?B) (?B) (?A) (?A) (?A) (?B) (?A) (?B) (?A) (?A)
+                 (?C) (SG) (?C) (?C) (?C) (PI) (PI) (PI) (PI) (SG)
+                 (?D) (?D) (?D) (PI) (PI) (SG) (PI) (PI) (PHI)
+                 (PHI) (SG) (?E) (?E) (?E) (PI) (PI) (?F) (?F)
+                 (?F) (PI) (PI) (SG) (PI) (PI) (SG) (PHI) (PHI)
+                 (DLTA) (DLTA) (SG) (PI) (PI) (SG) (DLTA) (DLTA)
+                 (PI) (PI) (SG) (PI) (PI) (?G) (?G) (PHI) (PHI)
+                 (DLTA) (DLTA) (SG) (?H) (?H) (?H) (?H) (?I) (?I)
+                 (?I) (PI) (PI) (?C) (?C) (?C) (PI) (PI) (?C) (SG)
+                 (SG) (SG)
+    12 initial guesses have been made.
+ Convergence on wavefunction:    0.001000000000000
+ Davidson Disk Diagonalization:  ConvIn= 1.00D-03 SkipCon=T Conv= 1.00D-03.
+ Max sub-space:  1700 roots to seek:    12 dimension of matrix:          850
+ Iteration     1 Dimension    12 NMult     0 NNew     12
+ CISAX will form    12 AO SS matrices at one time.
+ NMat=    12 NSing=    12 JSym2X= 2.
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.535184344337307
+ Root      2 :     4.744252429128801
+ Root      3 :     8.399807609705997
+ Root      4 :     9.303377753608192
+ Root      5 :    10.327132980339740
+ Root      6 :    10.387499445626970
+ Root      7 :    10.532683948273350
+ Root      8 :    10.977842609954150
+ Root      9 :    11.065690367925830
+ Root     10 :    11.295483149427240
+ Root     11 :    11.627183787701290
+ Root     12 :    12.647952152141530
+ Iteration     2 Dimension    24 NMult    12 NNew     12
+ CISAX will form    12 AO SS matrices at one time.
+ NMat=    12 NSing=    12 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.094932105197833
+ Excitation Energies [eV] at current iteration:
+ Root      1 :     0.002663076988829   Change is   -0.532521267348478
+ Root      2 :     3.940180350582354   Change is   -0.804072078546447
+ Root      3 :     7.804210630248951   Change is   -0.595596979457045
+ Root      4 :     8.851491631426724   Change is   -0.451886122181467
+ Root      5 :    10.188421545686780   Change is   -0.138711434652964
+ Root      6 :    10.197933881655220   Change is   -0.334750066618126
+ Root      7 :    10.273279704170670   Change is   -0.114219741456302
+ Root      8 :    10.314271959437910   Change is   -0.663570650516238
+ Root      9 :    10.897401178910880   Change is   -0.168289189014951
+ Root     10 :    11.123291111776300   Change is   -0.503892675924998
+ Root     11 :    11.142326779194010   Change is   -0.153156370233229
+ Root     12 :    11.592643594480280   Change is   -1.055308557661251
+ Iteration     3 Dimension    27 NMult    24 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 not converged, maximum delta is    0.003335033455591
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.000063008217005   Change is   -0.002726085205834
+ Root      2 :     3.884817485444045   Change is   -0.055362865138309
+ Root      3 :     7.770463824826410   Change is   -0.033746805422541
+ Iteration     4 Dimension    30 NMult    27 NNew      3
+ CISAX will form     3 AO SS matrices at one time.
+ NMat=     3 NSing=     3 JSym2X= 2.
+ Root      1 has converged.
+ Excitation Energies [eV] at current iteration:
+ Root      1 :    -0.000079979511096   Change is   -0.000016971294091
+ Root      2 :     3.881705559847724   Change is   -0.003111925596321
+ Root      3 :     7.769371729122057   Change is   -0.001092095704354
+ Convergence achieved on expansion vectors.
+ ***********************************************************************
+ Stability analysis using <AA,BB:AA,BB> singles matrix:
+ ***********************************************************************
+ 1PDM for each excited state written to RWF  633
+ Ground to excited state transition densities written to RWF  633
+
+ Eigenvectors of the stability matrix:
+ 
+ Excited state symmetry could not be determined.
+ Eigenvector   1:  2.005-?Sym  Eigenvalue=-0.0000029  <S**2>=0.755
+      4B ->  5B        0.97121
+      4B ->  9B       -0.18063
+ The wavefunction is stable under the perturbations considered.
+ Leave Link  914 at Sat Apr 17 20:44:57 2021, MaxMem=   104857600 cpu:             684.3 elap:              14.9
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l508.exe)
+ The wavefunction is already stable.
+ Leave Link  508 at Sat Apr 17 20:44:57 2021, MaxMem=   104857600 cpu:               2.2 elap:               0.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l601.exe)
+ Copying SCF densities to generalized density rwf, IOpCl= 1 IROHF=0.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (SG) (SG) (SG) (PI) (PI)
+       Virtual   (SG) (PI) (PI) (SG) (SG) (PI) (PI) (SG) (?A) (?A)
+                 (?A) (PI) (PI) (SG) (PI) (PI) (SG) (PI) (PI) (?B)
+                 (SG) (SG) (?B) (?B) (?C) (?C) (?C) (?C) (SG) (?D)
+                 (?D) (?D) (PI) (PI) (SG) (PI) (PI) (PHI) (PHI)
+                 (SG) (?E) (?E) (?E) (PI) (PI) (?F) (?F) (?F) (PI)
+                 (PI) (?F) (PI) (PI) (SG) (PHI) (PHI) (DLTA) (DLTA)
+                 (SG) (PI) (PI) (SG) (PI) (PI) (DLTA) (DLTA) (SG)
+                 (PI) (PI) (?G) (?G) (PHI) (PHI) (?H) (?H) (?H)
+                 (?I) (?I) (?I) (?I) (?H) (?H) (?H) (PI) (PI) (?F)
+                 (?F) (?F) (PI) (?F) (PI) (SG) (SG) (SG)
+ Beta  Orbitals:
+       Occupied  (SG) (SG) (SG) (?A)
+       Virtual   (?A) (?B) (?A) (?B) (?A) (?B) (?A) (?A) (?B) (?B)
+                 (?B) (?B) (?A) (?A) (?A) (?B) (?A) (?B) (?A) (?A)
+                 (?C) (SG) (?C) (?C) (?C) (PI) (PI) (PI) (PI) (SG)
+                 (?D) (?D) (?D) (PI) (PI) (SG) (PI) (PI) (PHI)
+                 (PHI) (SG) (?E) (?E) (?E) (PI) (PI) (?F) (?F)
+                 (?F) (PI) (PI) (SG) (PI) (PI) (SG) (PHI) (PHI)
+                 (DLTA) (DLTA) (SG) (PI) (PI) (SG) (DLTA) (DLTA)
+                 (PI) (PI) (SG) (PI) (PI) (?G) (?G) (PHI) (PHI)
+                 (DLTA) (DLTA) (SG) (?H) (?H) (?H) (?H) (?I) (?I)
+                 (?I) (PI) (PI) (?C) (?C) (?C) (PI) (PI) (?C) (SG)
+                 (SG) (SG)
+ Unable to determine electronic state:  an orbital has unidentified symmetry.
+ Alpha  occ. eigenvalues --  -19.69889  -1.14853  -0.56875  -0.50728  -0.44401
+ Alpha virt. eigenvalues --    0.01545   0.05839   0.06517   0.07009   0.15607
+ Alpha virt. eigenvalues --    0.17412   0.17627   0.24750   0.34172   0.34195
+ Alpha virt. eigenvalues --    0.35993   0.41231   0.41343   0.48343   0.48478
+ Alpha virt. eigenvalues --    0.48554   0.51830   0.77585   0.77736   0.93747
+ Alpha virt. eigenvalues --    1.05481   1.18229   1.26089   1.26243   1.38988
+ Alpha virt. eigenvalues --    1.40991   1.51024   1.54373   1.56118   1.96318
+ Alpha virt. eigenvalues --    2.00776   2.00976   2.40143   2.40196   2.58512
+ Alpha virt. eigenvalues --    2.62369   2.63264   3.09418   3.09503   3.12304
+ Alpha virt. eigenvalues --    3.33701   3.44299   3.44370   3.86993   3.90233
+ Alpha virt. eigenvalues --    3.91883   3.91931   4.24873   4.33259   4.36257
+ Alpha virt. eigenvalues --    4.47631   5.13590   5.18872   5.29565   5.68841
+ Alpha virt. eigenvalues --    5.68844   6.38457   6.38510   7.00173   7.15494
+ Alpha virt. eigenvalues --    7.16310   7.25999   7.58034   7.59200   7.59275
+ Alpha virt. eigenvalues --    7.59317   8.27223   8.42759   8.44824   8.73044
+ Alpha virt. eigenvalues --    8.73071   8.89838   8.89844   9.94424   9.94532
+ Alpha virt. eigenvalues --   10.21610  10.63702  10.68466  10.71663  10.71790
+ Alpha virt. eigenvalues --   10.86249  10.89054  10.90182  11.45443  11.51938
+ Alpha virt. eigenvalues --   11.87512  11.90473  11.90689  13.48918  13.53148
+ Alpha virt. eigenvalues --   13.55111  16.27807  47.76990 250.79668
+  Beta  occ. eigenvalues --  -19.68213  -1.06488  -0.53663  -0.40802
+  Beta virt. eigenvalues --   -0.10741   0.01590   0.06560   0.06831   0.08016
+  Beta virt. eigenvalues --    0.15698   0.17527   0.17859   0.23536   0.31060
+  Beta virt. eigenvalues --    0.32547   0.35966   0.40226   0.41405   0.45647
+  Beta virt. eigenvalues --    0.47711   0.48206   0.52201   0.76144   0.77967
+  Beta virt. eigenvalues --    0.93243   1.06557   1.16661   1.28030   1.28212
+  Beta virt. eigenvalues --    1.40507   1.41572   1.53292   1.55209   1.56936
+  Beta virt. eigenvalues --    1.94775   2.00625   2.00871   2.39249   2.40776
+  Beta virt. eigenvalues --    2.59187   2.61609   2.64479   3.10043   3.11159
+  Beta virt. eigenvalues --    3.12054   3.37679   3.44896   3.45493   3.87417
+  Beta virt. eigenvalues --    3.90921   3.94470   3.95648   4.24008   4.34647
+  Beta virt. eigenvalues --    4.36371   4.52071   5.20070   5.20478   5.31317
+  Beta virt. eigenvalues --    5.68867   5.68916   6.39559   6.39576   7.02089
+  Beta virt. eigenvalues --    7.17489   7.18118   7.27332   7.59202   7.59282
+  Beta virt. eigenvalues --    7.60622   7.61489   8.30001   8.46538   8.46560
+  Beta virt. eigenvalues --    8.77992   8.79030   8.93159   8.95355   9.97102
+  Beta virt. eigenvalues --    9.99428  10.23463  10.67572  10.71016  10.85902
+  Beta virt. eigenvalues --   10.89883  10.94766  10.99447  11.02178  11.54353
+  Beta virt. eigenvalues --   11.62458  11.92469  12.06674  12.08701  13.58042
+  Beta virt. eigenvalues --   13.65284  13.66215  16.32940  47.88311 250.79083
+          Condensed to atoms (all electrons):
+               1          2
+     1  O    8.216738   0.205743
+     2  H    0.205743   0.371776
+          Atomic-Atomic Spin Densities.
+               1          2
+     1  O    1.013967   0.023145
+     2  H    0.023145  -0.060257
+ Mulliken charges and spin densities:
+               1          2
+     1  O   -0.422481   1.037112
+     2  H    0.422481  -0.037112
+ Sum of Mulliken charges =  -0.00000   1.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  O   -0.000000   1.000000
+ Electronic spatial extent (au):  <R**2>=             15.6644
+ Charge=             -0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=              0.0000    Y=              0.0000    Z=             -1.6801  Tot=              1.6801
+ Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=             -5.5472   YY=             -6.8460   ZZ=             -4.6679
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
+ Traceless Quadrupole moment (field-independent basis, Debye-Ang):
+   XX=              0.1399   YY=             -1.1590   ZZ=              1.0191
+   XY=              0.0000   XZ=              0.0000   YZ=              0.0000
+ Octapole moment (field-independent basis, Debye-Ang**2):
+  XXX=              0.0000  YYY=              0.0000  ZZZ=             -1.9066  XYY=              0.0000
+  XXY=             -0.0000  XXZ=             -0.1536  XZZ=              0.0000  YZZ=              0.0000
+  YYZ=             -0.2020  XYZ=             -0.0000
+ Hexadecapole moment (field-independent basis, Debye-Ang**3):
+ XXXX=             -4.1284 YYYY=             -6.3209 ZZZZ=             -5.7784 XXXY=              0.0000
+ XXXZ=              0.0000 YYYX=              0.0000 YYYZ=              0.0000 ZZZX=              0.0000
+ ZZZY=              0.0000 XXYY=             -1.7427 XXZZ=             -1.8890 YYZZ=             -2.2795
+ XXYZ=             -0.0000 YYXZ=              0.0000 ZZXY=              0.0000
+ N-N= 4.369311173303D+00 E-N=-1.881768403384D+02  KE= 7.553225008357D+01
+                          Isotropic Fermi Contact Couplings
+        Atom                 a.u.       MegaHertz       Gauss      10(-4) cm-1
+     1  O(17)              0.14692     -89.06309     -31.77993     -29.70825
+     2  H(1)              -0.01640     -73.32434     -26.16395     -24.45837
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ --------------------------------------------------------
+       Center         ----  Spin Dipole Couplings  ----
+                      3XX-RR        3YY-RR        3ZZ-RR
+ --------------------------------------------------------
+     1   Atom        3.871477     -1.940640     -1.930836
+     2   Atom       -0.035509     -0.134891      0.170400
+ --------------------------------------------------------
+                        XY            XZ            YZ
+ --------------------------------------------------------
+     1   Atom        0.000000      0.000000      0.000000
+     2   Atom        0.000000      0.000000      0.000000
+ --------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------
+              Anisotropic Spin Dipole Couplings in Principal Axis System
+ ---------------------------------------------------------------------------------
+
+       Atom             a.u.   MegaHertz   Gauss  10(-4) cm-1        Axes
+
+              Baa    -1.9406   140.423    50.107    46.840 -0.0000  1.0000  0.0000
+     1 O(17)  Bbb    -1.9308   139.714    49.853    46.604  0.0000  0.0000  1.0000
+              Bcc     3.8715  -280.137   -99.960   -93.444  1.0000  0.0000  0.0000
+ 
+              Baa    -0.1349   -71.971   -25.681   -24.007 -0.0000  1.0000  0.0000
+     2 H(1)   Bbb    -0.0355   -18.946    -6.760    -6.320  1.0000  0.0000  0.0000
+              Bcc     0.1704    90.917    32.442    30.327  0.0000  0.0000  1.0000
+ 
+
+ ---------------------------------------------------------------------------------
+
+ PrsmSu:  requested number of processors reduced to:  21 ShMem   1 Linda.
+ No NMR shielding tensors so no spin-rotation constants.
+ Leave Link  601 at Sat Apr 17 20:44:59 2021, MaxMem=   104857600 cpu:              87.7 elap:               2.1
+ (Enter /s/ls4/users/knvvv/bin/g16sse/l9999.exe)
+
+ Test job not archived.
+ 1\1\GINC-N151\Stability\UM062X\Gen\H1O1(2)\KNVVV\17-Apr-2021\0\\#P M06
+ 2X/GEN Integral=UltraFineGrid SCF=NoSymm Stable=(RExt, Opt) IOp(1/33=1
+ )\\Database calculations.\\0,2\O,0,0.,0.,0.\H,0,0.,0.,0.96889819\\Vers
+ ion=ES64L-G16RevA.03\HF=-75.7400349\S2=0.752973\S2-1=0.\S2A=0.750006\R
+ MSD=3.075e-09\Dipole=0.,0.,0.6609916\Quadrupole=0.1039786,-0.8616864,0
+ .7577077,0.,0.,0.\PG=C*V [C*(H1O1)]\\@
+
+
+ IT IS UNWORTHY OF EXCELLENT MEN TO LOSE HOURS LIKE SLAVES IN THE LABOR
+ OF CALCULATION WHICH COULD BE SAFELY RELEGATED TO ANYONE ELSE
+ IF A MACHINE WERE USED.
+    -- G.W. VON LEIBNIZ
+ Job cpu time:       0 days  0 hours 21 minutes 39.3 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes 29.2 seconds.
+ File lengths (MBytes):  RWF=     36 Int=      0 D2E=      0 Chk=      2 Scr=      1
+ Normal termination of Gaussian 16 at Sat Apr 17 20:44:59 2021.
